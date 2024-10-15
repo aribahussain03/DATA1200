@@ -3,13 +3,41 @@
 <head>
     <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=""><!--add css when ready-->
+    <style>
+        /* Fet skrift for spesifikk rad */
+.tabell-fet-skrift td {
+    font-weight: bold; /* Fet skrift */
+  padding-top: 20px;
+}
+
+/* Generell styling for  */
+.tabell-1 {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.andre-seksjon img {
+    width:110px;
+    height:150px;
+    float: left;
+    
+}
+
+.tredje-seksjon img {
+    width:600px;
+    height:300px;
+}
+
+    </style>
 </head>
 <body>
 <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
 <p>Bachelorprogram</p>
 <hr />
-<table>
+<table class="tabell-1">
     <tr>
         <th>Studiested</th>
         <th>Varighet</th>
@@ -22,12 +50,10 @@
         <td>Heltid</td>
         <td>180</td>
     </tr>
-</table>
-<table>
-    <tr>
-        <th>Studiestart</th>
-        <th>Undervisningsspråk</th>
-        <th>Studieplasser</th>
+    <tr class="tabell-fet-skrift">
+        <td>Studiestart</th>
+        <td>Undervisningsspråk</th>
+        <td>Studieplasser</th>
     </tr>
     <tr>
         <td>August</td>
@@ -42,7 +68,7 @@
 
 <hr />
 
-<section class="primary"> 
+<section class="første-seksjon"> 
     <!--setter inn klasse her for å kunne style det annerledes enn de andre seksjonene i css. 
     Klasse vil kunne hjelp med å identifisere riktig seksjon-->
     <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
@@ -141,17 +167,22 @@
 
 <hr />
 
-<section class="secondary">
+<section class="andre-seksjon">
     <h2>Studiested</h2>
     <p><a href="https://www.oslomet.no/om/studiested-pilestredet"targer="_self">Studiested Pilestredet</a></p>
 
     <h2>Spørsmål om utdanningen?</h2>
     <p><a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"targer="_self">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a></p>
     
+<hr />
+    
     <h2>Faglig leder</h2>
+    <p><img src= "https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944" alt = "Bilde av Kristoffer Herland Hellton"></p>
     <p><a href="https://www.oslomet.no/om/ansatt/krhel3944/"target="_self"></a>Kristoffer Herland Hellton</p>
     <p>førsteamanuensis</p>
     <p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
+  
+<hr />
 
     <h2>Du er kanskje også interessert i disse?</h2>
         <h3><a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"target=
@@ -190,8 +221,9 @@
 
 <hr />
 
-<section class="third">
+<section class="tredje-seksjon">
 <h2>Studenthistorier</h2>
+<p><img src="https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/1/6/4/1/401461-1-nor-NO/613c6efdb147-matematikk_oslomet_smilefjes.jpg" alt="Bilder med to menn"></p>
 <p><a href="https://www.oslomet.no/studier/studenthistorier?student_story=147"targer= "_self">Teknologi og design</a></p>
 
     <h3><a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap"targer= "_self">Spå fremtiden med matematikk og datavitenskap</a></h3>

@@ -1,0 +1,12 @@
+        /* Fet skrift for spesifikk rad */
+        .fet-skrift td {
+            font-weight: bold; /* Fet skrift */
+          padding-top: 20px;
+        }
+        
+        /* Generell styling for  */
+        .tabell-1 {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
