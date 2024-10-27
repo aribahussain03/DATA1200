@@ -10,7 +10,8 @@
         list-style-type: none;
     }
     .menu li {padding-right: 4rem}
-  } } 
+  }
+
 @media (max-width: 700px) {
     .menu {
         list-style-type: none;
@@ -22,7 +23,6 @@
     .menu-icon {
         display: block;
         background-image: url(https://media.snl.no/media/8590/standard_oslo.png);
-        
         background-size: cover;
         height: 40px;
         width: 40px;
@@ -48,12 +48,20 @@
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         padding-bottom: 0.5rem;
-        background-color: var(--black);
     }
 
-    nav {
+    .nav{
         display: flex;
         height: 40px;
+        background-color: black;
+    }
+    .nav a{
+      color: #FFFF00;
+      text-decoration: none;
+      display: block;
+    }
+    .nav a:hover{
+      background-color: #b5b52ce9;
     }
 }
 .Oslomet-logo{
@@ -61,4 +69,5 @@
   width: auto;
 
 }
+
 
