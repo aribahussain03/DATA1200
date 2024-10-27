@@ -4,23 +4,25 @@
 
 @media (min-width: 701px) {
     .menu {
-        display: flex;
-        flex-direction: row;
+        display: block;
+        flex-direction: block;
         justify-content: center;
         list-style-type: none;
     }
     .menu li {padding-right: 4rem}
-}
+  } } 
 @media (max-width: 700px) {
     .menu {
         list-style-type: none;
         position: sticky;
         padding-left: 0px;
+        display: none;
     }
 
     .menu-icon {
         display: block;
-        background-image: url(https://media.snl.no/media/150803/standard_oslomet.png);
+        background-image: url(https://media.snl.no/media/8590/standard_oslo.png);
+        
         background-size: cover;
         height: 40px;
         width: 40px;
@@ -32,7 +34,14 @@
     .menu li {
         height: 0px;
         overflow: hidden;
+    
+    } 
+    /* Usikker på de neste 2 linjene er nødvendig */
+      #burger-toggle:checked ~ .menu {
+          display: block; /* Viser menyen når checkboxen er sjekket */
+
     }
+
     #burger-toggle:checked ~ .menu li {
         height: 1rem;
         width: auto;
@@ -47,60 +56,9 @@
         height: 40px;
     }
 }
-hr {
-    border: 2px solid #FFFF00; /* En gul kantlinje */
-    border-block-end: 2px black solid;
-  }
-  a {text-decoration: underline;
-  }
-  a:active {color:darkblue;
-  }
-  a:visited {color: purple;
-  }
-  
-    
-    p {
-    padding-bottom: 10px; /* Litt padding for å gi tekstlinjene mellomrom */
-    padding-left: 20px;
-  }
-  ul {
-  padding-left: 70px;
-  }
-      
-  .tabell-fet-skrift td {  /* Fet skrift for spesifikk rad */
-    font-weight: bold; /* Fet skrift */
-    padding-top: 50px;
-  }
-  
-  /* Generell styling for  */
-  .tabell-1 {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    background-color: black;
-    color:yellow;
-  }
-  
-  .andre-seksjon img {
-    width:110px;
-    height:150px;
-    float: left;
-    padding-right: 20px;
-    
-  }
-  .tredje-seksjon{
-    text-align:center;
-  }
-  
-  .tredje-seksjon img {
-    width:600px;
-    height:300px;
-  
-  }
-  
-  .tredje-seksjon {
-    width: 100%;
-  background-color: black;
-    color: yellow;
-  
-  }
+.Oslomet-logo{
+  height: 40px;
+  width: auto;
+
+}
+
