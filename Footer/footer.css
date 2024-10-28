@@ -53,12 +53,12 @@ hr {
 
 /* Generell linjeavstand for hele footeren */
 footer {
-    line-height: 1.8; /* Juster til ønsket verdi */
+    line-height: 1.8; 
 }
 
 /* Spesifikk linjeavstand for kontaktinformasjonen */
 .contact-info p, .footer-links a {
-    line-height: 2; /* Juster til ønsket verdi */
+    line-height: 2; 
 }
 
 /* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
