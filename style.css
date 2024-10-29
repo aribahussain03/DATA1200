@@ -38,7 +38,12 @@ padding-left: 70px;
   float: left;
   padding-right: 20px;
   
+/* Rim tabell gi klasse på html */
+table, th, td .oppbyggning Tabell{
+  border: 1px solid black;
+  border-collapse: collapse;
 }
+
 .tredje-seksjon{
   text-align:center;
 }
