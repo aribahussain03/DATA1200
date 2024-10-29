@@ -2,42 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="stylesheet" href=""><!--add css when ready-->
     <title>Alpakkavandring - OsloMet</title>
+    <style>/* styling for images */
+        body{
+            background-color: #ffd500;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rolling-paper {
+            max-width: 900px; 
+            margin: 0 auto; 
+            background-color: white; 
+            padding: 50px; 
+        }
+        .lower-content {
+            padding: 0 0 60px 60px;
+        }
+
+        /* Flex container styling for side-by-side content */
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Ensure there's space between items */
+            align-items: center; /* Vertically center the image and text */
+            flex-wrap: nowrap; /* No wrapping on larger screens */
+            gap: 20px; /* Space between the image and the text */
+        }
+        .flex-container ul {
+            flex: 2; /* Text section takes up more space on larger screens */
+            max-width: 500px;
+            margin: 10px;
+            padding: 0;
+        }
+
+        .flex-container img {
+            flex: 1; /* Image takes up less space compared to the text */
+            max-width: 400px; /* Limit the width of the image */
+            margin: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+
+        h1, h2, p, ul {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .image1, .image2 {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%; 
+          height: auto;
+        }
+        /* Center images */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%; /* Ensure the image doesn't exceed container width */
+            height: auto;
+        }
+
+        /* Link styling */
+        a {
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: yellow;
+            text-decoration-thickness: 3px;
+            transition: color 0.3s ease;
+        }
+
+        /* Mobile responsive layout */
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                align-items: center; /* Center them */
+            }
+
+            .flex-container img {
+                max-width: 100%; /* Allow the image to be 100% wide */
+            }
+
+            .flex-container ul {
+                max-width: 100%; /* Full width for text on smaller screens */
+            }
+        }
+    
+    </style>
 </head>
 
-<main>
-	<article>
-        <!-- stort bilde her-->
-		<h1>Ta en pause fra studiene med alpakkavandring!</h1>
-		<p class="ingress">Som student kan det være stressende å balansere studier, deltidsjobber og fritid. Hvorfor ikke ta en velfortjent pause i frisk luft, omgitt av rolige og nysgjerrige alpakkaer? Alpakkavandring er den perfekte måten å koble av fra skolearbeidet på og samtidig tilbringe tid med venner eller alene i naturen.</p>
+<body>
+    <!--contains the main rolling paper effect-->
+    <div class="rolling-paper">
+        <main>
+	        <article>
+                <img src ="media/gutt_med_alpakka.webp" alt="Baby alpakka med en liten gutt" class="image1">
+		        <h1>Ta en pause fra studiene med alpakkavandring!</h1>
+		        <p class="ingress">Som student kan det være stressende å balansere studier, deltidsjobber og fritid. Hvorfor ikke ta en velfortjent pause i frisk luft, omgitt av rolige og nysgjerrige alpakkaer? Alpakkavandring er den perfekte måten å koble av fra skolearbeidet på og samtidig tilbringe tid med venner eller alene i naturen.</p>
 		
-		<h2>Hvorfor alpakkavandring?</h2>
-        <ul>
-            <li>Avslappende og stressreduserende - Å være i naturen og lede en alpakka kan være en fantastisk måte å koble av på. Alpakkaer er kjent for sitt rolige temperament og kan bidra til å redusere stress.</li>
-            <li>Fysisk aktivitet - Få frisk luft og lett mosjon mens du går i skjønn natur. Perfekt for å lade opp før eksamener eller krevende prosjektarbeid.</li>
-            <li>En sosial aktivitet - Ta med studiegruppen eller en vennegjeng for en morsom og sosial opplevelse. Alpakkavandring er en fin måte å knytte bånd på utenfor klasserommet.</li>
-        </ul>
+		
+                <div class="lower-content">
+                    <div class="flex-container">
+                    <ul>
+                        <h2>Hvorfor alpakkavandring?</h2>
+                        <li><b>Avslappende og stressreduserende</b> - Å være i naturen og lede en alpakka kan være en fantastisk måte å koble av på. Alpakkaer er kjent for sitt rolige temperament og kan bidra til å redusere stress.</li>
+                        <li><b>Fysisk aktivitet</b> - Få frisk luft og lett mosjon mens du går i skjønn natur. Perfekt for å lade opp før eksamener eller krevende prosjektarbeid.</li>
+                        <li><b>En sosial aktivitet</b> - Ta med studiegruppen eller en vennegjeng for en morsom og sosial opplevelse. Alpakkavandring er en fin måte å knytte bånd på utenfor klasserommet.</li>
+                    </ul>
 
-		<!-- bilde her-->
+		            <img src ="media/alpakkavandring.webp" alt="Jenter på alpakkavandring" class="image2">
+                    </div>
 
-		<h2>Hvordan komme i gang?</h2>
-		<p>Det finnes flere alpakkagårder over hele Norge som tilbyr vandringer for grupper og enkeltpersoner. Sjekk ut noen av disse populære destinasjonene:</p>
-		<ul>
-            <li>Alpakkavandring Oslo</li> <!--legg til linker-->
-		    <li>Alpakkavandring i Vestland</li> 
-            <li>Eventyrlig alpakkavandring i Nord-Norge</li>
-         </ul>
-         <p>Du kan også lese mer om alpakkaene selv og hva som gjør dem så spesielle her.</p>
+		            <h2>Hvordan komme i gang?</h2>
+		            <p>Det finnes flere alpakkagårder over hele Norge som tilbyr vandringer for grupper og enkeltpersoner. Sjekk ut noen av disse populære destinasjonene:</p>
+		            <ul>
+                        <li><a href="https://www.alpakkavandring.no/produkt/alpakkavandring/"target="_self">Alpakkavandring i Sørum</a></li>
+		                <li><a href="https://www.alpakkavandring.no/produkt/alpakkavandring-hurdal/"target="_self">Alpakkavandring i Hurdal</a></li> 
+                        <li><a href="https://alpakkagaarden.no/product/alpakkavandring-med-alpakka/"target="_self">Alpakkavandring i Våler</a></li>
+                    </ul>
+                    <p><a href="https://www.alpakkaforeningen.no/om-alpakka/"target="_self">Her kan du lese mer om alpakkaene selv og hva som gjør dem så spesielle.</a></p>
         
-        <h2>Praktisk informasjon</h2>  
-        <p>De fleste alpakkavandringer er tilgjengelige året rundt, men det er lurt å bestille i god tid. MAnge gårder tilbyr studentrabatter eller gruppepriser, noe som gjør det til en perfekt aktivitet å inkludere i en studentbudsjettvennlig helgetur. For mer informasjon om turer og priser, sjekk ut ´de beste alpakkavandringene for studenter.´</p>   <!-- link -->
+                    <h2>Praktisk informasjon</h2>  
+                    <p>De fleste alpakkavandringer er tilgjengelige året rundt, men det er lurt å bestille i god tid. Mange gårder tilbyr studentrabatter eller gruppepriser, noe som gjør det til en perfekt aktivitet å inkludere i en studentbudsjettvennlig helgetur. For mer informasjon om turer og priser, sjekk ut <a href=""target="_self">de beste alpakkavandringene for studenter.</a></p>   <!-- link -->
        
-         <h2>Gå en tur og få ny energi!</h2>
-         <p>Etter en dag med alpakkaer kommer du tilbake til studiene med fornyet energi og motivasjon. Forskning viser at tif i naturen kan forbedre konsentrasjonsevnen og gi deg et mentalt løft. Les mer om fordelene med naturbaserte aktiviteter for studenter her.</p> <!-- link -->
+                    <h2>Gå en tur og få ny energi!</h2>
+                    <p>Etter en dag med alpakkaer kommer du tilbake til studiene med fornyet energi og motivasjon. Forskning viser at tid i naturen kan forbedre konsentrasjonsevnen og gi deg et mentalt løft. <a href="https://strongbody.no/derfor-er-naturen-viktig/"target="_self">Les mer om fordelene med naturbaserte aktiviteter for studenter.</a></p> <!-- link -->
 
-         <!-- bilde 3 & 4 ? -->
-	</article>
-
-</main>
+                    <img src =".jpg" alt="Alpakka" ><img src =".jpg" alt="Alpakka">
+                </div>
+	        </article>
+        </main>
+    </div>
+</body>
 </html>
