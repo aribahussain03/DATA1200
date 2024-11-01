@@ -4,9 +4,9 @@
 
 @media (min-width: 701px) {
     .menu {
-        display: block;
-        flex-direction: block;
-        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
         list-style-type: none;
     }
     .menu li {padding-right: 4rem}
@@ -17,12 +17,12 @@
         list-style-type: none;
         position: sticky;
         padding-left: 0px;
-        display: none;
     }
+  }  
 
     .menu-icon {
         display: block;
-        background-image: url(https://media.snl.no/media/8590/standard_oslo.png);
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png);
         background-size: cover;
         height: 40px;
         width: 40px;
@@ -36,21 +36,18 @@
         overflow: hidden;
     
     } 
-    /* Usikker på de neste 2 linjene er nødvendig */
-      #burger-toggle:checked ~ .menu {
-          display: block; /* Viser menyen når checkboxen er sjekket */
-
-    }
 
     #burger-toggle:checked ~ .menu li {
         height: 1rem;
         width: auto;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-left: 0.5;
+        padding-right: 0.5;
+        padding-bottom: 0.5;
+        background-color: black;
+       
     }
 
-    .nav{
+    /* .nav{
         display: flex;
         height: 40px;
         background-color: black;
@@ -68,6 +65,6 @@
   height: 40px;
   width: auto;
 
-}
+} */
 
 
