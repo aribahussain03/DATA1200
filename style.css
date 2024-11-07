@@ -22,6 +22,7 @@ padding-top: 30px;
 padding-top: 20px;
 }
 
+
   h2, p {
     /* Sett ønsket margin */
   text-align: left;
@@ -118,10 +119,6 @@ background-color: #ffda00;
       height: auto;
       float: center;
 
-  }
-
-  h2, h3{
-      padding-top: 5px;
   }
 
 }
