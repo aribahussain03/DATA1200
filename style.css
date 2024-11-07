@@ -1,6 +1,6 @@
 body {
   margin: 0 auto; /* Sentrerer innholdet horisontalt */
-  max-width: 1000px; /* Begrens bredden til maks 1000px */
+  max-width: 1200px; /* Begrens bredden til maks 1000px */
   padding: 20px; /* Legger til 20px padding rundt innholdet */
   border: 5px solid #ffda00; /* Gul ramme rundt */
   outline: 5px solid black; /* Svart ramme utenfor den gule */
@@ -67,7 +67,8 @@ padding-left: 40px;
   width:600px;
   float: right;
   background-color: #ffda00;
-  padding: 5px; /* Legger til 20px padding rundt innholdet */
+  padding: 10px;
+ 
 }
 
   .femte-seksjon::after {
@@ -78,8 +79,10 @@ padding-left: 40px;
 
   .femte-seksjon {
   width: 100%;
-background-color: #ffda00;
+  background-color: #ffda00;
   color: black;
+  padding: 10px;
+  margin-right: 10px;
 }
 
   .femte-seksjon a{
@@ -107,6 +110,7 @@ background-color: #ffda00;
   }
 
   .femte-seksjon {
+    margin-left: 2px;
 
   }
 
