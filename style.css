@@ -64,10 +64,10 @@ padding-left: 40px;
 }
 
   .femte-seksjon img {
-  width:600px;
+  /* width: 600px; */
   float: right;
   background-color: #ffda00;
-  padding: 5px; /* Legger til 20px padding rundt innholdet */
+  padding: 25px; /* Legger til 20px padding rundt innholdet */
 }
 
   .femte-seksjon::after {
@@ -77,9 +77,10 @@ padding-left: 40px;
 }
 
   .femte-seksjon {
-  width: 100%;
+  /* width: 100%; */
 background-color: #ffda00;
   color: black;
+  padding: 2em;
 }
 
   .femte-seksjon a{
