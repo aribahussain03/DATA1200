@@ -58,9 +58,11 @@ padding-left: 40px;
   padding-right: 20px;
   
 }
-.tredje-seksjon{
-  text-align:center;
-  
+.tredje-seksjon::after { /* Koden er kopiert fra https://www.w3schools.com/howto/howto_css_clearfix.asp. Denne koden hinderer at 
+  bildet ikke kommer ut av elementet på grunn av bruk av float. Denne metoden blir kalt for clearfix */
+  content: "";
+  clear: both;
+  display: table;
 }
 
   .femte-seksjon img {
@@ -80,6 +82,10 @@ padding-left: 40px;
   width: 100%;
 background-color: #ffda00;
   color: black;
+}
+.femte-seksjon h2 {
+  text-align:center;
+  
 }
 
   .femte-seksjon a{
