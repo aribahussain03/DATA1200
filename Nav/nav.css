@@ -1,8 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    /*box-sizing: border-box; /* Sikrer at padding ikke endrer bredden */
-}
+/* * {
+    
+    /*box-sizing: border-box; /* Sikrer at padding ikke endrer bredden
+} */
 
 /** Hamburger menu **/
 
@@ -14,6 +13,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 80px;
+margin: 0;
+padding: 0;
 }
 
 a {
