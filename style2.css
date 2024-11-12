@@ -1,0 +1,206 @@
+body {
+    margin: 0 auto; /* Sentrerer innholdet horisontalt */
+    max-width: 1000px; /* Begrens bredden til maks 1000px */
+    padding: 20px; /* Legger til 20px padding rundt innholdet */
+    border: 5px solid #ffda00; /* Gul ramme rundt */
+    outline: 5px solid black; /* Svart ramme utenfor den gule */
+    line-height: 1.5; /* Setter linjeavstand for all tekst */
+}
+
+    a {
+    color: black; /* Sett tekstfargen til svart */
+    text-decoration: underline; /* Sørger for at lenken har understrek */
+    text-decoration-color: #ffda00; /* Setter understreken til gul */
+    text-decoration-thickness: 3px; /* Gjør understreken tykkere */
+    text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
+}
+
+a:hover {
+    background-color: #ffda00; /* Endrer bakgrunnsfarge på hover */
+ 
+}
+
+
+    h2, h3{
+	padding-top: 10px;
+}
+
+    h2, p {
+      /* Sett ønsket margin */
+    text-align: left;
+
+}
+    hr {
+    border: 3px solid #ffda00; /* En gul kantlinje */
+    border-block-end: 3px black solid;
+}
+      
+    .tabell-fet-skrift td {  /* Fet skrift for spesifikk rad i tabell 1*/
+    font-weight: bold; /* Fet skrift */
+  	padding-top: 20px;
+    padding-right: 5px;
+}
+
+    .tabell-1 { /* Generell styling for tabell-1 */
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: black;
+    color:#ffda00;
+}
+
+.andre-seksjon-flex-container, .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+  display: flex;
+  max-width: 1000px;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.andre-seksjon-flex-container > div {
+  max-width: 400px;
+  margin: auto;
+  justify-content: center;
+}
+
+.studiested {
+  text-align: right;
+  padding: 70px;
+
+}
+
+.spørsmål {
+  text-align: left;
+  padding:30px;
+
+}
+
+.spørsmål, .studiested, .femte-seksjon-flex-container a {
+    color: black; /* Sett tekstfargen til svart */
+    text-decoration: underline; /* Sørger for at lenken har understrek */
+    text-decoration-color: black; /* Setter understreken til gul */
+    text-decoration-thickness: 3px; /* Gjør understreken tykkere */
+    text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
+}
+
+.tredje-seksjon-flex-container > div {
+  max-width: 1000px;
+  margin: 10px;
+
+}
+
+.tredje-seksjon, .femte-seksjon h2 {
+    text-align:center;
+}
+
+.femte-seksjon-flex-container {
+  max-width: 100%;
+  margin: 10px;
+  background-color: #ffda00;
+  padding: 10px;
+
+} 
+
+
+.enkel-flex-container{
+    display: flex;
+    
+    max-width: 200px;
+    background-color: #ffda00;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+} 
+
+.container-første-seksjon{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Styling for summary-tittelen */
+summary {
+    font-weight: bold;
+    background-color: black;
+    color: #ffda00;
+    padding: 10px;
+    outline: none;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+}
+
+/* Endre bakgrunnsfarge ved hover på summary */
+summary:hover {
+    background-color: #ffda00;
+    color: black;
+}
+
+/* Styling for innholdet i paragraf*/
+details h2, h3, p {
+    
+    padding-left: 10px;
+    max-width: 750px;
+}
+details ul {
+    
+    padding-left: 70px;
+    max-width: 750px;
+}
+details > details {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 700px;
+    border-left: 2px
+}
+
+details > summary {
+    padding: 10px;
+}
+
+details > p {
+    max-width: 600px;
+}
+
+/* Fikse mobilvisning */
+@media screen and (max-width: 600px) {
+    
+    /* Fjern linjer rundt siden */
+    body {
+        border: none; /* Fjern gul kantlinje */
+        outline: none; /* Fjern svart kantlinje */
+        padding:2px; 
+        width: 100%;
+    }
+    
+    /* Gjør tabellen mer lesbar */
+    .tabell-1 {
+        width: 100%; /* Tabellens bredde justeres til 100% av skjermen */
+        font-size: 14px; /* Reduserer skriftstørrelsen litt for bedre lesbarhet */
+
+    }
+
+    h2, h3{
+        padding-top: 5px;
+    }
+    .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+    flex: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+   
+    .femte-seksjon img {
+        max-width: 100%;
+    }
+    .tredje-seksjon-flex-container p{
+        text-align: center;
+    }
+
+    .andre-seksjon-flex-container, .spørsmål, .studiested{
+        padding: 5px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+
+}
