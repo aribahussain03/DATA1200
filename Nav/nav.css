@@ -1,82 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box; /* Sikrer at padding ikke endrer bredden */
+}
+
 /** Hamburger menu **/
 
-#burger-toggle {display: none;}
+#burger-toggle{display: none;}
 
 nav {
-  background-color: black;
-  padding: 1rem;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 80px;
 }
 
-@media (min-width: 701px) {
-    .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        list-style-type: none;
-    }
-    .menu li {padding-right: 4rem}
-  }
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-@media (max-width: 700px) {
-    .menu {
-        list-style-type: none;
-        position: sticky;
-        padding-left: 0px;
-    }
-  }  
+/* Desktop view */
+@media (min-width:701px) {
+.menu {
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style-type: none;
+}
 
-    .menu-icon {
+.menu li {padding-right: 4rem;}
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+.menu {
+list-style-type: none;
+position: absolute; /* Bruker absolutt posisjonering på menyen */
+top: 80px; /* Plasserer menyen rett under navigasjonsbaren */
+left: 0;
+right: 0;
+background-color: black;
+display: none; /* Skjuler menyen som standard */
+
+
+/*
+list-style-type: none;
+position: sticky;
+padding-left: 0px;
+display: none; */
+}
+
+.menu-icon{
+display: block;
+background-image: url(media/menuIkon-gul.png);
+background-size: contain;
+width: 40px;
+height: 40px;
+margin-left: 20px;
+margin-right: 20px;     
+
+}
+
+#burger-toggle:checked ~ .menu {
         display: block;
-        background-image: url(https://www.iconsdb.com/icons/preview/yellow/menu-4-xxl.png);
-        background-size: cover;
-        height: 40px;
-        width: 40px;
-    }
-
-    .hamburger-toggle-container {cursor: pointer}
-
-    /** Hide the menu**/
-    .menu li {
-        height: 0px;
-        overflow: hidden;
-    
-    } 
-
-    #burger-toggle:checked ~ .menu li {
-        height: 1rem; /* bør jeg bytte med auto*/
-        width: auto;
-        display:block;
-        /* kan jeg istedenfor ta alt på en linje:'
-        padding-left: 0.5;
-        padding-right: 0.5;
-        padding-bottom: 0.5; */
-        padding: 0.5px;
-        background-color: black;
-       
-    }
-    .menu li a{
-      color: #FFFF00;
-      text-decoration: none;
-    }
-
-    /* .nav{
-        display: flex;
-        height: 40px;
-        background-color: black;
-    }
-    .nav a{
-      color: #FFFF00;
-      text-decoration: none;
-      display: block;
-    }
-    .nav a:hover{
-      background-color: #b5b52ce9;
-    }
 }
-.Oslomet-logo{
-  height: 40px;
-  width: auto;
 
-} */
+.hamburger-toggle-container {
+cursor: pointer;
+position: relative;
+}
 
+.menu li {
+height: auto;
+overflow: visible;
+padding: 10px 0;
+/* height: 0px;
+overflow: hidden;
+transition: height 0.5s ease; */
+}
 
+#burger-toggle:checked ~ .menu li{
+height: 1rem;
+width: auto;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+padding-bottom: 2rem;
+}
+}
+.menu a {
+color: #FFFF00;
+text-decoration: none;
+padding: 15px;
+display: block;
+text-align: center;
+}
+.menu a:hover{
+background-color: #FFFF00;
+color: black;
+}
