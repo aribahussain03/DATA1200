@@ -1,16 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            /*box-sizing: border-box; /* Sikrer at padding ikke endrer bredden */
+        }
+        
+/** Hamburger menu **/
+
+#burger-toggle{display: none;}
+
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+a {
+            padding-left: 20px;
+            padding-right: 20px;
+}
+
+/* Desktop view */
+@media (min-width:701px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu li {padding-right: 4rem;}
+}
+
+/* Mobile view */
+@media (max-width: 700px) {
+    .menu {
+        list-style-type: none;
+        position: absolute; /* Bruker absolutt posisjonering på menyen */
+        top: 80px; /* Plasserer menyen rett under navigasjonsbaren */
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none; /* Skjuler menyen som standard */
+        
+    
+/*
+        list-style-type: none;
+        position: sticky;
+        padding-left: 0px;
+        display: none; */
+    }
+
+    .menu-icon{
+        display: block;
+        background-image: url(media/menuIkon-gul.png);
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;     
+        
+    }
+    
+    #burger-toggle:checked ~ .menu {
+                display: block;
+    }
+
+        .hamburger-toggle-container {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu li {
+        height: auto;
+        overflow: visible;
+        padding: 10px 0;
+        /* height: 0px;
+        overflow: hidden;
+        transition: height 0.5s ease; */
+    }
+
+    #burger-toggle:checked ~ .menu li{
+        height: 1rem;
+        width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 2rem;
+    }
+}
+.menu a {
+    color: #FFFF00;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: #FFFF00;
+    color: black;
+}
 
 
+    </style>
+</head>
+
+<body>
 <header>
     <nav>
-        <input id= "burger-toggle" type="checkbox">
+
+        <a href="OsloMet-logo" >
+            <img
+                width="90"
+                height="50"
+                src="media/OsloMet-gulLogo.png"
+                id="logo"
+                alt="OsloMet logo">
+        </a>  
+
+        <input id="burger-toggle" type="checkbox">
         <label class="hamburger-toggle-container" for="burger-toggle">
             <div class="menu-icon"></div>
         </label>
         <ul class="menu">
-            <li> Menu 1</li>
-            <li> Menu 2</li>
-            <li> Menu 3</li>
-            <li> Menu 4</li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="Github.html">Github</a></li>
+            <li><a href="Activity.html">Activity</a></li>
         </ul>
     </nav>
 </header>
+
+</body>
+
+</html>
