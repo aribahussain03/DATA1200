@@ -23,6 +23,13 @@
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
         }
 
+        /* generell styling for flex-container */
+        .flex-container img {
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         .flex-container {
             display: flex;
             justify-content: space-between; 
@@ -36,13 +43,6 @@
             margin: 10px;
             padding: 0;
             list-style-position: inside;
-        }
-
-        /* General styling for flex container images */
-        .flex-container img {
-            width: 100%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -81,12 +81,12 @@
             overflow: hidden;
         }
 
-        /* Center images */
+        /* sentrer bilder */
         .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            max-width: 100%; /* Ensure the image doesn't exceed container width */
+            max-width: 100%; 
             height: auto;
         }
 
@@ -116,23 +116,22 @@
             background-color: #004c99;
         }
         
-        /* Bottom image hover container */
+        /* container for bilder med effekt */
         .image-container {
             display: flex;
             justify-content: space-between;
             gap: 20px;
-            max-width: 900px; /* Match .rolling-paper width */
+            max-width: 900px; 
             margin: 40px auto 0;
-            padding: 0 60px; /* Align padding with .rolling-paper */
+            padding: 0 60px; 
         }
 
-        /* styling for images with hover effect */
+        /* style for bilder med effekt */
         .image-container img {
             width: 100%;
             height: 300px;        
             object-fit: cover;
             transition: transform 0.3s ease;
-            cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -141,10 +140,10 @@
             z-index: 1; 
         }
 
-        /* set the images side-by-side */
+        /* setter bilder side ved side */
         .image-container .image-box {
             flex: 1;
-            overflow: hidden; /* Hide overflow when image scales */
+            overflow: hidden;
         }
 
 
@@ -177,7 +176,7 @@
 
             }
 
-        /* mobile layout for img 3 & 4 */
+        /* mobil layout for bilde 3 & 4 */
         @media (max-width: 600px) {
         .image-container {
             flex-direction: column; 
@@ -186,7 +185,7 @@
         }
 
         .image-container .image-box {
-            width: 100%; /
+            width: 100%;
             margin-bottom: 20px; 
         }
 
