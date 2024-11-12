@@ -1,6 +1,6 @@
 body {
   margin: 0 auto; /* Sentrerer innholdet horisontalt */
-  max-width: 1000px; /* Begrens bredden til maks 1000px */
+  max-width: 1200px; /* Begrens bredden til maks 1000px */
   padding: 20px; /* Legger til 20px padding rundt innholdet */
   border: 5px solid #ffda00; /* Gul ramme rundt */
   outline: 5px solid black; /* Svart ramme utenfor den gule */
@@ -21,6 +21,7 @@ padding-top: 30px;
   h3{
 padding-top: 20px;
 }
+
 
   h2, p {
     /* Sett ønsket margin */
@@ -48,42 +49,49 @@ padding-left: 40px;
   text-align: left;
   background-color: black;
   color:#ffda00;
-
+  padding: 15px; /* Legger til padding rundt hele innholdet */
 }
 
-  .tredje-seksjon img { /*bilde av fagleder*/
+.tredje-seksjon img { /*bilde av fagleder*/
   width:110px;
   height:150px;
   float: left;
   padding-right: 20px;
   
 }
-.tredje-seksjon{
-  text-align:center;
+  .tredje-seksjon::after { /* Koden er kopiert fra https://www.w3schools.com/howto/howto_css_clearfix.asp. Denne koden hinderer at 
+  bildet ikke kommer ut av elementet på grunn av bruk av float. Denne metoden blir kalt for clearfix */
+  content: "";
+  clear: both;
+  display: table;
+}
+  .tredje-seksjon{
+text-align:center;
   
 }
 
   .femte-seksjon img {
-  width:600px;
-  float: right;
-  background-color: #ffda00;
-  padding: 5px; /* Legger til 20px padding rundt innholdet */
+width: 800px;
+float: right;
+background-color: #ffda00;
+padding: 25px; /* Legger til 20px padding rundt innholdet */
 }
 
   .femte-seksjon::after {
-  content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
   .femte-seksjon {
-  width: 100%;
+  /* width: 100%; */
 background-color: #ffda00;
-  color: black;
+color: black;
+padding: 2em;
 }
 
   .femte-seksjon a{
-  text-decoration-color: black;
+text-decoration-color: black;
 }
 
 /* Fikse mobilvisning */
@@ -93,33 +101,200 @@ background-color: #ffda00;
   
   /* Fjern linjer rundt siden */
   body {
-      border: none; /* Fjern gul kantlinje */
-      outline: none; /* Fjern svart kantlinje */
-      padding:10px; 
-      padding-right:10px;  
+  border: none; /* Fjern gul kantlinje */
+  outline: none; /* Fjern svart kantlinje */
+  padding:10px; 
+  padding-right:10px;  
   }
   
   /* Gjør tabellen mer lesbar */
   .tabell-1 {
-      width: 100%; /* Tabellens bredde justeres til 100% av skjermen */
-      font-size: 12px; /* Reduserer skriftstørrelsen litt for bedre lesbarhet */
-      overflow-x: auto; /* Legger til horisontal scrolling hvis nødvendig */
+  width: 1000px; /* Tabellens bredde justeres til 100% av skjermen */
+  /* font-size: 3em; Reduserer skriftstørrelsen litt for bedre lesbarhet */
+  overflow-x: auto; /* Legger til horisontal scrolling hvis nødvendig */
   }
 
   .femte-seksjon {
-
+  margin-left: 2px;
   }
 
 
   .femte-seksjon img {
-      max-width: 97%;  /* Bildet vil justere seg etter skjermens bredde */
-      height: auto;
-      float: center;
-
+  max-width: 100%;  /* Bildet vil justere seg etter skjermens bredde */
+  height: auto;
+  float: center;
   }
 
-  h2, h3{
-      padding-top: 5px;
+}
+
+footer {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color:yellow
+}
+
+.container {
+  padding: 20px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  font-size:16px;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-weight:bold;
+
+}
+
+hr {
+  border: 1px solid yellow;
+  margin: 20px 0;
+}
+
+.contact-info, .footer-links, .social-icons {
+  width: 30%;
+}
+
+.social-icons i {
+  font-size:24px;
+}
+
+.footer-links a,
+.social-icons a {
+  text-decoration: none;
+  
+}
+.footer-links a:hover,
+.social-icons a:hover
+{
+  text-decoration: underline;
+}
+
+
+.social-icons a {
+  color: yellow; /*endrer teksten og ikon  til gul*/
+  text-decoration: none;
+}
+
+/* Generell linjeavstand for hele footeren */
+footer {
+  line-height: 1.8; 
+}
+
+/* Spesifikk linjeavstand for kontaktinformasjonen */
+.contact-info p, .footer-links a {
+  line-height: 2; 
+}
+
+/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
+.social-icons a {
+  line-height: 0.5;
+  display: flex;
+  align-items: center; /* Justerer ikonene og teksten på samme linje */
+}
+
+.contact-info a {
+text-decoration:none;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}
+
+.contact-info a, .footer-links a {
+  color:yellow;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.contact-info a {
+  margin-bottom: 30px; 
+}
+
+footer {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: yellow;
+  line-height: 1.8;
+}
+
+.container {
+  padding: 20px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid yellow;
+  margin: 20px 0;
+}
+
+.contact-info, .footer-links, .social-icons {
+  width: 30%;
+}
+
+.footer-links a,
+.social-icons a,
+.contact-info a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.social-icons a:hover,
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  line-height: 0.5;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  margin-bottom: 30px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .footer-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .contact-info, .footer-links, .social-icons {
+      width: 100%;
+      margin-bottom: 20px;
   }
 
+  .subscribe-btn {
+      width: 100%;
+      font-size: 14px;
+  }
 }
