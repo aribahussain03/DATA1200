@@ -55,3 +55,175 @@ background-color: black;
   color: yellow;
 
 }
+
+footer {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color:yellow
+}
+
+.container {
+  padding: 20px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  font-size:16px;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-weight:bold;
+
+}
+
+hr {
+  border: 1px solid yellow;
+  margin: 20px 0;
+}
+
+.contact-info, .footer-links, .social-icons {
+  width: 30%;
+}
+
+.social-icons i {
+  font-size:24px;
+}
+
+.footer-links a,
+.social-icons a {
+  text-decoration: none;
+  
+}
+.footer-links a:hover,
+.social-icons a:hover
+{
+  text-decoration: underline;
+}
+
+
+.social-icons a {
+  color: yellow; /*endrer teksten og ikon  til gul*/
+  text-decoration: none;
+}
+
+/* Generell linjeavstand for hele footeren */
+footer {
+  line-height: 1.8; 
+}
+
+/* Spesifikk linjeavstand for kontaktinformasjonen */
+.contact-info p, .footer-links a {
+  line-height: 2; 
+}
+
+/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
+.social-icons a {
+  line-height: 0.5;
+  display: flex;
+  align-items: center; /* Justerer ikonene og teksten på samme linje */
+}
+
+.contact-info a {
+text-decoration:none;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}
+
+.contact-info a, .footer-links a {
+  color:yellow;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.contact-info a {
+  margin-bottom: 30px; 
+}
+
+footer {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: yellow;
+  line-height: 1.8;
+}
+
+.container {
+  padding: 20px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid yellow;
+  margin: 20px 0;
+}
+
+.contact-info, .footer-links, .social-icons {
+  width: 30%;
+}
+
+.footer-links a,
+.social-icons a,
+.contact-info a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.social-icons a:hover,
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  line-height: 0.5;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  margin-bottom: 30px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .footer-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .contact-info, .footer-links, .social-icons {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .subscribe-btn {
+      width: 100%;
+      font-size: 14px;
+  }
+}
