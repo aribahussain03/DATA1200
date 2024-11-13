@@ -1,3 +1,46 @@
+/** Hamburger menu **/
+
+#burger-toggle{display: none;}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Desktop view */
+@media (min-width:701px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu li {padding-right: 4rem;}
+}
+
+.menu a {
+    color: #FFFF00;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: #FFFF00;
+    color: black;
+}
+
 body {
     margin: 0 auto; /* Sentrerer innholdet horisontalt */
     max-width: 1000px; /* Begrens bredden til maks 1000px */
@@ -14,12 +57,6 @@ body {
     text-decoration-thickness: 3px; /* Gjør understreken tykkere */
     text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
 }
-
-a:hover {
-    background-color: #ffda00; /* Endrer bakgrunnsfarge på hover */
- 
-}
-
 
     h2, h3{
 	padding-top: 10px;
@@ -40,6 +77,10 @@ a:hover {
   	padding-top: 20px;
     padding-right: 5px;
 }
+.tabell-fet-skrift td {
+    padding: auto;
+
+}
 
     .tabell-1 { /* Generell styling for tabell-1 */
     width: 100%;
@@ -47,6 +88,29 @@ a:hover {
     text-align: left;
     background-color: black;
     color:#ffda00;
+
+}
+
+.tabell-2{
+    max-width: 200%;
+}
+
+
+
+.tabell-2 th{
+background-color: #ffda00;
+}
+
+.semester1_2,.semester3_4,.semester5_6{
+    background-color: black;
+    color: #ffda00;
+    text-align: center;
+}
+
+
+.Emnegruppe{
+    color:#ffda00;
+    background-color: black;
 }
 
 .andre-seksjon-flex-container, .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
@@ -104,7 +168,6 @@ a:hover {
 
 .enkel-flex-container{
     display: flex;
-    
     max-width: 200px;
     background-color: #ffda00;
     padding: 10px;
@@ -157,13 +220,70 @@ details > summary {
     padding: 10px;
 }
 
-details > p {
+details > details p {
     max-width: 600px;
 }
 
 /* Fikse mobilvisning */
 @media screen and (max-width: 700px) {
+/* Mobile view - nav*/
+/* Mobile view - */
+@media (max-width: 700px) {
+    .menu {
+        list-style-type: none;
+        position: absolute; /* Bruker absolutt posisjonering på menyen */
+        top: 80px; /* Plasserer menyen rett under navigasjonsbaren */
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none; /* Skjuler menyen som standard */
+        
     
+/*
+        list-style-type: none;
+        position: sticky;
+        padding-left: 0px;
+        display: none; */
+    }
+
+    .menu-icon{
+        display: block;
+        background-image: url(media/menu-icon.png);
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;     
+        
+    }
+    
+    #burger-toggle:checked ~ .menu {
+                display: block;
+    }
+
+        .hamburger-toggle-container {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu li {
+        height: auto;
+        overflow: visible;
+        padding: 10px 0;
+        /* height: 0px;
+        overflow: hidden;
+        transition: height 0.5s ease; */
+    }
+
+    #burger-toggle:checked ~ .menu li{
+        height: 1rem;
+        width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
     /* Fjern linjer rundt siden */
     body {
         border: none; /* Fjern gul kantlinje */
