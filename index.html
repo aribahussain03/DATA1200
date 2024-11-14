@@ -31,39 +31,55 @@
 </head>
 <body>
     <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
-    <p>Bachelorprogram</p>
-    
     <hr />
     
     <table class="tabell-1">
-        <tr>
-            <th>Studiested</th>
-            <th>Varighet</th>
-            <th>Omfang</th>
-            <th>Studiepoeng</th>
-        </tr>
-        <tr>
-            <td>Pilestredet i Oslo</td>
-            <td>3 år</td>
-            <td>Heltid</td>
-            <td>180</td>
-        </tr>
-        <tr class="tabell-fet-skrift">
-            <td>Studiestart</th>
-            <td>Undervisningsspråk</th>
-            <td>Studieplasser</th>
-        </tr>
-        <tr>
-            <td>August</td>
-            <td>Norsk</td>
-            <td>40</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Engelsk</td>
-        </tr> 
+        <caption>Bachelorprogram</caption> <!-- Tabellen her laget etter koder i W3School og denne artikkelen: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary -->
+        
+        <thead>
+            <tr>
+                <th scope="col">Studiested</th><!-- cope="col" for å tydeliggjøre at disse er kolonneoverskrifter-->
+                <th scope="col">Varighet</th>
+                <th scope="col">Omfang</th>
+                <th scope="col">Studiepoeng</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Pilestredet i Oslo</td>
+                <td>3 år</td>
+                <td>Heltid</td>
+                <td>180</td>
+            </tr>
+        </tbody>
     </table>
-    
+    <table class="tabell-2">        
+        <thead>
+            <tr>
+                <th scope="col">Studiestart</th>
+                <th scope="col">Undervisningsspråk</td>
+                <th scope="col">Studieplasser</td>
+                <th></th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>August</td>
+                <td>Norsk</td>
+                <td>40</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Engelsk</td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+            
     <hr />
     
     <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
@@ -82,6 +98,11 @@
         <p>For å se din personlige timeplan må du logge deg inn på <a href="https://student.oslomet.no/en/"target="_self">"Min side"
             (student.oslomet.no)</a> etter at du har aktivert IT-kontoen din og du er blitt plassert i klasse/gruppe. 
             Dette skjer vanligvis uken før studiestart.</p>
+            </details>
+        
+            <details>
+                <summary>Studiested</summary>
+                    <p><a href="https://www.oslomet.no/om/studiested-pilestredet"targer="_self">Studiested Pilestredet</a></p>
             </details>
        
             <details>
@@ -149,8 +170,7 @@
             <summary>Studiets oppbygging</summary>
             <p>⍟ valgfritt emne</p>
 <p>⇢ Løper over flere semestre</p>
-
-<table class="tabell-2">
+<table class="tabell-3">
     <tr>
     <th colspan="2">1.Studieår</th>
     </tr>
@@ -509,6 +529,7 @@
     </tr>
 
 </table>
+
         </details>
     
         <details>
@@ -553,6 +574,11 @@
             <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi"target="_self">Anvendt data- og informasjonsteknologi (ACIT)</a></p>
             <p>Masterprogram | 2 år | Pilestredet i Oslo | Heltid</p>
         </details>
+
+        <details>
+            <summary>Spørsmål om utdanningen?</summary>
+            <p><a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"targer="_self">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a></p>
+        </details>
     
         <details>
             <summary>Du er kanskje også interessert i disse?</summary>
@@ -592,20 +618,7 @@
     </section>
     
     <hr />
-    
-    <section class="andre-seksjon-flex-container">
-        <div class="studiested">
-            <h2>Studiested</h2>
-            <p><a href="https://www.oslomet.no/om/studiested-pilestredet"targer="_self">Studiested Pilestredet</a></p>
-        </div>
-    
-        <div class="spørsmål">
-            <h2>Spørsmål om utdanningen?</h2>
-            <p><a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"targer="_self">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a></p>
-        </div>
-    </section>
-    
-    <hr />
+
     
     <section>
         <h2 class = "tredje-seksjon">Faglig leder</h2>

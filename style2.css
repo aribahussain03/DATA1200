@@ -42,8 +42,8 @@ nav {
 }
 
 body {
-    margin: 0 auto; /* Sentrerer innholdet horisontalt */
-    max-width: 1000px; /* Begrens bredden til maks 1000px */
+    margin: auto; /* Sentrerer innholdet horisontalt */
+    max-width: 1200px; /* Begrens bredden til maks 1000px */
     padding: 20px; /* Legger til 20px padding rundt innholdet */
     border: 5px solid #ffda00; /* Gul ramme rundt */
     outline: 5px solid black; /* Svart ramme utenfor den gule */
@@ -71,33 +71,55 @@ body {
     border: 3px solid #ffda00; /* En gul kantlinje */
     border-block-end: 3px black solid;
 }
-      
-    .tabell-fet-skrift td {  /* Fet skrift for spesifikk rad i tabell 1*/
-    font-weight: bold; /* Fet skrift */
-  	padding-top: 20px;
-    padding-right: 5px;
-}
-.tabell-fet-skrift td {
-    padding: auto;
 
-}
-
-    .tabell-1 { /* Generell styling for tabell-1 */
+.tabell-1, .tabell-2 { /* General styling for tabell-1 */
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     background-color: black;
-    color:#ffda00;
+    color: #ffda00;
+    padding: 10px;
+    
+}
+
+.tabell-1 th, .tabell-1 td, .tabell-2 th, .tabell-2 td {
+    padding-left: 10px; /* Padding inside cells */
+    width: 25%;
+    
+  
+}
+
+.tabell-1 caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+.tabell-1 th, .tabell-2 th {
+    padding-top: 10px;
+    border-bottom: 2px solid #ffda00;
 
 }
 
-.tabell-2{
-    max-width: 200%;
+
+
+/* Stil for tabell-3 
+.tabell-3 {
+    width: 100%;
 }
 
+.tabell-3 th,.tabell-3 td{
+    
+    padding: 15px;
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+}
 
-
-.tabell-2 th{
+.tabell-3 th{
 background-color: #ffda00;
 }
 
@@ -105,12 +127,79 @@ background-color: #ffda00;
     background-color: black;
     color: #ffda00;
     text-align: center;
+}*/
+
+.tabell-3 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
 }
 
+.tabell-3 caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-.Emnegruppe{
-    color:#ffda00;
+.tabell-3 th {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: ffda00; /* Bakgrunnsfarge for hovedoverskriften */
+}
+
+.tabell-3 td {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* Styling for semesteroverkskrifter */
+.tabell-3 tr.semester5_6 td {
+    font-weight: bold;
+    text-align: center;
     background-color: black;
+
+}
+
+/* Styling for emner */
+.tabell-3 td a {
+    display: block; /* Sørger for at lenken er på egen linje */
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 5px; /* Avstand mellom lenken og emnekode */
+}
+
+.tabell-3 td span {
+    display: block; /* Plasserer emnekode og studiepoeng på egen linje */
+    color: black; /* Lysere farge for emnekoden */
+}
+
+.tabell-3 th {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffda00; /* Gul bakgrunn for studieår */
+    color: black; /* Svart tekst for studieår */
+    border: 1px solid black;
+}
+
+.tabell-3 .semester {
+    background-color: black; /* Gul bakgrunn for studieår */
+    color: #ffda00; 
+
+
+}
+
+/* Utheving av emnegrupper */
+.tabell-3 .Emnegruppe {
+    font-weight: bold; /* Gjør teksten tykk */
+    background-color: #ffda00; /* Gul bakgrunn for emnegrupper */
+    padding: 2px 5px;
+    display: block;
+    margin-bottom: 5px; /* Avstand mellom emnegruppen og innholdet */
 }
 
 .andre-seksjon-flex-container, .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
