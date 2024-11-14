@@ -49,6 +49,26 @@ a:hover {
     color:#ffda00;
 }
 
+table, th, td {
+    padding: 15px;
+    width: 50%;
+     border: 1px solid black;
+     border-collapse: collapse;
+     vertical-align: top;
+   }
+
+   .semester12,.semester34,.semester56{
+background-color: black;
+  color: yellow;
+  text-align: center;
+}
+
+
+.Emnegruppe{
+  color:yellow;
+  background-color: black;
+}
+
 .andre-seksjon-flex-container, .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
   display: flex;
   max-width: 1000px;
