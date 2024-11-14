@@ -162,6 +162,11 @@ hr {
     vertical-align: top;
 }
 
+.tabell-3 .semester {
+  background-color: black; /* Gul bakgrunn for studieår */
+  color: #ffda00; 
+}
+
 /* Stil for semesteroverkskrifter */
 .tabell-3 tr.semester5_6 td {
     font-weight: bold;
