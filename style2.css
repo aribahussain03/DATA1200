@@ -202,33 +202,14 @@ background-color: #ffda00;
     margin-bottom: 5px; /* Avstand mellom emnegruppen og innholdet */
 }
 
-.andre-seksjon-flex-container, .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+.tredje-seksjon-flex-container, .femte-seksjon-flex-container {
   display: flex;
   max-width: 1000px;
   flex-direction: row;
   align-items: center;
 }
 
-
-.andre-seksjon-flex-container > div {
-  max-width: 400px;
-  margin: auto;
-  justify-content: center;
-}
-
-.studiested {
-  text-align: right;
-  padding: 70px;
-
-}
-
-.spørsmål {
-  text-align: left;
-  padding:30px;
-
-}
-
-.spørsmål, .studiested, .femte-seksjon-flex-container a {
+.femte-seksjon-flex-container a {
     color: black; /* Sett tekstfargen til svart */
     text-decoration: underline; /* Sørger for at lenken har understrek */
     text-decoration-color: black; /* Setter understreken til gul */
