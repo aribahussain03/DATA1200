@@ -273,18 +273,19 @@ details > details p {
 
 
 /* Mobilvisning */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .menu {
         list-style-type: none;
         position: absolute;
         overflow: visible;
-        top: 80px;
+        top: 50px;
         left: 0;
         right: 0;
         background-color: black;
         display: none;
         transition: max-height 0.3s ease-out; /* Smooth transition for menu */
         padding: 0%;
+
     }
 
     .menu-icon {
@@ -304,8 +305,9 @@ details > details p {
     .menu li {
         height: auto;
         overflow: visible;
-        padding: 1px 0;
         text-align: center;
+      
+        
     }
 
     /* Fjern kantlinjer på mindre skjermer */
