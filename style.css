@@ -4,7 +4,7 @@
 nav {
     margin: 0;
     padding: 0 20px; /* Legger til padding på begge sider */
-    background-color: black;
+    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,7 @@ nav {
 
 .menu a {
     font-size: 1em;
-    color: #FFFF00;
+    color: pink;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -33,7 +33,7 @@ nav {
 }
 
 .menu a:hover {
-    background-color: #FFFF00;
+    background-color: pink;
     color: black;
 }
 
@@ -43,28 +43,10 @@ body {
   line-height: 1.5; /* Økt linjehøyde for lesbarhet */
   margin: auto;
   max-width: 1000px;
-  padding: 20px;
-  border: 5px solid #ffda00;
+  border: 5px solid pink;
   outline: 5px solid black;
 }
 
-/* Stiler for video-embed container */
-.video-container {
-  width: 100%;
-  height: 0;
-  position: relative;
-  padding-bottom:56.25%;
-}
-
-/* Stiler for iframe */
-.video-container iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: none; /* Fjern kantlinjer */
-}
 
 h1 {
   font-size: 2em; /* 32px for overskrift nivå 1 */
@@ -93,7 +75,7 @@ text-align: center;
 a {
     color: black;
     text-decoration: underline;
-    text-decoration-color: #ffda00; /* Gul understrek */
+    text-decoration-color: pink; /* Gul understrek */
     text-decoration-thickness: 3px;
     text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
 }
@@ -101,7 +83,7 @@ a {
 h2, h3 { padding-top: 10px; }
 
 hr {
-    border: 3px solid #ffda00; /* Gul kantlinje */
+    border: 3px solid pink; /* Gul kantlinje */
     border-block-end: 3px black solid; /* Svart bunnkant */
 }
 
@@ -113,8 +95,8 @@ hr {
     width: 100%;
     border-collapse: collapse; /* Fjerner mellomrom mellom cellene */
     text-align: left;
-    background-color: black;
-    color: #ffda00;
+    background-color: pink;
+    color: black;
     padding: 10px;
 }
 
@@ -151,7 +133,7 @@ hr {
     text-align: center;
     font-weight: bold;
     padding: 10px;
-    background-color: #ffda00; /* Gul bakgrunn */
+    background-color: pink; /* Rosa bakgrunn */
     color: black;
     border: 1px solid black;
 }
@@ -163,16 +145,16 @@ hr {
 }
 
 .tabell-3 .semester {
-  background-color: black; /* Gul bakgrunn for studieår */
-  color: #ffda00; 
+  background-color: pink; /* Gul bakgrunn for studieår */
+  color: black; 
 }
 
 /* Stil for semesteroverkskrifter */
 .tabell-3 tr.semester5_6 td {
     font-weight: bold;
     text-align: center;
-    background-color: black;
-    color: #ffda00;
+    background-color: pink;
+    color: black;
 }
 
 /* Stil for emner */
@@ -186,7 +168,7 @@ hr {
 /* Utheving av emnegrupper */
 .tabell-3 .Emnegruppe {
     font-weight: bold;
-    background-color: #ffda00; /* Gul bakgrunn for emnegrupper */
+    background-color: pink; /* Gul bakgrunn for emnegrupper */
     padding: 2px 5px;
     display: block;
     margin-bottom: 5px;
@@ -213,7 +195,7 @@ margin: 10px;
 .femte-seksjon-flex-container {
 max-width: 100%;
 margin: 10px;
-background-color: #ffda00;
+background-color: pink;
 padding: 10px;
 
 } 
@@ -229,7 +211,7 @@ padding: 10px;
 .enkel-flex-container{
   display: flex;
   max-width: 300px;
-  background-color: #ffda00;
+  background-color: pink;
   padding: 5px;
   margin-top: 50px;
   margin-left: auto;
@@ -247,8 +229,8 @@ padding: 10px;
 /* Styling for summary-tittelen */
 summary {
     font-weight: bold;
-    background-color: black;
-    color: #ffda00;
+    background-color: pink;
+    color: black;
     padding: 10px;
     max-width: 100%;
 
