@@ -2,14 +2,17 @@
 <html>
 
 <head>
+    <!-- Meta tag sikrer at nettsiden er responsiv og tilpasser seg etter skjermbredden -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
         
 /** Hamburger menu **/
 
+/* Skjuler avkrysningsboksen som brukes til å styre hamburger-menyen */
 #burger-toggle{display: none;}
 
+/* Stiler for navigasjonsbaren */
 nav {
     margin: 0;
     padding: 0;
@@ -20,12 +23,13 @@ nav {
     height: 80px;
 }
 
+/* Bestemmer paddingen for OsloMet logoen i nav*/
 a {
             padding-left: 20px;
             padding-right: 20px;
 }
 
-/* Desktop view */
+/* Desktop visning: Stiler som gjelder når skjermbredder er 701px eller større */
 @media (min-width:701px) {
     .menu {
         display: flex;
@@ -37,7 +41,7 @@ a {
     .menu li {padding-right: 4rem;}
 }
 
-/* Mobile view */
+/* Mobil visning: Stiler som gjelder ved skermbredden som er 700px eller mindre */
 @media (max-width: 700px) {
     .menu {
         list-style-type: none;
@@ -56,6 +60,7 @@ a {
         display: none; */
     }
 
+    /* Definerer stilene for hamburger-ikonet i mobilversjon.*/
     .menu-icon{
         display: block;
         background-image: url(media/menuIkon-gul.png);
@@ -66,16 +71,18 @@ a {
         margin-right: 20px;     
         
     }
-    
+     /* Viser menyen når avkrysningsboksen for hamburger.menyen er valgt */
     #burger-toggle:checked ~ .menu {
                 display: block;
     }
 
+    /* Definerer stilen for containeren rundt hamburger-ikonet*/
         .hamburger-toggle-container {
         cursor: pointer;
         position: relative;
     }
 
+    /* Stil for listeelementet i menyen på mobil*/
     .menu li {
         height: auto;
         overflow: visible;
@@ -85,6 +92,7 @@ a {
         transition: height 0.5s ease; */
     }
 
+    /* Stilen som gjelder dersom menyen er aktiv på mobil*/
     #burger-toggle:checked ~ .menu li{
         height: 1rem;
         width: auto;
@@ -93,6 +101,8 @@ a {
         padding-bottom: 2rem;
     }
 }
+
+/* Stilen for de lenkene som er meny alternativene*/
 .menu a {
     color: #FFFF00;
     text-decoration: none;
@@ -100,6 +110,8 @@ a {
     display: block;
     text-align: center;
 }
+
+/* Endrer tekst- og bakgrunnsfarge ved hover */
 .menu a:hover{
     background-color: #FFFF00;
     color: black;
@@ -109,6 +121,7 @@ a {
 </head>
 
 <body>
+    <!-- Her starter html for navigasjonsfeltet. -->
 <header>
     <nav>
 
