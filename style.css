@@ -38,14 +38,21 @@ nav {
 }
 
 body {
+  
   font-family: Arial, sans-serif; /* Sans-serif skrifttype for bedre lesbarhet */
   font-size: 16px; /* Grunnstørrelse i henhold til WCAG anbefalinger */
   line-height: 1.5; /* Økt linjehøyde for lesbarhet */
-  margin: auto;
+  margin: 0;
+}
+
+article {
   max-width: 1000px;
   border: 5px solid #ffda00;
   outline: 5px solid black;
   padding: 20px; /* Legger til 20px padding rundt innholdet */
+  margin: auto;
+  background-color: white;
+
 }
 
 
@@ -203,6 +210,7 @@ padding: 10px;
 } 
 
 .femte-seksjon-flex-container a {
+
   color: black; /* Sett tekstfargen til svart */
   text-decoration: underline; /* Sørger for at lenken har understrek */
   text-decoration-color: black; /* Setter understreken til gul */
@@ -211,19 +219,20 @@ padding: 10px;
 }
 
 .enkel-flex-container{
-  display: flex;
-  max-width: 300px;
+  width: 250px;
+  margin: auto;
   background-color: #ffda00;
-  padding: 10px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 } 
-
+ 
 .container-første-seksjon{
   max-width: 800px;
   margin: auto;
   padding: 10px;
+
 }
 
 /* Styling for summary-tittelen */
@@ -276,6 +285,12 @@ max-width: 100%;
 .tykkskrift {
 font-weight: bold;
 }  
+
+.git
+{
+  max-width: 500px;
+  
+  }  
 
 /* Mobilvisning */
 @media (max-width: 600px) {
