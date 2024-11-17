@@ -43,7 +43,7 @@ nav {
 
 body {
     margin: auto; /* Sentrerer innholdet horisontalt */
-    max-width: 1200px; /* Begrens bredden til maks 1000px */
+    max-width: 1000px; /* Begrens bredden til maks 1000px */
     padding: 20px; /* Legger til 20px padding rundt innholdet */
     border: 5px solid #ffda00; /* Gul ramme rundt */
     outline: 5px solid black; /* Svart ramme utenfor den gule */
@@ -216,7 +216,7 @@ background-color: #ffda00;
 }
 
 .tredje-seksjon-flex-container > div {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 10px;
 
 }
