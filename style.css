@@ -8,7 +8,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 100px;
 }
 
 /* Desktop-visning */
@@ -113,6 +113,7 @@ hr {
     padding-left: 10px;
     width: 25%; /* Justerer cellebredde */
 }
+
 
 .tabell-1 caption {
     font-size: 1.5em;
@@ -222,10 +223,11 @@ padding: 10px;
   width: 250px;
   margin: auto;
   background-color: #ffda00;
-  padding: 20px;
+  padding: auto;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  align-items: center;
 } 
  
 .container-første-seksjon{
@@ -285,12 +287,42 @@ max-width: 100%;
 .tykkskrift {
 font-weight: bold;
 }  
+/* Css for Git siden */
+.git h1{
+text-align: left;
+}
 
-.git
-{
-  max-width: 500px;
-  
+.git-container{
+ display: flex;
+ flex-direction: column;
+ 
   }  
+
+.githublogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }  
+
+  .gitlogo img{
+    float: right;
+    
+  } 
+
+  .githublogo2 img{
+    float: left;
+    overflow: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+  } 
+  
+  .fordeler-container li{
+  
+    margin-right: 50px;
+    
+  } 
+
 
 /* Mobilvisning */
 @media (max-width: 600px) {
