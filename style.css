@@ -1,300 +1,402 @@
-body {
-  margin: 0 auto; /* Sentrerer innholdet horisontalt */
-  max-width: 1200px; /* Begrens bredden til maks 1000px */
-  padding: 20px; /* Legger til 20px padding rundt innholdet */
-  border: 5px solid #ffda00; /* Gul ramme rundt */
-  outline: 5px solid black; /* Svart ramme utenfor den gule */
+/** Hamburger-meny **/
+#burger-toggle { display: none; } /* Skjuler checkbox for hamburger-meny på mobil */
+
+nav {
+    margin: 0;
+    padding: 0 20px; /* Legger til padding på begge sider */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
 }
 
-  a {
+/* Desktop-visning */
+@media (min-width: 701px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .menu li { padding-right: 4rem; } /* Ekstra spacing mellom meny-elementer */
+}
+
+.menu a {
+    font-size: 1em;
+    color: #ffda00;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.menu a:hover {
+    background-color: #ffda00;
+    color: black;
+}
+
+body {
+  
+  font-family: Arial, sans-serif; /* Sans-serif skrifttype for bedre lesbarhet */
+  font-size: 16px; /* Grunnstørrelse i henhold til WCAG anbefalinger */
+  line-height: 1.5; /* Økt linjehøyde for lesbarhet */
+  margin: 0;
+}
+
+article {
+  max-width: 1000px;
+  border: 5px solid #ffda00;
+  outline: 5px solid black;
+  padding: 20px; /* Legger til 20px padding rundt innholdet */
+  margin: auto;
+  background-color: white;
+
+}
+
+
+h1 {
+  font-size: 2em; /* 32px for overskrift nivå 1 */
+  line-height: 1.1; /* Mindre linjehøyde for overskrifter */
+  text-align: center;
+}
+
+h2, details summary h2 {
+  font-size: 20px; /* 28px for overskrift nivå 2 */
+  line-height: 1.3;
+}
+
+h3, details summary h3 {
+  font-size: 20px; /* 24px for overskrift nivå 3 */
+  line-height: 1.3;
+}
+
+
+p, li, a {
+  font-size: 1em; /* 16px for paragraf og lenketekst */
+  line-height: 1.5;
+}
+.undertekst {
+text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #ffda00; /* Gul understrek */
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
+}
+
+h2, h3 { padding-top: 10px; }
+
+hr {
+    border: 3px solid #ffda00; /* Gul kantlinje */
+    border-block-end: 3px black solid; /* Svart bunnkant */
+}
+
+.tabell-1, .tabell-2, .tabell-3 {
+  font-size: 0.9em; /* Justerer ned litt til 14px på mindre skjermer, beholdt 16px for større skjermer */
+}
+
+.tabell-1, .tabell-2 {
+    width: 100%;
+    border-collapse: collapse; /* Fjerner mellomrom mellom cellene */
+    text-align: left;
+    background-color: black;
+    color: #ffda00;
+    padding: 10px;
+}
+
+.tabell-1 th, .tabell-1 td, .tabell-2 th, .tabell-2 td {
+    padding-left: 10px;
+    width: 25%; /* Justerer cellebredde */
+}
+
+
+.tabell-1 caption {
+    font-size: 1.5em;
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* Stil for tabell-3 */
+.tabell-3 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+}
+
+.tabell-3 caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabell-3 th {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: black; /* Rosa bakgrunn */
+    color: #ffda00;
+    border: 1px solid black;
+}
+
+.tabell-3 td {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.tabell-3 .semester {
+  background-color: black; /* Gul bakgrunn for studieår */
+  color: #ffda00; 
+}
+
+/* Stil for semesteroverkskrifter */
+.tabell-3 tr.semester5_6 td {
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: #ffda00;
+}
+
+/* Stil for emner */
+.tabell-3 td a {
+    display: block;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Utheving av emnegrupper */
+.tabell-3 .Emnegruppe {
+    font-weight: bold;
+    background-color: #ffda00; /* Gul bakgrunn for emnegrupper */
+    padding: 2px 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Flex-konteinere for seksjoner */
+.tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+    display: flex;
+    max-width: 800px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tredje-seksjon-flex-container > div {
+max-width: 100%;
+margin: 10px;
+
+}
+
+.tredje-seksjon, .femte-seksjon h2 {
+  text-align:center;
+}
+
+.femte-seksjon-flex-container {
+max-width: 100%;
+margin: 10px;
+background-color: #ffda00;
+padding: 10px;
+
+} 
+
+.femte-seksjon-flex-container a {
+
   color: black; /* Sett tekstfargen til svart */
   text-decoration: underline; /* Sørger for at lenken har understrek */
-  text-decoration-color: #ffda00; /* Setter understreken til gul */
+  text-decoration-color: black; /* Setter understreken til gul */
   text-decoration-thickness: 3px; /* Gjør understreken tykkere */
-  text-underline-offset: 6px; /* Avstand mellom tekst og understrek */
+  text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
 }
 
-  h2{
-padding-top: 30px;
-}
-
-  h3{
-padding-top: 20px;
-}
-
-
-  h2, p {
-    /* Sett ønsket margin */
-  text-align: left;
-  
-
-}
-  hr {
-  border: 2px solid #ffda00; /* En gul kantlinje */
-  border-block-end: 2px black solid;
-}
-
-  ul {
-padding-left: 40px;
-}
-    
-  .tabell-fet-skrift td {  /* Fet skrift for spesifikk rad i tabell 1*/
-  font-weight: bold; /* Fet skrift */
-  padding-top: 50px;
-}
-
-  .tabell-1 { /* Generell styling for tabell-1 */
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  background-color: black;
-  color:#ffda00;
-  padding: 15px; /* Legger til padding rundt hele innholdet */
-}
-
-.tredje-seksjon img { /*bilde av fagleder*/
-  width:110px;
-  height:150px;
-  float: left;
-  padding-right: 20px;
-  
-}
-  .tredje-seksjon::after { /* Koden er kopiert fra https://www.w3schools.com/howto/howto_css_clearfix.asp. Denne koden hinderer at 
-  bildet ikke kommer ut av elementet på grunn av bruk av float. Denne metoden blir kalt for clearfix */
-  content: "";
-  clear: both;
-  display: table;
-}
-  .tredje-seksjon{
-text-align:center;
-  
-}
-
-  .femte-seksjon img {
-width: 800px;
-float: right;
-background-color: #ffda00;
-padding: 25px; /* Legger til 20px padding rundt innholdet */
-}
-
-  .femte-seksjon::after {
-content: "";
-display: table;
-clear: both;
-}
-
-  .femte-seksjon {
-  /* width: 100%; */
-background-color: #ffda00;
-color: black;
-padding: 2em;
-}
-
-  .femte-seksjon a{
-text-decoration-color: black;
-}
-
-/* Fikse mobilvisning */
-@media screen and (max-width: 600px) {
-  
-  
-  
-  /* Fjern linjer rundt siden */
-  body {
-  border: none; /* Fjern gul kantlinje */
-  outline: none; /* Fjern svart kantlinje */
-  padding:10px; 
-  padding-right:10px;  
-  }
-  
-  /* Gjør tabellen mer lesbar */
-  .tabell-1 {
-  width: 1000px; /* Tabellens bredde justeres til 100% av skjermen */
-  /* font-size: 3em; Reduserer skriftstørrelsen litt for bedre lesbarhet */
-  overflow-x: auto; /* Legger til horisontal scrolling hvis nødvendig */
-  }
-
-  .femte-seksjon {
-  margin-left: 2px;
-  }
-
-
-  .femte-seksjon img {
-  max-width: 100%;  /* Bildet vil justere seg etter skjermens bredde */
-  height: auto;
-  float: center;
-  }
-
-}
-
-footer {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color:yellow
-}
-
-.container {
-  padding: 20px;
-}
-
-.subscribe-btn {
-  background-color: black;
-  color: yellow;
-  border: 2px solid yellow;
-  padding:10px 20px;
-  font-size:16px;
-  cursor:pointer;
-  text-transform:uppercase;
-  font-weight:bold;
-
-}
-
-hr {
-  border: 1px solid yellow;
-  margin: 20px 0;
-}
-
-.contact-info, .footer-links, .social-icons {
-  width: 30%;
-}
-
-.social-icons i {
-  font-size:24px;
-}
-
-.footer-links a,
-.social-icons a {
-  text-decoration: none;
-  
-}
-.footer-links a:hover,
-.social-icons a:hover
-{
-  text-decoration: underline;
-}
-
-
-.social-icons a {
-  color: yellow; /*endrer teksten og ikon  til gul*/
-  text-decoration: none;
-}
-
-/* Generell linjeavstand for hele footeren */
-footer {
-  line-height: 1.8; 
-}
-
-/* Spesifikk linjeavstand for kontaktinformasjonen */
-.contact-info p, .footer-links a {
-  line-height: 2; 
-}
-
-/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
-.social-icons a {
-  line-height: 0.5;
-  display: flex;
-  align-items: center; /* Justerer ikonene og teksten på samme linje */
-}
-
-.contact-info a {
-text-decoration:none;
-}
-
-.contact-info a:hover {
-text-decoration: underline;
-}
-
-.contact-info a, .footer-links a {
-  color:yellow;
-}
-
-.footer-details {
-  display: flex;
-  justify-content: space-between;
-  
-}
-.contact-info a {
-  margin-bottom: 30px; 
-}
-
-footer {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: yellow;
-  line-height: 1.8;
-}
-
-.container {
-  padding: 20px;
-}
-
-.subscribe-btn {
-  background-color: black;
-  color: yellow;
-  border: 2px solid yellow;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: uppercase;
+.enkel-flex-container{
+  width: 250px;
+  margin: auto;
+  background-color: #ffda00;
+  padding: auto;
+  font-size: 20px;
   font-weight: bold;
-}
-
-hr {
-  border: 1px solid yellow;
-  margin: 20px 0;
-}
-
-.contact-info, .footer-links, .social-icons {
-  width: 30%;
-}
-
-.footer-links a,
-.social-icons a,
-.contact-info a {
-  color: yellow;
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.social-icons a:hover,
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.social-icons a {
-  font-size: 24px;
-  display: flex;
+  text-align: center;
   align-items: center;
-  line-height: 0.5;
+} 
+ 
+.container-første-seksjon{
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+
 }
 
-.footer-details {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* Styling for summary-tittelen */
+summary {
+  font-weight: bold;
+  background-color: black;
+  color: #ffda00;
+  padding: 0;
+  max-width: 100%;
+  height: 40px;
+  outline: none;
+  transition: background-color 0.2s ease;
+  margin-bottom: 10px;
+  cursor: pointer; /* Indikerer at summary er klikkbart */
 }
 
-.contact-info a {
-  margin-bottom: 30px;
+summary:hover {
+  background-color: #ffda00;
+  color: black;
 }
 
-/* Responsive design for mobile devices */
-@media (max-width: 768px) {
-  .footer-details {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
+/* Styling for innholdet i paragraf*/
+details h2, h3, p {
   
-  .contact-info, .footer-links, .social-icons {
-      width: 100%;
-      margin-bottom: 20px;
-  }
+padding-left: 10px;
+max-width: 100%;
+}
+details ul {
 
-  .subscribe-btn {
+padding-left: 70px;
+max-width: 750px;
+}
+details > details {
+margin-left: 20px;
+margin-bottom: 10px;
+max-width: 750px;
+border-left: 2px
+}
+
+details > summary {
+padding: 10px;
+display: flex; /* Plasser innholdet i summary på én linje */
+cursor: pointer; /* Indiker at det er klikkbart */
+align-items: center; /* Juster vertikal plassering */
+}
+
+details > details p {
+max-width: 100%;
+}
+.tykkskrift {
+font-weight: bold;
+}  
+/* Css for Git siden */
+.git h1{
+text-align: left;
+}
+
+.git-container{
+ display: flex;
+ flex-direction: column;
+ 
+  }  
+
+.githublogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }  
+
+  .gitlogo img{
+    float: right;
+    
+  } 
+
+  .githublogo2 img{
+    float: left;
+    overflow: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+  } 
+  
+  .fordeler-container li{
+  
+    margin-right: 50px;
+    
+  } 
+
+
+/* Mobilvisning */
+@media (max-width: 600px) {
+    .menu {
+        list-style-type: none;
+        position: absolute;
+        overflow: visible;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+        transition: max-height 0.3s ease-out; /* Smooth transition for menu */
+        padding: 0%;
+
+    }
+
+    .menu-icon {
+        display: block;
+        background-image: url(media/menu-icon.png);
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;     
+    }
+
+    #burger-toggle:checked ~ .menu {
+        display: block;
+    }
+
+    .menu li {
+        height: auto;
+        overflow: visible;
+        text-align: center;
+      
+        
+    }
+
+    /* Fjern kantlinjer på mindre skjermer */
+    body {
+        border: none;
+        outline: none;
+        padding: 0;
+        width: 100%;
+        font-size: 14px; /* Justering for mindre skjermer */
+        padding-bottom: 10px;
+    }
+
+    .video-container {
       width: 100%;
-      font-size: 14px;
-  }
+      height: auto;
+    }
+    
+    /* Juster tabell og skriftstørrelse */
+    .tabell-1, .tabell-2, .tabell-3 {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+        flex: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tredje-seksjon-flex-container p {
+      text-align: center;
+    
+    }
+    .femte-seksjon img {
+        max-width: 100%;
+    }
+    .enkel-flex-container{
+      padding-bottom: 10px;
+    }  
 }

@@ -39,7 +39,7 @@ list-style-type: none;
 .menu {
 list-style-type: none;
 position: absolute; /* Bruker absolutt posisjonering på menyen */
-top: 80px; /* Plasserer menyen rett under navigasjonsbaren */
+top: 50px; /* Plasserer menyen rett under navigasjonsbaren */
 left: 0;
 right: 0;
 background-color: black;
@@ -76,8 +76,8 @@ position: relative;
 .menu li {
 height: auto;
 overflow: visible;
-padding: 10px 0;
-/* height: 0px;
+/* padding: 10px 0;
+height: 0px;
 overflow: hidden;
 transition: height 0.5s ease; */
 }
