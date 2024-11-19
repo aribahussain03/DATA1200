@@ -2,38 +2,39 @@
 #burger-toggle { display: none; } /* Skjuler checkbox for hamburger-meny på mobil */
 
 nav {
-    margin: 0;
-    padding: 0 20px; /* Legger til padding på begge sider */
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
+    margin: 0; /* Fjerner standarmarginen rundt navigasjonsfeltet */
+    padding: 0 20px; /* Legger til 20px både på venstre og høyre side*/
+    background-color: black; /* Bakgrunnsfarge på navigasjonsfeltet*/
+    display: flex; /* For å strukturere innholdet*/
+    align-items: center; /* Sentrerer innholdet vertikalt i navigasjonsfeltet */
+    justify-content: space-between; /* Sørger for at meny ikonet og logen er hver sin ende */
+    height: 100px; /* Høyden til navigasjonsfeltet*/
 }
 
-/* Desktop-visning */
-@media (min-width: 701px) {
+/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 701px eller mer. */
+@media (min-width: 701px) { 
     .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        list-style-type: none;
+        display: flex; /* Viser menyen som er horisontal liste ved å bruke flexbox */
+        flex-direction: row; /* Listen blir satt opp i en rad */
+        justify-content: center; /* Sentrer meny elementene horisontalt */
+        list-style-type: none; /* Fjerner punktmerking for listen */
     }
-    .menu li { padding-right: 4rem; } /* Ekstra spacing mellom meny-elementer */
+    .menu li { padding-right: 4rem; } /* Ekstra spacing mellom hvert meny-elementer */
 }
 
 .menu a {
-    font-size: 1em;
-    color: #ffda00;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    font-size: 1em; /* Setter fontstørrelsen til 1em, basert på standard tekstørrelse */
+    color: #ffda00; /* Tekstfargen på meny-elementene*/
+    text-decoration: none; /* Fjerner understrek fra lenkene*/
+    padding: 15px; /* Legger til padding rundt meny-elementene*/
+    display: block; /* Lenkene blir blokkelementer slik at hele omrpdet er klikkbar */
+    text-align: center; /* Sentrerer teksten horisontalt */
+    transition: background-color 0.3s ease; /* For å gjøre endringen på bakgrunnsfarge til en jevn overgang */
 }
 
 .menu a:hover {
-    background-color: #ffda00;
+    /* Endrer fargene med hverandre når musen er over lenken */
+    background-color: #ffda00; 
     color: black;
 }
 
@@ -143,7 +144,7 @@ hr {
     text-align: center;
     font-weight: bold;
     padding: 10px;
-    background-color: black; /* Rosa bakgrunn */
+    background-color: black; /* Svart bakgrunn */
     color: #ffda00;
     border: 1px solid black;
 }
@@ -324,13 +325,13 @@ text-align: left;
   } 
 
 
-/* Mobilvisning */
-@media (max-width: 600px) {
+/* Mobilvisning: Følgende stiler gjelder for skjermer med 600px eller mindre i bredde */
+@media (max-width: 600px) { 
     .menu {
-        list-style-type: none;
+        list-style-type: none; /* Fjerner standard punktmerking fra listen */
         position: absolute;
-        overflow: visible;
-        top: 50px;
+        overflow: visible; /* Sørger for at innhold utenfor elementets boks er synlig */
+        top: 50px; /* Plasserer menyen rett under navigasjonsfeltet */
         left: 0;
         right: 0;
         background-color: black;
@@ -340,9 +341,9 @@ text-align: left;
 
     }
 
-    .menu-icon {
+    .menu-icon { /* Denne delen definerer hvordan hamburger meny skal være visuelt */
         display: block;
-        background-image: url(media/menu-icon.png);
+        background-image: url(media/menu-icon.png); /* Meny ikon hentet fra: */
         background-size: contain;
         width: 40px;
         height: 40px;
@@ -351,7 +352,7 @@ text-align: left;
     }
 
     #burger-toggle:checked ~ .menu {
-        display: block;
+        display: block; /* Menyen vises når avkrysningsboksen er krysset av */
     }
 
     .menu li {
