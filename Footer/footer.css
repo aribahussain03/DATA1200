@@ -1,14 +1,18 @@
 footer {
     margin:0;
     font-family: Arial, sans-serif;
-    background-color: black;
-    color:yellow
+    background-color:black; 
+    color: yellow ;
+    padding: 70px 0 30px;
+    border-top-left-radius: 100px;
+    
+   
+    
 }
 
-.container {
-    padding: 20px;
+.footer-container h2 {
+    font-size: 35px; 
 }
-
 .subscribe-btn {
     background-color: black;
     color: yellow;
@@ -31,25 +35,54 @@ hr {
 }
 
 .social-icons i {
-    font-size:24px;
+    font-size:12px;
+    padding:1px;
 }
 
-.footer-links a,
-.social-icons a {
-    text-decoration: none;
+.footer-links a ,
+{
+    text-decoration: none:
     
 }
 .footer-links a:hover,
-.social-icons a:hover
+.social-icons a:hover,
+.contact-info a:hover
  {
     text-decoration: underline;
+    color:white;
 }
 
+.social-icons a i:hover
+{
+   background-color: black;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.social-icons a:hover i {
+    color:black;
+    transition: 0.5s;
+    background-color: yellow;
+}
 
-.social-icons a {
-    color: yellow; /*endrer teksten og ikon  til gul*/
+.social-icons a i {
     text-decoration: none;
+    padding:8px;
+    
+    border-radius: 50%;
+
 }
+.social-icons a i {
+    color:yellow;
+    opacity: 0.9;
+    font-size: 1.5em;
+}
+.social-icons a {
+    color: yellow; /*endrer teksten og ikon  til svart*/
+    text-decoration: none;
+    
+    
+}
+
 
 /* Generell linjeavstand for hele footeren */
 footer {
@@ -87,7 +120,9 @@ text-decoration: underline;
 }
 .contact-info a {
     margin-bottom: 30px; 
+    
 }
+
 
 .social-icons i {
         margin-right: 8px !important; 
@@ -95,29 +130,74 @@ text-decoration: underline;
 
     .footer-container {
         display: flex;
+        align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 20px; 
         padding: 20px;
         background-color: black;
         color: yellow;
+        border-top-left-radius: 30px;
     }
     
+    .footer-container > div {
+        flex: 1 1 200px; /* Hvert element tar minst 200px og vokser ved behov */
+        
+    }
 
+    .subscribe-btn {
+        text-align: center; /* Sentrer knappen horisontalt */
+        padding: 20px; /* Ekstra luft rundt */
+        
+        
+    }
+    
+    /* KNAPPSTIL */
+    .subscribe-btn {
+        background-color: yellow; /* gul bakgrunn */
+        color: black; /* Tekstfarge */
+        border: 2px solid yellow; /* Rosa kant */
+        padding: 15px 30px; /* God padding for større knapp */
+        font-size: 15px; /* Større og mer lesbar tekst */
+        font-weight: bold;
+        text-transform: uppercase; /* Gjør teksten stor */
+        letter-spacing: 2px; /* Gir luftigere tekst */
+        border-radius: 10px; /* Myke, avrundede hjørner */
+        cursor: pointer; /* Gir musepeker */
+        transition: all 0.3s ease; /* Myk overgangseffekt */
+       
+    }
+    
+    /* HOVER-EFFEKT */
+    .subscribe-btn:hover {
+        background-color: yellow; /* Bytt til rosa bakgrunn */
+        color: #black; /* Gjør teksten svart */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Subtil skygge */
+        transform: translateY(-5px); /* Løfter knappen litt */
+    }
 
 /* design for mindre skjerm (mobil) */
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
     .footer-details {
         flex-direction: column;
         align-items: center;
         text-align: left;
     }
     .footer-container h2 {
-        font-size: 18px; 
+        font-size: 25px; 
     }
 
+    .footer-container {
+        padding:10px;
+    }
+
+    .footer i {
+        padding:15px;
+    }
     .contact-info, .footer-links, .social-icons {
         width: 100%;
         margin-bottom: 20px;
+        
     }
 
     .social-icons i {
@@ -129,4 +209,5 @@ text-decoration: underline;
         font-size: 12px;
         padding: 8px 16px;
     }
+    
 }

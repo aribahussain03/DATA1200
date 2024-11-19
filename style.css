@@ -466,23 +466,29 @@ text-align: left;
   }
 }
 
-
 footer {
   margin:0;
   font-family: Arial, sans-serif;
-  background-color: black;
-  color: #ffda00;
+  background-color:black; 
+  color: yellow ;
+  padding: 70px 0 30px;
+  border-top-left-radius: 100px;
+  line-height: 1.8; 
 }
 
-.container {
-  padding: 20px;
+.footer i {
+  padding:15px;
 }
 
+.footer-container h2 {
+  font-size: 40px; 
+  padding:10px;
+}
 .subscribe-btn {
   background-color: black;
-  color: #ffda00;
-  border: 2px solid #ffda00;
-  padding:10px 20px;
+  color: yellow;
+  border: 3px solid yellow;
+  padding:15px 30px;
   font-size:16px;
   cursor:pointer;
   text-transform:uppercase;
@@ -490,8 +496,8 @@ footer {
 
 }
 
-.footer hr {
-  border: 1px solid #ffda00;
+hr {
+  border: 1px solid yellow;
   margin: 20px 0;
 }
 
@@ -500,30 +506,52 @@ footer {
 }
 
 .social-icons i {
-  font-size:24px;
+  font-size:12px;
+  padding:1px;
 }
 
-.footer-links a,
-.social-icons a {
-  text-decoration: none;
-  
+.footer-links a 
+{ text-decoration: none;
 }
+
+
 .footer-links a:hover,
-.social-icons a:hover
+.social-icons a:hover,
+.contact-info a:hover
 {
   text-decoration: underline;
+  color:rgb(245, 239, 153);
 }
 
+.social-icons a i:hover
+{
+ background-color: black;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.social-icons a:hover i {
+  color:black;
+  transition: 0.5s;
+  background-color: yellow;
+}
+
+.social-icons a i {
+  text-decoration: none;
+  padding:8px;
+  color:yellow;
+  opacity: 0.9;
+  font-size: 1.5em;
+  border-radius: 50%;
+
+}
 
 .social-icons a {
-  color: #ffda00; /*endrer teksten og ikon  til gul*/
+  color: yellow; /*endrer teksten og ikon  til gul*/
   text-decoration: none;
 }
 
-/* Generell linjeavstand for hele footeren */
-footer {
-  line-height: 1.8; 
-}
+
+
 
 /* Spesifikk linjeavstand for kontaktinformasjonen */
 .contact-info p, .footer-links a {
@@ -537,8 +565,9 @@ footer {
   align-items: center; /* Justerer ikonene og teksten på samme linje */
 }
 
-.contact-info a {
+.contact-info a, .contact-info p {
 text-decoration:none;
+font-size: 18px;
 }
 
 .contact-info a:hover {
@@ -546,7 +575,7 @@ text-decoration: underline;
 }
 
 .contact-info a, .footer-links a {
-  color:#ffda00;
+  color:yellow;
 }
 
 .footer-details {
@@ -556,7 +585,9 @@ text-decoration: underline;
 }
 .contact-info a {
   margin-bottom: 30px; 
+  
 }
+
 
 .social-icons i {
       margin-right: 8px !important; 
@@ -564,29 +595,84 @@ text-decoration: underline;
 
   .footer-container {
       display: flex;
+      align-items: flex-start;
       flex-wrap: wrap;
       justify-content: space-between;
+      gap: 20px; 
       padding: 20px;
       background-color: black;
-      color: #ffda00;
+      color: yellow;
+      border-top-left-radius: 30px;
   }
   
+  .footer-container > div {
+      flex: 1 1 200px; /* Hvert element tar minst 200px og vokser ved behov */
+      
+  }
 
+  .subscribe-btn {
+      text-align: center; /* Sentrer knappen horisontalt */
+      padding: 20px; 
+  }
+  
+  /* KNAPPSTIL */
+  .subscribe-btn {
+      background-color: yellow; /* gul bakgrunn */
+      color: black; /* Tekstfarge */
+      border: 2px solid yellow; /* gul kant */
+      padding: 15px 30px; /* God padding for større knapp */
+      font-size: 15px; /* Større og mer lesbar tekst */
+      font-weight: bold;
+      text-transform: uppercase; /* Gjør teksten stor */
+      letter-spacing: 2px; /* Gir luftigere tekst */
+      border-radius: 10px; /* Myke, avrundede hjørner */
+      cursor: pointer; /* Gir musepeker */
+      transition: all 0.3s ease; /* Myk overgangseffekt */
+      
+    
+  }
+  
+  /* HOVER-EFFEKT */
+  .subscribe-btn:hover {
+      background-color: yellow; /* Bytter til gul bakgrunn */
+      color: #black; /* Gjør teksten svart */
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
+      transform: translateY(-5px); /* Løfter knappen litt */
+  }
 
 /* design for mindre skjerm (mobil) */
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .footer-details {
       flex-direction: column;
       align-items: center;
       text-align: left;
   }
-  .footer-container h2 {
-      font-size: 18px; 
-  }
+
+.contact-info a, .contact-info p {
+  font-size: 15px;
+}
+  
+.footer-container h2 {
+  font-size: 27px;
+}
+
+.subscribe-btn {
+  padding:10px;
+  font-size: 12px;
+  
+}
 
   .contact-info, .footer-links, .social-icons {
       width: 100%;
       margin-bottom: 20px;
+  }
+
+  .footer-links, .social-icons {
+    padding-left: 20px;
+  }
+
+  .footer-container {
+    padding:10px;
   }
 
   .social-icons i {
@@ -594,8 +680,14 @@ text-decoration: underline;
       margin: 5px;
   }
 
-  .subscribe-btn {
-      font-size: 12px;
-      padding: 8px 16px;
-  }
+  .social-icons i {
+    font-size: 1rem; /* Mindre størrelse for mobil */
+    padding: 5px;    /* Reduser padding rundt ikonene */
+}
+
+.social-icons a i {
+    margin: 0px; 
+    padding:0px;   /* Mindre avstand mellom ikonene */
+}
+  
 }
