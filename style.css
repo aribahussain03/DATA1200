@@ -24,6 +24,7 @@ nav {
 
 .menu a {
     font-size: 1em; /* Setter fontstørrelsen til 1em, basert på standard tekstørrelse */
+    font-weight: bold;
     color: #ffda00; /* Tekstfargen på meny-elementene*/
     text-decoration: none; /* Fjerner understrek fra lenkene*/
     padding: 15px; /* Legger til padding rundt meny-elementene*/
