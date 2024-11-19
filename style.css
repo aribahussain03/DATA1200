@@ -455,7 +455,138 @@ text-align: left;
   .git-container p {
       text-align: center;
   }
+}
 
 
+footer {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color:yellow
+}
 
+.container {
+  padding: 20px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  font-size:16px;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-weight:bold;
+
+}
+
+hr {
+  border: 1px solid yellow;
+  margin: 20px 0;
+}
+
+.contact-info, .footer-links, .social-icons {
+  width: 30%;
+}
+
+.social-icons i {
+  font-size:24px;
+}
+
+.footer-links a,
+.social-icons a {
+  text-decoration: none;
+  
+}
+.footer-links a:hover,
+.social-icons a:hover
+{
+  text-decoration: underline;
+}
+
+
+.social-icons a {
+  color: yellow; /*endrer teksten og ikon  til gul*/
+  text-decoration: none;
+}
+
+/* Generell linjeavstand for hele footeren */
+footer {
+  line-height: 1.8; 
+}
+
+/* Spesifikk linjeavstand for kontaktinformasjonen */
+.contact-info p, .footer-links a {
+  line-height: 2; 
+}
+
+/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
+.social-icons a {
+  line-height: 0.5;
+  display: flex;
+  align-items: center; /* Justerer ikonene og teksten på samme linje */
+}
+
+.contact-info a {
+text-decoration:none;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}
+
+.contact-info a, .footer-links a {
+  color:yellow;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.contact-info a {
+  margin-bottom: 30px; 
+}
+
+.social-icons i {
+      margin-right: 8px !important; 
+  }
+
+  .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: black;
+      color: yellow;
+  }
+  
+
+
+/* design for mindre skjerm (mobil) */
+@media (max-width: 1024px) {
+  .footer-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+  }
+  .footer-container h2 {
+      font-size: 18px; 
+  }
+
+  .contact-info, .footer-links, .social-icons {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .social-icons i {
+      font-size: 18px;
+      margin: 5px;
+  }
+
+  .subscribe-btn {
+      font-size: 12px;
+      padding: 8px 16px;
+  }
 }
