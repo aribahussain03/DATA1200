@@ -272,14 +272,20 @@ details > details {
 margin-left: 20px;
 margin-bottom: 10px;
 max-width: 750px;
-border-left: 2px
+border-left: 2px;
 }
+
+details > details summary {
+  background-color: #ffda00;
+  color: black;
+  }
 
 details > summary {
 padding: 10px;
 display: flex; /* Plasser innholdet i summary på én linje */
 cursor: pointer; /* Indiker at det er klikkbart */
 align-items: center; /* Juster vertikal plassering */
+
 }
 
 details > details p {
@@ -307,7 +313,7 @@ text-align: left;
 
   .gitlogo img{
     float: right;
-    
+    text-indent: 0;
   } 
 
   .githublogo2 img{
@@ -317,12 +323,30 @@ text-align: left;
     margin-right: 20px;
     
   } 
-  
-  .fordeler-container li{
-  
-    margin-right: 50px;
+  .fordeler-container{
+    display: flex;
+
+ flex-direction: row;
+  }
+  .vscode-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+ 
+  }
+  .fordeler-container img{
+    
+    padding: 20px;
     
   } 
+  figcaption {
+   
+    font-style: italic;
+    margin: auto;
+    text-align: right;
+    
+  }
 
 
 /* Mobilvisning: Følgende stiler gjelder for skjermer med 600px eller mindre i bredde */
@@ -364,7 +388,7 @@ text-align: left;
     }
 
     /* Fjern kantlinjer på mindre skjermer */
-    body {
+    body, article, .git, .aktivitet {
         border: none;
         outline: none;
         padding: 0;
@@ -374,6 +398,7 @@ text-align: left;
     }
 
     .video-container {
+      display: flex;
       width: 100%;
       height: auto;
     }
@@ -383,11 +408,16 @@ text-align: left;
         width: 100%;
         font-size: 0.9em;
     }
+    .tabell-1, .tabell-2
+    {
+      padding: 20px;
+  }
 
-    .tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+    .tredje-seksjon-flex-container, .femte-seksjon-flex-container{
+      display: flex;
         flex: 100%;
         flex-direction: column;
-        align-items: center;
+        
     }
 
     .tredje-seksjon-flex-container p {
@@ -399,5 +429,33 @@ text-align: left;
     }
     .enkel-flex-container{
       padding-bottom: 10px;
-    }  
+    }
+
+    .git h1, h2{
+      margin: 10px;
+    }
+    .githublogo  {
+      max-width: 70%;
+      height: auto;
+  }
+    .git-container, .fordeler-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .git-container img, .vscode-container img {
+      max-width: 40%;
+      height: auto;
+  }
+  .vscode-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+  .git-container p {
+      text-align: center;
+  }
+
+
+
 }
