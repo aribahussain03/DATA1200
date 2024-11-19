@@ -24,6 +24,7 @@ nav {
 
 .menu a {
     font-size: 1em; /* Setter fontstørrelsen til 1em, basert på standard tekstørrelse */
+    font-weight: bold;
     color: #ffda00; /* Tekstfargen på meny-elementene*/
     text-decoration: none; /* Fjerner understrek fra lenkene*/
     padding: 15px; /* Legger til padding rundt meny-elementene*/
@@ -221,14 +222,21 @@ padding: 10px;
 }
 
 .enkel-flex-container{
-  width: 250px;
+  width: 350px;
   margin: auto;
   background-color: #ffda00;
-  padding: auto;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100px;
+} 
+
+.enkel-flex-container h3 {
+  margin: 0;
+  padding: 0;
 } 
  
 .container-første-seksjon{
@@ -263,11 +271,12 @@ details h2, h3, p {
 padding-left: 10px;
 max-width: 100%;
 }
-details ul {
 
+details ul {
 padding-left: 70px;
 max-width: 750px;
 }
+
 details > details {
 margin-left: 20px;
 margin-bottom: 10px;
@@ -427,9 +436,9 @@ text-align: left;
     .femte-seksjon img {
         max-width: 100%;
     }
-    .enkel-flex-container{
+   /*  .enkel-flex-container{
       padding-bottom: 10px;
-    }
+    } */
 
     .git h1, h2{
       margin: 10px;
