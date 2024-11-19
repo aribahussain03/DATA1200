@@ -95,9 +95,22 @@ hr {
     border-block-end: 3px black solid; /* Svart bunnkant */
 }
 
-.video-container iframe {
-  border: none; /* Fjerner rammen */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* For 16:9 aspektforhold */
+  background-color: black;
 }
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  border: none; /* Fjerner rammen */
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .tabell-1, .tabell-2, .tabell-3 {
   font-size: 0.9em; /* Justerer ned litt til 14px på mindre skjermer, beholdt 16px for større skjermer */
@@ -358,6 +371,14 @@ text-align: left;
     
   }
 
+  .brukGit {
+    max-width: 750px; /* Begrens bredden til 750px */
+    margin: 0 auto; /* Sentraliser innholdet horisontalt */
+
+    padding: 20px; /* Legg til litt padding for bedre lesbarhet */
+}
+  
+
   /*CSS for activity*/
   main {
     border: none;
@@ -536,7 +557,7 @@ text-align: left;
     }
 
     /* Fjern kantlinjer på mindre skjermer */
-    body, article, .git, .aktivitet {
+    body, article, .aktivitet {
         border: none;
         outline: none;
         padding: 0;
@@ -593,30 +614,32 @@ text-align: left;
     } */
 
     /* CSS for Git siden*/
+    .git{
+     padding-left: 10px;
+     padding-right: 10px;
+    }
+
+
     .git h1, h2{
-      margin: 10px;
+     
     }
     .githublogo  {
       max-width: 70%;
       height: auto;
   }
     .git-container, .fordeler-container {
+      max-width: 100%;
       flex-direction: column;
-      padding: 10px;
+      
   }
 
-  .git-container img, .vscode-container img {
-      max-width: 40%;
-      height: auto;
-  }
   .vscode-container img {
     max-width: 100%;
     height: auto;
 }
-
-  .git-container p {
-      text-align: center;
-  }
+.gitlogo img, 
+.githublogo2 img {
+    display: none; /* Skjuler bildene i mobilvisning */
 }
 
 footer {
