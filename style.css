@@ -462,7 +462,7 @@ footer {
   margin:0;
   font-family: Arial, sans-serif;
   background-color: black;
-  color:yellow
+  color: #ffda00;
 }
 
 .container {
@@ -471,8 +471,8 @@ footer {
 
 .subscribe-btn {
   background-color: black;
-  color: yellow;
-  border: 2px solid yellow;
+  color: #ffda00;
+  border: 2px solid #ffda00;
   padding:10px 20px;
   font-size:16px;
   cursor:pointer;
@@ -482,7 +482,7 @@ footer {
 }
 
 hr {
-  border: 1px solid yellow;
+  border: 1px solid #ffda00;
   margin: 20px 0;
 }
 
@@ -507,7 +507,7 @@ hr {
 
 
 .social-icons a {
-  color: yellow; /*endrer teksten og ikon  til gul*/
+  color: #ffda00; /*endrer teksten og ikon  til gul*/
   text-decoration: none;
 }
 
@@ -537,7 +537,7 @@ text-decoration: underline;
 }
 
 .contact-info a, .footer-links a {
-  color:yellow;
+  color:#ffda00;
 }
 
 .footer-details {
@@ -559,7 +559,7 @@ text-decoration: underline;
       justify-content: space-between;
       padding: 20px;
       background-color: black;
-      color: yellow;
+      color: #ffda00;
   }
   
 
