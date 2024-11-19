@@ -481,7 +481,7 @@ footer {
 
 }
 
-hr {
+.footer hr {
   border: 1px solid #ffda00;
   margin: 20px 0;
 }
