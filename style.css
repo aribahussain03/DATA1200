@@ -620,7 +620,7 @@ text-align: left;
     }
 
 
-    .git h1, h2{
+    .git h1, h2 {
      
     }
     .githublogo  {
@@ -672,7 +672,6 @@ text-align: left;
   cursor:pointer;
   text-transform:uppercase;
   font-weight:bold;
-
 }
 
 hr {
@@ -814,7 +813,7 @@ text-decoration: underline;
   /* HOVER-EFFEKT */
   .subscribe-btn:hover {
       background-color: yellow; /* Bytter til gul bakgrunn */
-      color: #black; /* Gjør teksten svart */
+      color: black; /* Gjør teksten svart */
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
       transform: translateY(-5px); /* Løfter knappen litt */
   }
@@ -869,4 +868,5 @@ text-decoration: underline;
     padding:0px;   /* Mindre avstand mellom ikonene */
 }
   
+}
 }
