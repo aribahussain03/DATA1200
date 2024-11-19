@@ -53,10 +53,7 @@ article {
   outline: 5px solid black;
   padding: 20px; /* Legger til 20px padding rundt innholdet */
   margin: auto;
-  background-color: white;
-
 }
-
 
 h1 {
   font-size: 2em; /* 32px for overskrift nivå 1 */
@@ -96,6 +93,10 @@ h2, h3 { padding-top: 10px; }
 hr {
     border: 3px solid #ffda00; /* Gul kantlinje */
     border-block-end: 3px black solid; /* Svart bunnkant */
+}
+
+.video-container iframe {
+  border: none; /* Fjerner rammen */
 }
 
 .tabell-1, .tabell-2, .tabell-3 {
@@ -187,24 +188,24 @@ hr {
 }
 
 /* Flex-konteinere for seksjoner */
-.tredje-seksjon-flex-container, .femte-seksjon-flex-container {
+.andre-seksjon-flex-container, .tredje-seksjon-flex-container {
     display: flex;
     max-width: 800px;
     flex-direction: row;
     align-items: center;
 }
 
-.tredje-seksjon-flex-container > div {
+.andre-seksjon-flex-container > div {
 max-width: 100%;
 margin: 10px;
 
 }
 
-.tredje-seksjon, .femte-seksjon h2 {
+.andre-seksjon, .tredje-seksjon h2 {
   text-align:center;
 }
 
-.femte-seksjon-flex-container {
+.tredje-seksjon-flex-container {
 max-width: 100%;
 margin: 10px;
 background-color: #ffda00;
@@ -212,7 +213,7 @@ padding: 10px;
 
 } 
 
-.femte-seksjon-flex-container a {
+.tredje-seksjon-flex-container a {
 
   color: black; /* Sett tekstfargen til svart */
   text-decoration: underline; /* Sørger for at lenken har understrek */
@@ -303,7 +304,7 @@ max-width: 100%;
 .tykkskrift {
 font-weight: bold;
 }  
-/* Css for Git siden */
+/* CSS for Git siden */
 .git h1{
 text-align: left;
 }
@@ -357,6 +358,144 @@ text-align: left;
     
   }
 
+  /*CSS for activity*/
+  main {
+    border: none;
+    outline: none;
+}
+    .rolling-paper {
+        max-width: 900px; 
+        margin: 20px auto; 
+        background-color: white; 
+        padding: 50px 60px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        border: none;
+        outline: none;
+    }
+
+    .aktivitet {
+      background-color: #ffd500;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+
+      max-width: none;
+  }
+
+  .rolling-paper h1 {
+      font-weight: 700;
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  .rolling-paper h2{
+      font-weight: 600;
+      font-size: 1.5em;
+      color: #555;
+      margin-top: 30px;
+  }
+  
+  .rolling-paper p, .rolling-paper ul {
+      font-size: 1em;
+      color: #666;
+      line-height: 1.8;
+  }
+
+  .rolling-paper a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+  }
+  .rolling-paper a:hover {
+      text-decoration: underline;
+  }
+
+    /* generell styling for flex-container */
+    .flex-container img {
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        gap: 40px; 
+    }
+    .flex-container ul {
+        flex: 2; 
+        max-width: 55%;
+        margin: 10px;
+        padding: 0;
+        list-style-position: inside;
+    }
+
+    .image1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%; 
+      height: auto;
+    }
+    .boxed-image {
+        width:100%;
+        max-width: 450px;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    /* sentrer bilder */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .button-link {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #0066cc;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .button-link:hover {
+        background-color: #004c99;
+    }
+    
+    /* container for bilder med effekt */
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 900px; 
+        margin: 40px auto 0;
+        padding: 0 60px; 
+    }
+    /* style for bilder med effekt */
+    .image-container img {
+        width: 100%;
+        height: 300px;        
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .image-container img:hover {
+        transform: scale(1.05); 
+        z-index: 1; 
+    }
+    /* setter bilder side ved side */
+    .image-container .image-box {
+        flex: 1;
+        overflow: hidden;
+    }
+
+
 
 /* Mobilvisning: Følgende stiler gjelder for skjermer med 600px eller mindre i bredde */
 @media (max-width: 600px) { 
@@ -406,11 +545,24 @@ text-align: left;
         padding-bottom: 10px;
     }
 
+    h2, details summary h2{
+   font-size: 1,rem;
+  }
+
     .video-container {
       display: flex;
       width: 100%;
-      height: auto;
+      height: 200px;
     }
+
+    .video-container iframe {
+      
+      top: 0;
+      left: 0;
+
+      width:100%;
+       height: 100%;
+  }
     
     /* Juster tabell og skriftstørrelse */
     .tabell-1, .tabell-2, .tabell-3 {
@@ -422,24 +574,25 @@ text-align: left;
       padding: 20px;
   }
 
-    .tredje-seksjon-flex-container, .femte-seksjon-flex-container{
+    .andre-seksjon-flex-container, .tredje-seksjon-flex-container{
       display: flex;
         flex: 100%;
         flex-direction: column;
         
     }
 
-    .tredje-seksjon-flex-container p {
+    .andre-seksjon-flex-container p {
       text-align: center;
     
     }
-    .femte-seksjon img {
+    .tredje-seksjon img {
         max-width: 100%;
     }
    /*  .enkel-flex-container{
       padding-bottom: 10px;
     } */
 
+    /* CSS for Git siden*/
     .git h1, h2{
       margin: 10px;
     }
