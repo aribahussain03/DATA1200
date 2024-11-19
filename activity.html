@@ -3,51 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <link rel="stylesheet" href=""><!--add css when ready-->
+    <link rel="stylesheet" href="style.css"><!--add css when ready-->
     <title>Alpakkavandring - OsloMet</title>
+    <nav>
+
+        <a href="OsloMet-logo" >
+            <img
+                width="90"
+                height="50"
+                src="media/OsloMet-gulLogo.png"
+                id="logo"
+                alt="OsloMet logo - homepage">
+        </a>  
+
+        <input id="burger-toggle" type="checkbox">
+        <label class="hamburger-toggle-container" for="burger-toggle">
+            <div class="menu-icon"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="git.html">Github</a></li>
+            <li><a href="activity.html">Activity</a></li>
+        </ul>
+    </nav>    
+    <style>
+        .aktivitet{
+            background-color: #ffd500;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            max-width: none;
+        }
+
+        .rolling-paper {
+            max-width: 900px; 
+            margin: 20px auto; 
+            background-color: white; 
+            padding: 50px 60px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* generell styling for flex-container */
+        .flex-container img {
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            gap: 40px; 
+        }
+
+        .flex-container ul {
+            flex: 2; 
+            max-width: 55%;
+            margin: 10px;
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-weight: 600;
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 30px;
+        }
+        
+        p, ul {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .image1 {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%; 
+          height: auto;
+        }
+
+        .boxed-image {
+            width:100%;
+            max-width: 450px;
+            height: auto;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        /* sentrer bilder */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%; 
+            height: auto;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #0066cc;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #004c99;
+        }
+        
+        /* container for bilder med effekt */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 900px; 
+            margin: 40px auto 0;
+            padding: 0 60px; 
+        }
+
+        /* style for bilder med effekt */
+        .image-container img {
+            width: 100%;
+            height: 300px;        
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); 
+            z-index: 1; 
+        }
+
+        /* setter bilder side ved side */
+        .image-container .image-box {
+            flex: 1;
+            overflow: hidden;
+        }
+
+
+        /* mobile layout */
+        @media (max-width: 800px) {
+            .rolling-paper {
+                padding: 10px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .flex-container ul, .flex-container img {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 1.8em;
+                word-break: break-word;
+            }
+
+            p, ul {
+                font-size: 1em;
+                line-height: 1.6;
+            }
+
+            }
+
+        /* mobil layout for bilde 3 & 4 */
+        @media (max-width: 600px) {
+        .image-container {
+            flex-direction: column; 
+            align-items: center;
+            padding: 0; 
+        }
+
+        .image-container .image-box {
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+
+        .image-container img {
+            height: auto; 
+        }
+        }
+
+    </style>
 </head>
 
-<header>
-<nav>
-    <a href="OsloMet-logo" >
-        <img
-            width="90"
-            height="50"
-            src="media/OsloMet-gulLogo.png"
-            id="logo"
-            alt="OsloMet logo - homepage">
-    </a>  
-
-    <input id="burger-toggle" type="checkbox">
-    <label class="hamburger-toggle-container" for="burger-toggle">
-        <div class="menu-icon"></div>
-    </label>
-    <ul class="menu">
-        <li><a href="index.html">Index</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="git.html">Github</a></li>
-        <li><a href="activity.html">Activity</a></li>
-    </ul>
-</nav>   
-<body>
-    <input id="burger-toggle" type="checkbox">
-    <label class="hamburger-toggle-container" for="burger-toggle">
-        <div class="menu-icon"></div>
-    </label>
-    <ul class="menu">
-        <li><a href="index.html">Index</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="git.html">Github</a></li>
-        <li><a href="activity.html">Activity</a></li>
-    </ul>
-</nav>
-</header>
-   
-<body>
+<body class="aktivitet">
     <div class="rolling-paper">
         <main>
 	        <article>
-                <img src ="media/gutt_med_alpakka.webp" alt="Baby alpakka med en liten gutt" class="image1"> /* https://www.visitvestfold.com/no/produkt/?tlp=6694413&name=Monnerod-Alpakka */
+                <img src ="media/gutt_med_alpakka.webp" alt="Baby alpakka med en liten gutt" class="image1">
 		        <h1>Ta en pause fra studiene med alpakkavandring!</h1>
 		        <p class="ingress">Som student kan det være stressende å balansere studier, deltidsjobber og fritid. Hvorfor ikke ta en velfortjent pause i frisk luft, omgitt av rolige og nysgjerrige alpakkaer? Alpakkavandring er den perfekte måten å koble av fra skolearbeidet på og samtidig tilbringe tid med venner eller alene i naturen.</p>
 		
@@ -61,7 +238,7 @@
                         <li><b>En sosial aktivitet</b> - Ta med studiegruppen eller en vennegjeng for en morsom og sosial opplevelse. Alpakkavandring er en fin måte å knytte bånd på utenfor klasserommet.</li>
                     </ul>
 
-		            <img src ="media/alpakkavandring.webp" alt="Jenter på alpakkavandring" class="boxed-image"> /* fra https://alpakkavandring.gifty.no/ */
+		            <img src ="media/alpakkavandring.webp" alt="Jenter på alpakkavandring" class="boxed-image">
                     </div>
 
 		            <h2>Hvordan komme i gang?</h2>
@@ -81,10 +258,10 @@
 
                     <div class="image-container">
                         <div class="image-box">
-                            <img src="media/3alpakkaer.webp" alt="Alpakkaer som løper rundt"> /* https://www.enghaugen.no/ */
+                            <img src="media/3alpakkaer.webp" alt="Alpakkaer som løper rundt">
                         </div>
                         <div class="image-box">
-                            <img src="media/jotunalpakka.webp" alt="Alpakkavandring i Jotun"> /* https://jotunfjell-alpakka.no/alpakka-vandring/ */
+                            <img src="media/jotunalpakka.webp" alt="Alpakkavandring i Jotun">
                         </div>
                     </div>
                 </div>
@@ -93,3 +270,4 @@
     </div>
 </body>
 </html>
+<!-- 39b2f82 (la til de nederste to bildene for activity siden, endret diverse ting på css delen for activity siden; blant annet hvordan den ser ut på mobile resolution og små-ting som så litt rart ut.)-->
