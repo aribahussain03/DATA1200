@@ -11,8 +11,8 @@ nav {
     height: 100px; /* Høyden til navigasjonsfeltet*/
 }
 
-/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 701px eller mer. */
-@media (min-width: 701px) { 
+/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 601px eller mer. */
+@media (min-width: 601px) { 
     .menu {
         display: flex; /* Viser menyen som er horisontal liste ved å bruke flexbox */
         flex-direction: row; /* Listen blir satt opp i en rad */
@@ -355,7 +355,7 @@ text-align: left;
         list-style-type: none; /* Fjerner standard punktmerking fra listen */
         position: absolute;
         overflow: visible; /* Sørger for at innhold utenfor elementets boks er synlig */
-        top: 50px; /* Plasserer menyen rett under navigasjonsfeltet */
+        top: 80px; /* Plasserer menyen rett under navigasjonsfeltet */
         left: 0;
         right: 0;
         background-color: black;
