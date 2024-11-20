@@ -11,7 +11,7 @@ nav {
     height: 100px; /* Høyden til navigasjonsfeltet*/
 }
 
-/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 601px eller mer. */
+/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 701px eller mer. */
 @media (min-width: 701px) { 
     .menu {
         display: flex; /* Viser menyen som er horisontal liste ved å bruke flexbox */
@@ -688,7 +688,7 @@ text-decoration: underline;
 
 
 
-/* Mobilvisning: Følgende stiler gjelder for skjermer med 600px eller mindre i bredde */
+/* Mobilvisning: Følgende stiler gjelder for skjermer med 700px eller mindre i bredde */
 @media (max-width: 700px) { 
     .menu {
         list-style-type: none; /* Fjerner standard punktmerking fra listen */
