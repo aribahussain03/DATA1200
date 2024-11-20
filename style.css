@@ -76,9 +76,7 @@ p, li, a {
   font-size: 1em; /* 16px for paragraf og lenketekst */
   line-height: 1.5;
 }
-.undertekst {
-text-align: center;
-}
+.undertekst {text-align: center;}
 
 a {
     color: black;
@@ -567,7 +565,7 @@ text-align: left;
     }
 
     h2, details summary h2{
-   font-size: 1,rem;
+   font-size: 1rem;
   }
 
     .video-container {
@@ -867,5 +865,4 @@ text-decoration: underline;
     padding:0px;   /* Mindre avstand mellom ikonene */
 }
   
-}
 }
