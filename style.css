@@ -96,7 +96,7 @@ hr {
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* For 16:9 aspektforhold */
+  padding-top: 50%; /* For 16:9 aspektforhold */
   background-color: black;
 }
 
