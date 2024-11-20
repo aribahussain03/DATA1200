@@ -11,8 +11,8 @@ nav {
     height: 100px; /* Høyden til navigasjonsfeltet*/
 }
 
-/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 601px eller mer. */
-@media (min-width: 601px) { 
+/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 701px eller mer. */
+@media (min-width: 701px) { 
     .menu {
         display: flex; /* Viser menyen som er horisontal liste ved å bruke flexbox */
         flex-direction: row; /* Listen blir satt opp i en rad */
@@ -76,9 +76,7 @@ p, li, a {
   font-size: 1em; /* 16px for paragraf og lenketekst */
   line-height: 1.5;
 }
-.undertekst {
-text-align: center;
-}
+.undertekst {text-align: center;}
 
 a {
     color: black;
@@ -98,7 +96,7 @@ hr {
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* For 16:9 aspektforhold */
+  padding-top: 50%; /* For 16:9 aspektforhold */
   background-color: black;
 }
 
@@ -203,7 +201,7 @@ hr {
 /* Flex-konteinere for seksjoner */
 .andre-seksjon-flex-container, .tredje-seksjon-flex-container {
     display: flex;
-    max-width: 800px;
+    max-width: 1000px;
     flex-direction: row;
     align-items: center;
 }
@@ -280,7 +278,7 @@ summary:hover {
 }
 
 /* Styling for innholdet i paragraf*/
-details h2, h3, p {
+details h2, details h3, details p {
   
 padding-left: 10px;
 max-width: 100%;
@@ -317,22 +315,22 @@ max-width: 100%;
 .tykkskrift {
 font-weight: bold;
 }  
+
 /* CSS for Git siden */
-.git h1{
-text-align: left;
-}
+.git{flex-wrap: wrap;}
+
+.git h1{text-align: left;}
 
 .git-container{
  display: flex;
  flex-direction: column;
- 
-  }  
+}  
 
 .githublogo{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  }  
+}  
 
   .gitlogo img{
     float: right;
@@ -348,36 +346,49 @@ text-align: left;
   } 
   .fordeler-container{
     display: flex;
-
- flex-direction: row;
+    flex-direction: row;
   }
+
   .vscode-container{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 100%;
     align-items: center;
  
   }
   .fordeler-container img{
-    
     padding: 20px;
-    
   } 
+
   figcaption {
    
     font-style: italic;
     margin: auto;
     text-align: right;
-    
   }
 
   .brukGit {
-    max-width: 750px; /* Begrens bredden til 750px */
+    max-width: 100%; /* Begrens bredden til 750px */
     margin: 0 auto; /* Sentraliser innholdet horisontalt */
-
     padding: 20px; /* Legg til litt padding for bedre lesbarhet */
+    padding-left: 100px;
+    padding-right: 100px;
 }
-  
+
+.gitimg-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+ .gitimg{
+  flex: 50%;
+  max-width: 50%;
+ }
+
+ .gitimg img{
+  max-width: 100%;
+ }
+
 
   /*CSS for activity*/
   main {
@@ -515,11 +526,183 @@ text-align: left;
         flex: 1;
         overflow: hidden;
     }
+/*CSS til footer*/
+
+.footer {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color:black; 
+  color: #ffd500;
+  padding: 70px 0 30px;
+  border-top-left-radius: 100px;
+  line-height: 1.8; 
+}
+
+.footer i {
+padding:15px;}
+
+.footer-container h2 {
+  font-size: 40px; 
+  padding:10px;
+}
+.subscribe-btn {
+  background-color: black;
+  color: #ffd500;
+  border: 3px solid #ffd500;
+  padding:15px 30px;
+  font-size:16px;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+.hrFooter {
+  border: 1px solid #ffd500;
+  margin: 0;
+}
+
+.contact-info, .footer-links, .social-icons {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size:12px;
+  padding:1px;
+}
+
+.footer-links a 
+{ text-decoration: none;
+}
+
+
+.footer-links a:hover,
+.social-icons a:hover,
+.contact-info a:hover
+{
+  text-decoration: underline;
+  color:rgb(245, 239, 153);
+}
+
+.social-icons a i:hover
+{
+ background-color: black;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.social-icons a:hover i {
+  color:black;
+  transition: 0.5s;
+  background-color: #ffd500;
+}
+
+.social-icons a i {
+  text-decoration: none;
+  padding:8px;
+  color:#ffd500;
+  opacity: 0.9;
+  font-size: 1.5em;
+  border-radius: 50%;
+
+}
+
+.social-icons a {
+  color: #ffd500; /*endrer teksten og ikon  til gul*/
+  text-decoration: none;
+}
+
+/* Spesifikk linjeavstand for kontaktinformasjonen */
+.contact-info p, .footer-links a {
+  line-height: 2; 
+}
+
+/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
+.social-icons a {
+  line-height: 0.5;
+  display: flex;
+  align-items: center; /* Justerer ikonene og teksten på samme linje */
+}
+
+.contact-info a, .contact-info p {
+text-decoration:none;
+font-size: 18px;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}
+
+.contact-info a, .footer-links a, .contact-info {
+  color:#ffd500;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  background-color:black; 
+  
+}
+.contact-info a {
+  margin-bottom: 30px; 
+  
+}
+
+
+.social-icons i {
+      margin-right: 8px !important; 
+  }
+
+  .footer-container {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px; 
+      padding: 20px;
+      background-color: black;
+      color: #ffd500;
+      border-top-left-radius: 30px;
+  }
+  
+  .footer-container > div {
+      flex: 1 1 200px; /* Hvert element tar minst 200px og vokser ved behov */
+      
+  }
+
+  .subscribe-btn {
+      text-align: center; /* Sentrer knappen horisontalt */
+      padding: 20px; 
+  }
+  
+  /* KNAPPSTIL */
+  .subscribe-btn {
+      background-color: #ffd500; /* gul bakgrunn */
+      color: black; /* Tekstfarge */
+      border: 2px solid #ffd500; /* gul kant */
+      padding: 15px 30px; /* God padding for større knapp */
+      font-size: 15px; /* Større og mer lesbar tekst */
+      font-weight: bold;
+      text-transform: uppercase; /* Gjør teksten stor */
+      letter-spacing: 2px; /* Gir luftigere tekst */
+      border-radius: 10px; /* Myke, avrundede hjørner */
+      cursor: pointer; /* Gir musepeker */
+      transition: all 0.3s ease; /* Myk overgangseffekt */
+      
+    
+  }
+  
+  /* HOVER-EFFEKT */
+  .subscribe-btn:hover {
+      background-color: #ffd500; /* Bytter til gul bakgrunn */
+      color: black; /* Gjør teksten svart */
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
+      transform: translateY(-5px); /* Løfter knappen litt */
+  }
 
 
 
-/* Mobilvisning: Følgende stiler gjelder for skjermer med 600px eller mindre i bredde */
-@media (max-width: 600px) { 
+/* Mobilvisning: Følgende stiler gjelder for skjermer med 700px eller mindre i bredde */
+@media (max-width: 700px) { 
     .menu {
         list-style-type: none; /* Fjerner standard punktmerking fra listen */
         position: absolute;
@@ -555,6 +738,10 @@ text-align: left;
       
         
     }
+    a {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
 
     /* Fjern kantlinjer på mindre skjermer */
     body, article, .aktivitet {
@@ -564,10 +751,13 @@ text-align: left;
         width: 100%;
         font-size: 14px; /* Justering for mindre skjermer */
         padding-bottom: 10px;
+        margin: 0;
+        word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     h2, details summary h2{
-   font-size: 1,rem;
+   font-size: 1rem;
   }
 
     .video-container {
@@ -577,12 +767,10 @@ text-align: left;
     }
 
     .video-container iframe {
-      
       top: 0;
       left: 0;
-
       width:100%;
-       height: 100%;
+      height: 100%;
   }
     
     /* Juster tabell og skriftstørrelse */
@@ -609,20 +797,8 @@ text-align: left;
     .tredje-seksjon img {
         max-width: 100%;
     }
-   /*  .enkel-flex-container{
-      padding-bottom: 10px;
-    } */
 
     /* CSS for Git siden*/
-    .git{
-     padding-left: 10px;
-     padding-right: 10px;
-    }
-
-
-    .git h1, h2 {
-     
-    }
     .githublogo  {
       max-width: 70%;
       height: auto;
@@ -637,27 +813,143 @@ text-align: left;
     max-width: 100%;
     height: auto;
 }
-.gitlogo img, 
-.githublogo2 img {
-    display: none; /* Skjuler bildene i mobilvisning */
+
+.brukGit {
+padding: 10px;
+max-width: 100%;
+}
+
+.git {
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: hidden; /* Hindrer horisontal rulling */
+}
+
+.image-row-git {
+  display: flex;
+  justify-content: space-between; /* Lik avstand mellom bildene */
+  gap: 10px; /* Mellomrom mellom bildene */
+  margin-bottom: 20px; /* Avstand mellom rader */
+}
+
+.image-row-git {
+  flex: 1; /* Bildene tar lik bredde */
+  display: flex;
+  justify-content: center; /* Sentrer bildet i boksen */
+}
+
+.image-row-git img {
+  max-width: 100%; /* Gjør bildet responsivt */
+  height: auto;
+  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
 }
 
 
+
+/* Github logoer */
+.githublogo {
+  max-width: 100%; /* Hindrer overskridelse av skjermbredden */
+  height: auto;
+  margin: 0 auto;
+  display: block; /* Sentrer bildene på mobil */
+}
+
+/* Git-container justeres til mobilvennlig */
+.git-container, .fordeler-container div{
+  display: flex;
+  flex-direction: column; /* Stablet layout */
+  gap: 5px; /* Litt mellomrom mellom elementene */
+  max-width: 100%;
+  padding: 5px;
+}
+
+.image-row-git {
+  flex-direction: column; /* Stabler bildene vertikalt */
+  gap: 20px; /* Avstand mellom bildene */
+}
+
+.image-row-git {
+  width: 100%; /* Bildene fyller hele bredden */
+}
+
+/* VS Code-bilder */
+.vscode-container img {
+  max-width: 100%; /* Hindrer at bildet blir større enn skjermbredden */
+  height: auto;
+}
+
+/* Reduser tekststørrelsen i figcaption */
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+/* GitHub logoer skal være skjult om nødvendig */
+.gitlogo, .githublogo2 img {
+  display: none; /* Du kan fjerne denne hvis du vil vise logoer */
+}
+
+
+.gitimg-container{
+  flex-direction: column; 
+}
+
+.gitimg{
+  max-width: 90%;
+ }
+
+/*CSS for activity mobil*/
+.image-container {
+  flex-direction: column; 
+  align-items: center;
+  padding: 0; 
+}
+.image-container .image-box {
+  max-width: 100%;
+  margin-bottom: 20px; 
+}
+.image-container img {
+  height: auto; 
+}
+
+.rolling-paper {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.flex-container ul, .flex-container img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.8em;
+  word-break: break-word;
+}
+p, ul {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
 /*CSS for Footer*/
+footer { overflow-x: hidden;}
 
 .footer {
   margin:0;
   font-family: Arial, sans-serif;
   background-color:black; 
-  color: yellow ;
+  color: #ffd500;
   padding: 70px 0 30px;
   border-top-left-radius: 100px;
   line-height: 1.8; 
 }
 
 .footer i {
-  padding:15px;
-}
+padding:15px;}
 
 .footer-container h2 {
   font-size: 40px; 
@@ -665,8 +957,8 @@ text-align: left;
 }
 .subscribe-btn {
   background-color: black;
-  color: yellow;
-  border: 3px solid yellow;
+  color: #ffd500;
+  border: 3px solid #ffd500;
   padding:15px 30px;
   font-size:16px;
   cursor:pointer;
@@ -674,13 +966,14 @@ text-align: left;
   font-weight:bold;
 }
 
-hr {
-  border: 1px solid yellow;
-  margin: 20px 0;
+.hrFooter {
+  border: 1px solid #ffd500;
+  margin: 0;
 }
 
 .contact-info, .footer-links, .social-icons {
   width: 30%;
+  margin-top: 20px;
 }
 
 .social-icons i {
@@ -710,13 +1003,13 @@ hr {
 .social-icons a:hover i {
   color:black;
   transition: 0.5s;
-  background-color: yellow;
+  background-color: #ffd500;
 }
 
 .social-icons a i {
   text-decoration: none;
   padding:8px;
-  color:yellow;
+  color:#ffd500;
   opacity: 0.9;
   font-size: 1.5em;
   border-radius: 50%;
@@ -724,7 +1017,7 @@ hr {
 }
 
 .social-icons a {
-  color: yellow; /*endrer teksten og ikon  til gul*/
+  color: #ffd500; /*endrer teksten og ikon  til gul*/
   text-decoration: none;
 }
 
@@ -752,13 +1045,14 @@ font-size: 18px;
 text-decoration: underline;
 }
 
-.contact-info a, .footer-links a {
-  color:yellow;
+.contact-info a, .footer-links a, .contact-info {
+  color:#ffd500;
 }
 
 .footer-details {
   display: flex;
   justify-content: space-between;
+  background-color:black; 
   
 }
 .contact-info a {
@@ -779,7 +1073,7 @@ text-decoration: underline;
       gap: 20px; 
       padding: 20px;
       background-color: black;
-      color: yellow;
+      color: #ffd500;
       border-top-left-radius: 30px;
   }
   
@@ -792,9 +1086,9 @@ text-decoration: underline;
   
   /* KNAPPSTIL */
   .subscribe-btn {
-      background-color: yellow; /* gul bakgrunn */
+      background-color: #ffd500; /* gul bakgrunn */
       color: black; /* Tekstfarge */
-      border: 2px solid yellow; /* gul kant */
+      border: 2px solid #ffd500; /* gul kant */
       padding: 15px 30px; /* God padding for større knapp */
       font-size: 15px; /* Større og mer lesbar tekst */
       font-weight: bold;
@@ -811,14 +1105,251 @@ text-decoration: underline;
   
   /* HOVER-EFFEKT */
   .subscribe-btn:hover {
-      background-color: yellow; /* Bytter til gul bakgrunn */
+      background-color: #ffd500; /* Bytter til gul bakgrunn */
       color: black; /* Gjør teksten svart */
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
       transform: translateY(-5px); /* Løfter knappen litt */
   }
 
-/* design for mindre skjerm (mobil) */
-@media (max-width: 600px) {
+
+
+/* Mobilvisning: Følgende stiler gjelder for skjermer med 700px eller mindre i bredde */
+@media (max-width: 700px) { 
+    .menu {
+        list-style-type: none; /* Fjerner standard punktmerking fra listen */
+        position: absolute;
+        overflow: visible; /* Sørger for at innhold utenfor elementets boks er synlig */
+        top: 80px; /* Plasserer menyen rett under navigasjonsfeltet */
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+        transition: max-height 0.3s ease-out; /* Smooth transition for menu */
+        padding: 0%;
+
+    }
+
+    .menu-icon { /* Denne delen definerer hvordan hamburger meny skal være visuelt */
+        display: block;
+        background-image: url(media/menu-icon.png); /* Meny ikon hentet fra: */
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;     
+    }
+
+    #burger-toggle:checked ~ .menu {
+        display: block; /* Menyen vises når avkrysningsboksen er krysset av */
+    }
+
+    .menu li {
+        height: auto;
+        overflow: visible;
+        text-align: center;
+      
+        
+    }
+    a {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Fjern kantlinjer på mindre skjermer */
+    body, article, .aktivitet {
+        border: none;
+        outline: none;
+        padding: 0;
+        width: 100%;
+        font-size: 14px; /* Justering for mindre skjermer */
+        padding-bottom: 10px;
+        margin: 0;
+        word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    h2, details summary h2{
+   font-size: 1rem;
+  }
+
+    .video-container {
+      display: flex;
+      width: 100%;
+      height: 200px;
+    }
+
+    .video-container iframe {
+      top: 0;
+      left: 0;
+      width:100%;
+      height: 100%;
+  }
+    
+    /* Juster tabell og skriftstørrelse */
+    .tabell-1, .tabell-2, .tabell-3 {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .tabell-1, .tabell-2
+    {
+      padding: 20px;
+  }
+
+    .andre-seksjon-flex-container, .tredje-seksjon-flex-container{
+      display: flex;
+        flex: 100%;
+        flex-direction: column;
+        
+    }
+
+    .andre-seksjon-flex-container p {
+      text-align: center;
+    
+    }
+    .tredje-seksjon img {
+        max-width: 100%;
+    }
+
+    /* CSS for Git siden*/
+    .githublogo  {
+      max-width: 70%;
+      height: auto;
+  }
+    .git-container, .fordeler-container {
+      max-width: 100%;
+      flex-direction: column;
+      
+  }
+
+  .vscode-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brukGit {
+padding: 10px;
+max-width: 100%;
+}
+
+.git {
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: hidden; /* Hindrer horisontal rulling */
+}
+
+.image-row-git {
+  display: flex;
+  justify-content: space-between; /* Lik avstand mellom bildene */
+  gap: 10px; /* Mellomrom mellom bildene */
+  margin-bottom: 20px; /* Avstand mellom rader */
+}
+
+.image-row-git {
+  flex: 1; /* Bildene tar lik bredde */
+  display: flex;
+  justify-content: center; /* Sentrer bildet i boksen */
+}
+
+.image-row-git img {
+  max-width: 100%; /* Gjør bildet responsivt */
+  height: auto;
+  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
+}
+
+
+
+/* Github logoer */
+.githublogo {
+  max-width: 100%; /* Hindrer overskridelse av skjermbredden */
+  height: auto;
+  margin: 0 auto;
+  display: block; /* Sentrer bildene på mobil */
+}
+
+/* Git-container justeres til mobilvennlig */
+.git-container, .fordeler-container div{
+  display: flex;
+  flex-direction: column; /* Stablet layout */
+  gap: 5px; /* Litt mellomrom mellom elementene */
+  max-width: 100%;
+  padding: 5px;
+}
+
+.image-row-git {
+  flex-direction: column; /* Stabler bildene vertikalt */
+  gap: 20px; /* Avstand mellom bildene */
+}
+
+.image-row-git {
+  width: 100%; /* Bildene fyller hele bredden */
+}
+
+/* VS Code-bilder */
+.vscode-container img {
+  max-width: 100%; /* Hindrer at bildet blir større enn skjermbredden */
+  height: auto;
+}
+
+/* Reduser tekststørrelsen i figcaption */
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+/* GitHub logoer skal være skjult om nødvendig */
+.gitlogo, .githublogo2 img {
+  display: none; /* Du kan fjerne denne hvis du vil vise logoer */
+}
+
+
+.gitimg-container{
+  flex-direction: column; 
+}
+
+.gitimg{
+  max-width: 90%;
+ }
+
+/*CSS for activity mobil*/
+.image-container {
+  flex-direction: column; 
+  align-items: center;
+  padding: 0; 
+}
+.image-container .image-box {
+  max-width: 100%;
+  margin-bottom: 20px; 
+}
+.image-container img {
+  height: auto; 
+}
+
+.rolling-paper {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.flex-container ul, .flex-container img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.8em;
+  word-break: break-word;
+}
+p, ul {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/*CSS for Footer*/
+footer { overflow-x: hidden;}
+
   .footer-details {
       flex-direction: column;
       align-items: center;
@@ -836,20 +1367,19 @@ text-decoration: underline;
 .subscribe-btn {
   padding:10px;
   font-size: 12px;
-  
 }
 
   .contact-info, .footer-links, .social-icons {
       width: 100%;
-      margin-bottom: 20px;
   }
 
-  .footer-links, .social-icons {
+  .footer-links, .social-icons, .contact-info {
     padding-left: 20px;
   }
 
   .footer-container {
-    padding:10px;
+    padding-top:10px;
+    
   }
 
   .social-icons i {
