@@ -620,7 +620,7 @@ text-align: left;
     }
 
 
-    .git h1, h2{
+    .git h1, h2 {
      
     }
     .githublogo  {
@@ -642,7 +642,10 @@ text-align: left;
     display: none; /* Skjuler bildene i mobilvisning */
 }
 
-footer {
+
+/*CSS for Footer*/
+
+.footer {
   margin:0;
   font-family: Arial, sans-serif;
   background-color:black; 
@@ -669,7 +672,6 @@ footer {
   cursor:pointer;
   text-transform:uppercase;
   font-weight:bold;
-
 }
 
 hr {
@@ -865,4 +867,5 @@ text-decoration: underline;
     padding:0px;   /* Mindre avstand mellom ikonene */
 }
   
+}
 }
