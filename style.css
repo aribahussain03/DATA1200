@@ -734,6 +734,7 @@ text-decoration: underline;
         width: 100%;
         font-size: 14px; /* Justering for mindre skjermer */
         padding-bottom: 10px;
+        margin: 0;
     }
 
     h2, details summary h2{
@@ -779,20 +780,8 @@ text-decoration: underline;
     .tredje-seksjon img {
         max-width: 100%;
     }
-   /*  .enkel-flex-container{
-      padding-bottom: 10px;
-    } */
 
     /* CSS for Git siden*/
-    .git{
-     padding-left: 10px;
-     padding-right: 10px;
-    }
-
-
-    .git h1, h2 {
-     
-    }
     .githublogo  {
       max-width: 70%;
       height: auto;
@@ -804,16 +793,109 @@ text-decoration: underline;
   }
 
   .vscode-container img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
-.gitlogo img, 
-.githublogo2 img {
-    display: none; /* Skjuler bildene i mobilvisning */
+
+
+.git {
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: hidden; /* Hindrer horisontal rulling */
 }
 
 
+
+/* Bilder skal være responsive */
+
+
+/* Github logoer */
+.githublogo {
+  max-width: 100%; /* Hindrer overskridelse av skjermbredden */
+  height: auto;
+  margin: 0 auto;
+  display: block; /* Sentrer bildene på mobil */
+}
+
+/* Git-container justeres til mobilvennlig */
+.git-container, .fordeler-container {
+  display: flex;
+  flex-direction: column; /* Stablet layout */
+  gap: 5px; /* Litt mellomrom mellom elementene */
+  max-width: 100%;
+  padding: 5px;
+}
+
+/* VS Code-bilder */
+.vscode-container img {
+  max-width: 100%; /* Hindrer at bildet blir større enn skjermbredden */
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Reduser tekststørrelsen i figcaption */
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+
+/* Fjern side-marginer fra overskrifter og tekst */
+h1, h2, h3, p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* GitHub logoer skal være skjult om nødvendig */
+.gitlogo, .githublogo2 img {
+  display: none; /* Du kan fjerne denne hvis du vil vise logoer */
+}
+
+/* Flex-bokser skal justeres */
+.fordeler-container {
+  flex-direction: column; /* Vertikal layout for mobil */
+  gap: 5px; /* Litt mellomrom mellom elementene */
+}
+
+/*CSS for activity mobil*/
+.image-container {
+  flex-direction: column; 
+  align-items: center;
+  padding: 0; 
+}
+.image-container .image-box {
+  width: 100%;
+  margin-bottom: 20px; 
+}
+.image-container img {
+  height: auto; 
+}
+
+.rolling-paper {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.flex-container ul, .flex-container img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.8em;
+  word-break: break-word;
+}
+p, ul {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
 /*CSS for Footer*/
+footer { overflow-x: hidden;}
 
   .footer-details {
       flex-direction: column;
@@ -832,12 +914,11 @@ text-decoration: underline;
 .subscribe-btn {
   padding:10px;
   font-size: 12px;
-  
 }
 
   .contact-info, .footer-links, .social-icons {
       width: 100%;
-      margin-bottom: 20px;
+      padding-bottom:0%;
   }
 
   .footer-links, .social-icons {
@@ -845,7 +926,8 @@ text-decoration: underline;
   }
 
   .footer-container {
-    padding:10px;
+    padding-top:10px;
+    
   }
 
   .social-icons i {
