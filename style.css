@@ -203,7 +203,7 @@ hr {
 /* Flex-konteinere for seksjoner */
 .andre-seksjon-flex-container, .tredje-seksjon-flex-container {
     display: flex;
-    max-width: 800px;
+    max-width: 1000px;
     flex-direction: row;
     align-items: center;
 }
@@ -811,13 +811,12 @@ text-decoration: underline;
   /* HOVER-EFFEKT */
   .subscribe-btn:hover {
       background-color: yellow; /* Bytter til gul bakgrunn */
-      color: #black; /* Gjør teksten svart */
+      color: black; /* Gjør teksten svart */
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
       transform: translateY(-5px); /* Løfter knappen litt */
   }
 
-/* design for mindre skjerm (mobil) */
-@media (max-width: 600px) {
+
   .footer-details {
       flex-direction: column;
       align-items: center;
