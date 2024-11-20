@@ -788,10 +788,7 @@ text-decoration: underline;
       
   }
 
-  .subscribe-btn {
-      text-align: center; /* Sentrer knappen horisontalt */
-      padding: 20px; 
-  }
+ 
   
   /* KNAPPSTIL */
   .subscribe-btn {
@@ -806,6 +803,8 @@ text-decoration: underline;
       border-radius: 10px; /* Myke, avrundede hjørner */
       cursor: pointer; /* Gir musepeker */
       transition: all 0.3s ease; /* Myk overgangseffekt */
+      text-align: center; /* Sentrer knappen horisontalt */
+      padding: 20px; 
       
     
   }
