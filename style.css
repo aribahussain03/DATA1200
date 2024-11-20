@@ -804,9 +804,25 @@ text-decoration: underline;
   overflow-x: hidden; /* Hindrer horisontal rulling */
 }
 
+.image-row-git {
+  display: flex;
+  justify-content: space-between; /* Lik avstand mellom bildene */
+  gap: 10px; /* Mellomrom mellom bildene */
+  margin-bottom: 20px; /* Avstand mellom rader */
+}
 
+.image-row-git {
+  flex: 1; /* Bildene tar lik bredde */
+  display: flex;
+  justify-content: center; /* Sentrer bildet i boksen */
+}
 
-/* Bilder skal være responsive */
+.image-row-git img {
+  max-width: 100%; /* Gjør bildet responsivt */
+  height: auto;
+  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
+}
+
 
 
 /* Github logoer */
@@ -824,6 +840,15 @@ text-decoration: underline;
   gap: 5px; /* Litt mellomrom mellom elementene */
   max-width: 100%;
   padding: 5px;
+}
+
+.image-row-git {
+  flex-direction: column; /* Stabler bildene vertikalt */
+  gap: 20px; /* Avstand mellom bildene */
+}
+
+.image-row-git {
+  width: 100%; /* Bildene fyller hele bredden */
 }
 
 /* VS Code-bilder */
