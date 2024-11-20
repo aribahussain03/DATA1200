@@ -278,7 +278,7 @@ summary:hover {
 }
 
 /* Styling for innholdet i paragraf*/
-details h2, h3, p {
+details h2, details h3, details p {
   
 padding-left: 10px;
 max-width: 100%;
@@ -315,22 +315,22 @@ max-width: 100%;
 .tykkskrift {
 font-weight: bold;
 }  
+
 /* CSS for Git siden */
-.git h1{
-text-align: left;
-}
+.git{flex-wrap: wrap;}
+
+.git h1{text-align: left;}
 
 .git-container{
  display: flex;
  flex-direction: column;
- 
-  }  
+}  
 
 .githublogo{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  }  
+}  
 
   .gitlogo img{
     float: right;
@@ -346,36 +346,49 @@ text-align: left;
   } 
   .fordeler-container{
     display: flex;
-
- flex-direction: row;
+    flex-direction: row;
   }
+
   .vscode-container{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 100%;
     align-items: center;
  
   }
   .fordeler-container img{
-    
     padding: 20px;
-    
   } 
+
   figcaption {
    
     font-style: italic;
     margin: auto;
     text-align: right;
-    
   }
 
   .brukGit {
-    max-width: 750px; /* Begrens bredden til 750px */
+    max-width: 100%; /* Begrens bredden til 750px */
     margin: 0 auto; /* Sentraliser innholdet horisontalt */
-
     padding: 20px; /* Legg til litt padding for bedre lesbarhet */
+    padding-left: 100px;
+    padding-right: 100px;
 }
-  
+
+.gitimg-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+ .gitimg{
+  flex: 50%;
+  max-width: 50%;
+ }
+
+ .gitimg img{
+  max-width: 100%;
+ }
+
 
   /*CSS for activity*/
   main {
@@ -725,6 +738,10 @@ text-decoration: underline;
       
         
     }
+    a {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
 
     /* Fjern kantlinjer på mindre skjermer */
     body, article, .aktivitet {
@@ -735,6 +752,8 @@ text-decoration: underline;
         font-size: 14px; /* Justering for mindre skjermer */
         padding-bottom: 10px;
         margin: 0;
+        word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     h2, details summary h2{
@@ -748,12 +767,10 @@ text-decoration: underline;
     }
 
     .video-container iframe {
-      
       top: 0;
       left: 0;
-
       width:100%;
-       height: 100%;
+      height: 100%;
   }
     
     /* Juster tabell og skriftstørrelse */
@@ -793,36 +810,21 @@ text-decoration: underline;
   }
 
   .vscode-container img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
+.brukGit {
+padding: 10px;
+max-width: 100%;
+}
 
 .git {
   padding-left: 10px;
   padding-right: 10px;
   overflow-x: hidden; /* Hindrer horisontal rulling */
+  max-width: 95%;
 }
-
-.image-row-git {
-  display: flex;
-  justify-content: space-between; /* Lik avstand mellom bildene */
-  gap: 10px; /* Mellomrom mellom bildene */
-  margin-bottom: 20px; /* Avstand mellom rader */
-}
-
-.image-row-git {
-  flex: 1; /* Bildene tar lik bredde */
-  display: flex;
-  justify-content: center; /* Sentrer bildet i boksen */
-}
-
-.image-row-git img {
-  max-width: 100%; /* Gjør bildet responsivt */
-  height: auto;
-  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
-}
-
 
 
 /* Github logoer */
@@ -834,7 +836,7 @@ text-decoration: underline;
 }
 
 /* Git-container justeres til mobilvennlig */
-.git-container, .fordeler-container {
+.git-container, .fordeler-container div{
   display: flex;
   flex-direction: column; /* Stablet layout */
   gap: 5px; /* Litt mellomrom mellom elementene */
@@ -842,20 +844,10 @@ text-decoration: underline;
   padding: 5px;
 }
 
-.image-row-git {
-  flex-direction: column; /* Stabler bildene vertikalt */
-  gap: 20px; /* Avstand mellom bildene */
-}
-
-.image-row-git {
-  width: 100%; /* Bildene fyller hele bredden */
-}
-
 /* VS Code-bilder */
 .vscode-container img {
   max-width: 100%; /* Hindrer at bildet blir større enn skjermbredden */
   height: auto;
-  margin: 0 auto;
 }
 
 /* Reduser tekststørrelsen i figcaption */
@@ -865,23 +857,19 @@ figcaption {
 }
 
 
-
-/* Fjern side-marginer fra overskrifter og tekst */
-h1, h2, h3, p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 /* GitHub logoer skal være skjult om nødvendig */
 .gitlogo, .githublogo2 img {
   display: none; /* Du kan fjerne denne hvis du vil vise logoer */
 }
 
-/* Flex-bokser skal justeres */
-.fordeler-container {
-  flex-direction: column; /* Vertikal layout for mobil */
-  gap: 5px; /* Litt mellomrom mellom elementene */
+
+.gitimg-container{
+  flex-direction: column; 
 }
+
+.gitimg{
+  max-width: 90%;
+ }
 
 /*CSS for activity mobil*/
 .image-container {
@@ -890,7 +878,7 @@ h1, h2, h3, p {
   padding: 0; 
 }
 .image-container .image-box {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 20px; 
 }
 .image-container img {
@@ -943,10 +931,9 @@ footer { overflow-x: hidden;}
 
   .contact-info, .footer-links, .social-icons {
       width: 100%;
-      padding-bottom:0%;
   }
 
-  .footer-links, .social-icons {
+  .footer-links, .social-icons, .contact-info {
     padding-left: 20px;
   }
 
