@@ -39,9 +39,9 @@ hr {
     padding:1px;
 }
 
-.footer-links a ,
+.footer-links a
 {
-    text-decoration: none:
+    text-decoration: none;
     
 }
 .footer-links a:hover,
@@ -171,7 +171,7 @@ text-decoration: underline;
     /* HOVER-EFFEKT */
     .subscribe-btn:hover {
         background-color: yellow; /* Bytt til rosa bakgrunn */
-        color: #black; /* Gjør teksten svart */
+        color: black; /* Gjør teksten svart */
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Subtil skygge */
         transform: translateY(-5px); /* Løfter knappen litt */
     }
