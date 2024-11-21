@@ -203,7 +203,6 @@ hr {
 .andre-seksjon-flex-container,
 .tredje-seksjon-flex-container {
   display: flex;
-  max-width: 1000px;
   flex-direction: row;
   align-items: center;
 }
@@ -226,11 +225,7 @@ hr {
 }
 
 .tredje-seksjon-flex-container a {
-  color: #000;
-  text-decoration: underline;
   text-decoration-color: #000;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
 }
 
 .enkel-flex-container {
