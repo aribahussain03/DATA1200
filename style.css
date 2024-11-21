@@ -522,7 +522,6 @@ main {
   padding: 0 60px;
 }
 
-/* Stil for bilder i containeren */
 .image-container img {
   width: 100%;
   height: 300px;
@@ -532,7 +531,7 @@ main {
 }
 
 .image-container img:hover {
-  transform: scale(1.05); /* Zoom-effekt */
+  transform: scale(1.05);
   z-index: 1;
 }
 
@@ -861,11 +860,6 @@ main {
     padding: 0;
   }
 
-  .image-container .image-box {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
   .image-container img {
     height: auto;
   }
@@ -924,18 +918,4 @@ main {
     padding: 0;
   }
 
-  .image-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .image-container .image-box {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .image-container img {
-    height: auto;
-  }
 }
