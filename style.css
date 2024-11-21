@@ -529,8 +529,7 @@ font-weight: bold;
 /*CSS til footer*/
 
 .footer {
-  margin:0;
-  font-family: Arial, sans-serif;
+  margin:0;  font-family: Arial, sans-serif;
   background-color:black; 
   color: #ffd500;
   padding: 70px 0 30px;
@@ -564,6 +563,7 @@ padding:15px;}
 .contact-info, .footer-links, .social-icons {
   width: 30%;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .social-icons i {
