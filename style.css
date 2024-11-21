@@ -65,7 +65,7 @@ h2,
 details summary h2,
 h3,
 details summary h3 {
-  font-size: 1,25em;
+  font-size: 1,2em;
 
 }
 
@@ -114,12 +114,6 @@ hr {
 }
 
 .tabell-1,
-.tabell-2,
-.tabell-3 {
-  font-size: 0.9em;
-}
-
-.tabell-1,
 .tabell-2 {
   width: 100%;
   border-collapse: collapse;
@@ -164,8 +158,8 @@ hr {
   text-align: center;
   font-weight: bold;
   padding: 10px;
-  background-color: #000;
-  color: #ffda00;
+  background-color: #ffda00;
+  color: #000;
   border: 1px solid #000;
 }
 
