@@ -1235,26 +1235,9 @@ max-width: 100%;
   padding-left: 10px;
   padding-right: 10px;
   overflow-x: hidden; /* Hindrer horisontal rulling */
+  max-width: 95%;
 }
 
-.image-row-git {
-  display: flex;
-  justify-content: space-between; /* Lik avstand mellom bildene */
-  gap: 10px; /* Mellomrom mellom bildene */
-  margin-bottom: 20px; /* Avstand mellom rader */
-}
-
-.image-row-git {
-  flex: 1; /* Bildene tar lik bredde */
-  display: flex;
-  justify-content: center; /* Sentrer bildet i boksen */
-}
-
-.image-row-git img {
-  max-width: 100%; /* Gjør bildet responsivt */
-  height: auto;
-  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
-}
 
 
 
@@ -1275,14 +1258,6 @@ max-width: 100%;
   padding: 5px;
 }
 
-.image-row-git {
-  flex-direction: column; /* Stabler bildene vertikalt */
-  gap: 20px; /* Avstand mellom bildene */
-}
-
-.image-row-git {
-  width: 100%; /* Bildene fyller hele bredden */
-}
 
 /* VS Code-bilder */
 .vscode-container img {
