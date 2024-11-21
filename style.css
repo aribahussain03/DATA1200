@@ -25,15 +25,19 @@ nav {
   }
 }
 
+.menu a,
+.footer-links a {
+  text-decoration: none;
+}
+
 .menu a {
   font-size: 1em;
   font-weight: bold;
   color: #ffda00;
-  text-decoration: none;
   padding: 15px;
   display: block;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .menu a:hover {
@@ -344,6 +348,13 @@ details > details p {
   margin-right: 20px;
 }
 
+.brukGit{
+  max-width: 750px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+
 .fordeler-container {
   display: flex;
   flex-direction: row;
@@ -600,10 +611,6 @@ main {
 .social-icons i {
   font-size: 12px;
   padding: 1px;
-}
-
-.footer-links a {
-  text-decoration: none;
 }
 
 .footer-links a:hover,
