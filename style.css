@@ -647,6 +647,11 @@ main {
 .social-icons a {
   color: #ffd500;
   text-decoration: none;
+ 
+}
+
+.social-icons {
+  margin-bottom: 20px;
 }
 
 .contact-info p,
@@ -771,20 +776,20 @@ main {
     padding: 0;
     width: 100%;
     font-size: 14px;
-    padding-bottom: 10px;
     margin: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
 
-  body {padding-bottom: 0;}
+  article {padding-bottom: 10px;}
 
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
   }
 
   .indexH1, .undertekst {
-    padding: 15px; /* Justerer padding for mobil */
+    padding: 5px; /* Justerer padding for mobil */
+    padding-bottom: 0;
     text-align: center; /* Sørger for sentrert tekst */
     line-height: 1.2; /* Mindre linjeavstand for mobil */
   }
@@ -795,17 +800,11 @@ main {
     font-size: 1rem;
   }
 
-  /* Video-container skaleres */
+  /* Video-container fjernes i mobilversjon */
   .video-container {
-    display: flex;
-    width: 100%;
-    height: 200px;
+    display: none;
   }
 
-  .video-container iframe {
-    width: 100%;
-    height: 100%;
-  }
 
   /* Justering av tabeller */
   .tabell-1,
@@ -897,11 +896,7 @@ main {
 
   .flex-container ul,
   .flex-container img {
-    max-width: 10%;
-  }
-
-  .text-content {
-    max-width: 100%; 
+    max-width: 90%;
   }
 
   /* Footer-tilpasninger */
