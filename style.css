@@ -408,47 +408,22 @@ main {
 
 /* Aktivitetsseksjonen */
 .aktivitet {
-  background-color: #ffd500;
+  background-color: #ffda00;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   max-width: none;
 }
 
-/* Typografi for rullende papir */
-.rolling-paper h1 {
-  font-weight: 700;
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 10px;
+.rolling-paper {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 50px 60px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.rolling-paper h2 {
-  font-weight: 600;
-  font-size: 1.5em;
-  color: #555;
-  margin-top: 30px;
-}
-
-.rolling-paper p,
-.rolling-paper ul {
-  font-size: 1em;
-  color: #666;
-  line-height: 1.8;
-}
-
-.rolling-paper a {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.rolling-paper a:hover {
-  text-decoration: underline;
-}
-
-/* Flex-container for bilder med hover-effekter */
+/* Generell styling for flex-container */
 .flex-container img {
   width: 100%;
   object-fit: cover;
@@ -470,11 +445,29 @@ main {
   list-style-position: inside;
 }
 
-/* Sentraliserte bilder */
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 30px;
+}
+
+p, ul {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.8;
+}
+
 .image1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   max-width: 100%;
   height: auto;
 }
@@ -487,16 +480,17 @@ main {
   overflow: hidden;
 }
 
-/* Sentrer bilder */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Knappstil */
+a:hover {
+  text-decoration: underline;
+}
+
 .button-link {
   display: inline-block;
   padding: 10px 15px;
@@ -512,7 +506,7 @@ main {
   background-color: #004c99;
 }
 
-/* Generelle stiler for bilder med effekter */
+/* Box for bilder med effekt */
 .image-container {
   display: flex;
   justify-content: space-between;
@@ -522,6 +516,7 @@ main {
   padding: 0 60px;
 }
 
+/* Style for bilder med effekt */
 .image-container img {
   width: 100%;
   height: 300px;
@@ -535,31 +530,14 @@ main {
   z-index: 1;
 }
 
-/* Side-ved-side layout for bilder */
+/* setter bilder side ved side */
 .image-container .image-box {
   flex: 1;
   overflow: hidden;
 }
 
-/* Stil for sentrerte bilder */
-.image1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
-}
 
-/* Stil for boxed bilder */
-.boxed-image {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-
+/* css for footer*/
 .footer {
   margin: 0;
   font-family: Arial, sans-serif;
