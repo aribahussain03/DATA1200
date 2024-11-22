@@ -863,6 +863,19 @@ main {
     display: block;
   }
 
+  .gitimg-container{
+    max-width: 100%;
+    flex-direction: column;
+  }
+ 
+  .gitimg{
+    max-width: 100%;
+  }
+  .brukGit{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   /* Tilpasninger for bilder */
   .image-container {
     flex-direction: column;
