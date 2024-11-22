@@ -564,7 +564,7 @@ main {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
-  color: #ffd500;
+  color: #ffda00;
   padding: 70px 0 30px;
   border-top-left-radius: 100px;
   line-height: 1.8;
@@ -581,8 +581,8 @@ main {
 
 .subscribe-btn {
   background-color: black;
-  color: #ffd500;
-  border: 3px solid #ffd500;
+  color: #ffda00;
+  border: 3px solid #ffda00;
   padding: 15px 30px;
   font-size: 16px;
   cursor: pointer;
@@ -591,7 +591,7 @@ main {
 }
 
 .hrFooter {
-  border: 1px solid #ffd500;
+  border: 1px solid #ffda00;
   margin: 0;
 }
 
@@ -763,11 +763,12 @@ main {
     padding: 0;
     width: 100%;
     font-size: 14px;
-    padding-bottom: 10px;
     margin: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  article{padding-bottom: 10px;}
 
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
