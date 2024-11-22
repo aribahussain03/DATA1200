@@ -355,7 +355,7 @@ details > details p {
   flex-direction: row;
 }
 .fordeler-container h3 {
-  display: inline;
+  display: inline; /*fjerner linjeskift*/
   font-size: 1em;
 }
 
