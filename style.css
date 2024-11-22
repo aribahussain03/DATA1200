@@ -647,6 +647,11 @@ main {
 .social-icons a {
   color: #ffd500;
   text-decoration: none;
+ 
+}
+
+.social-icons {
+  margin-bottom: 20px;
 }
 
 .contact-info p,
