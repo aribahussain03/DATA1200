@@ -647,11 +647,6 @@ main {
 .social-icons a {
   color: #ffd500;
   text-decoration: none;
- 
-}
-
-.social-icons {
-  margin-bottom: 20px;
 }
 
 .contact-info p,
@@ -776,12 +771,13 @@ main {
     padding: 0;
     width: 100%;
     font-size: 14px;
+    padding-bottom: 10px;
     margin: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
 
-  article {padding-bottom: 10px;}
+  body {padding-bottom: 0;}
 
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
@@ -901,7 +897,11 @@ main {
 
   .flex-container ul,
   .flex-container img {
-    max-width: 90%;
+    max-width: 10%;
+  }
+
+  .text-content {
+    max-width: 100%; 
   }
 
   /* Footer-tilpasninger */
