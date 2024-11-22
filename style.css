@@ -12,7 +12,7 @@ nav {
   height: 100px;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 701px) {
   .menu {
     display: flex;
     flex-direction: row;
@@ -721,7 +721,7 @@ main {
 
 
 /* Mobilvisning: Stiler for skjermer med 700px eller mindre */
-@media (max-width: 751px) {
+@media (max-width: 700px) {
   /* Menyen blir vertikal og skjult til den aktiveres */
   .menu {
     list-style-type: none;
