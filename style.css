@@ -771,13 +771,12 @@ main {
     padding: 0;
     width: 100%;
     font-size: 14px;
-    padding-bottom: 10px;
     margin: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
 
-  body {padding-bottom: 0;}
+  article {padding-bottom: 10px;}
 
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
