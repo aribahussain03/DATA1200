@@ -578,7 +578,6 @@ a:hover {
 }
 
     .kode1, kode2{
-        max-width: 100%;
-        height: auto;
-
+         max-width: 100%;
+         height: auto;
     }
