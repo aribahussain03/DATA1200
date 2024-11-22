@@ -354,6 +354,10 @@ details > details p {
   display: flex;
   flex-direction: row;
 }
+.fordeler-container h3 {
+  display: inline; /*fjerner linjeskift*/
+  font-size: 1em;
+}
 
 .vscode-container {
   display: flex;
