@@ -769,6 +769,8 @@ main {
     overflow-wrap: break-word;
   }
 
+  body {padding-bottom: 0;}
+
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
   }
