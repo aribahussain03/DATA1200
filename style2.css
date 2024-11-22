@@ -576,3 +576,14 @@ a:hover {
         height: auto;
     }
 }
+ 
+    .kode1, kode2{
+         max-width: 100%;
+         height: auto;
+    }
+
+    .farge test, Farge 2, Farge, mobil index, data index, mobil git, data git{
+        max-width: 100%;
+        height: auto;
+   } 
+/* \tester omm koden fungerer\ */
