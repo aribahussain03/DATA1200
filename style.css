@@ -448,18 +448,26 @@ main {
   text-decoration: underline;
 }
 
-/* Flex-container for bilder med hover-effekter */
-.flex-container img {
-  width: 100%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .flex-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+  align-items: flex-start; 
+  gap: 40px; 
+}
+
+.text-content {
+  flex: 1.5; 
+  max-width: 55%; 
+  line-height: 1.8;
+  margin: 0;
+}
+
+.flex-container img {
+  flex: 1.5;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
 }
 
 .flex-container ul {
@@ -473,8 +481,7 @@ main {
 /* Sentraliserte bilder */
 .image1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   max-width: 100%;
   height: auto;
 }
@@ -560,6 +567,7 @@ main {
 }
 
 
+/* Footer css*/ 
 .footer {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -876,7 +884,7 @@ main {
 
   .flex-container ul,
   .flex-container img {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   /* Footer-tilpasninger */
