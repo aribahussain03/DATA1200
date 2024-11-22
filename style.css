@@ -1,239 +1,234 @@
-/** Hamburger-meny **/
-#burger-toggle { display: none; } /* Skjuler checkbox for hamburger-meny på mobil */
-
-nav {
-    margin: 0; /* Fjerner standarmarginen rundt navigasjonsfeltet */
-    padding: 0 20px; /* Legger til 20px både på venstre og høyre side*/
-    background-color: black; /* Bakgrunnsfarge på navigasjonsfeltet*/
-    display: flex; /* For å strukturere innholdet*/
-    align-items: center; /* Sentrerer innholdet vertikalt i navigasjonsfeltet */
-    justify-content: space-between; /* Sørger for at meny ikonet og logen er hver sin ende */
-    height: 100px; /* Høyden til navigasjonsfeltet*/
+#burger-toggle {
+  display: none;
 }
 
-/* Desktop-visning: Følgende stiler gjelder for skjermbredde på 701px eller mer. */
-@media (min-width: 701px) { 
-    .menu {
-        display: flex; /* Viser menyen som er horisontal liste ved å bruke flexbox */
-        flex-direction: row; /* Listen blir satt opp i en rad */
-        justify-content: center; /* Sentrer meny elementene horisontalt */
-        list-style-type: none; /* Fjerner punktmerking for listen */
-    }
-    .menu li { padding-right: 4rem; } /* Ekstra spacing mellom hvert meny-elementer */
+nav {
+  margin: 0;
+  padding: 0 20px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+@media (min-width: 750px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .menu li {
+    padding-right: 4rem;
+  }
+}
+
+.menu a,
+.footer-links a {
+  text-decoration: none;
 }
 
 .menu a {
-    font-size: 1em; /* Setter fontstørrelsen til 1em, basert på standard tekstørrelse */
-    font-weight: bold;
-    color: #ffda00; /* Tekstfargen på meny-elementene*/
-    text-decoration: none; /* Fjerner understrek fra lenkene*/
-    padding: 15px; /* Legger til padding rundt meny-elementene*/
-    display: block; /* Lenkene blir blokkelementer slik at hele omrpdet er klikkbar */
-    text-align: center; /* Sentrerer teksten horisontalt */
-    transition: background-color 0.3s ease; /* For å gjøre endringen på bakgrunnsfarge til en jevn overgang */
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffda00;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    /* Endrer fargene med hverandre når musen er over lenken */
-    background-color: #ffda00; 
-    color: black;
+  background-color: #ffda00;
+  color: #000;
 }
 
 body {
-  
-  font-family: Arial, sans-serif; /* Sans-serif skrifttype for bedre lesbarhet */
-  font-size: 16px; /* Grunnstørrelse i henhold til WCAG anbefalinger */
-  line-height: 1.5; /* Økt linjehøyde for lesbarhet */
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
   margin: 0;
 }
 
 article {
   max-width: 1000px;
   border: 5px solid #ffda00;
-  outline: 5px solid black;
-  padding: 20px; /* Legger til 20px padding rundt innholdet */
+  outline: 5px solid #000;
+  padding: 20px;
   margin: auto;
 }
 
 h1 {
-  font-size: 2em; /* 32px for overskrift nivå 1 */
-  line-height: 1.1; /* Mindre linjehøyde for overskrifter */
+  font-size: 2em;
   text-align: center;
 }
 
-h2, details summary h2 {
-  font-size: 20px; /* 28px for overskrift nivå 2 */
-  line-height: 1.3;
+h2,
+details summary h2,
+h3,
+details summary h3 {
+  font-size: 1,2em;
+
 }
 
-h3, details summary h3 {
-  font-size: 20px; /* 24px for overskrift nivå 3 */
-  line-height: 1.3;
+p,
+li,
+a {
+  font-size: 1em;
 }
 
-
-p, li, a {
-  font-size: 1em; /* 16px for paragraf og lenketekst */
-  line-height: 1.5;
+.undertekst {
+  text-align: center;
 }
-.undertekst {text-align: center;}
 
 a {
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: #ffda00; /* Gul understrek */
-    text-decoration-thickness: 3px;
-    text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #ffda00;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
-h2, h3 { padding-top: 10px; }
+h2,
+h3 {
+  padding-top: 10px;
+}
 
 hr {
-    border: 3px solid #ffda00; /* Gul kantlinje */
-    border-block-end: 3px black solid; /* Svart bunnkant */
+  border: 3px solid #ffda00;
+  border-block-end: 3px solid #000;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 50%; /* For 16:9 aspektforhold */
-  background-color: black;
+  padding-top: 50%;
+  background-color: #000;
 }
 
 .video-container iframe {
   position: absolute;
   top: 0;
-  border: none; /* Fjerner rammen */
+  border: none;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-
-.tabell-1, .tabell-2, .tabell-3 {
-  font-size: 0.9em; /* Justerer ned litt til 14px på mindre skjermer, beholdt 16px for større skjermer */
+.tabell-1,
+.tabell-2 {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #000;
+  color: #ffda00;
+  padding: 10px;
 }
 
-.tabell-1, .tabell-2 {
-    width: 100%;
-    border-collapse: collapse; /* Fjerner mellomrom mellom cellene */
-    text-align: left;
-    background-color: black;
-    color: #ffda00;
-    padding: 10px;
+.tabell-1 th,
+.tabell-1 td,
+.tabell-2 th,
+.tabell-2 td {
+  padding-left: 10px;
+  width: 25%;
 }
-
-.tabell-1 th, .tabell-1 td, .tabell-2 th, .tabell-2 td {
-    padding-left: 10px;
-    width: 25%; /* Justerer cellebredde */
-}
-
 
 .tabell-1 caption {
-    font-size: 1.5em;
-    caption-side: top;
-    font-weight: bold;
-    padding: 10px;
-    color: black;
-    text-align: center;
+  font-size: 1.5em;
+  caption-side: top;
+  font-weight: bold;
+  padding: 10px;
+  color: #000;
+  text-align: center;
 }
 
-/* Stil for tabell-3 */
 .tabell-3 {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-    border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  border: 1px solid #000;
 }
 
 .tabell-3 caption {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .tabell-3 th {
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-    background-color: black; /* Svart bakgrunn */
-    color: #ffda00;
-    border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #ffda00;
+  color: #000;
+  border: 1px solid #000;
 }
 
 .tabell-3 td {
-    border: 1px solid black;
-    padding: 10px;
-    vertical-align: top;
+  border: 1px solid #000;
+  padding: 10px;
+  vertical-align: top;
 }
 
 .tabell-3 .semester {
-  background-color: black; /* Gul bakgrunn for studieår */
-  color: #ffda00; 
+  background-color: #000;
+  color: #ffda00;
 }
 
-/* Stil for semesteroverkskrifter */
 .tabell-3 tr.semester5_6 td {
-    font-weight: bold;
-    text-align: center;
-    background-color: black;
-    color: #ffda00;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000;
+  color: #ffda00;
 }
 
-/* Stil for emner */
 .tabell-3 td a {
-    display: block;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
 }
 
-/* Utheving av emnegrupper */
 .tabell-3 .Emnegruppe {
-    font-weight: bold;
-    background-color: #ffda00; /* Gul bakgrunn for emnegrupper */
-    padding: 2px 5px;
-    display: block;
-    margin-bottom: 5px;
+  font-weight: bold;
+  background-color: #ffda00;
+  padding: 2px 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
-/* Flex-konteinere for seksjoner */
-.andre-seksjon-flex-container, .tredje-seksjon-flex-container {
-    display: flex;
-    max-width: 1000px;
-    flex-direction: row;
-    align-items: center;
+.andre-seksjon-flex-container,
+.tredje-seksjon-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .andre-seksjon-flex-container > div {
-max-width: 100%;
-margin: 10px;
-
+  max-width: 100%;
+  margin: 10px;
 }
 
-.andre-seksjon, .tredje-seksjon h2 {
-  text-align:center;
+.andre-seksjon,
+.tredje-seksjon h2 {
+  text-align: center;
 }
 
 .tredje-seksjon-flex-container {
-max-width: 100%;
-margin: 10px;
-background-color: #ffda00;
-padding: 10px;
-
-} 
-
-.tredje-seksjon-flex-container a {
-
-  color: black; /* Sett tekstfargen til svart */
-  text-decoration: underline; /* Sørger for at lenken har understrek */
-  text-decoration-color: black; /* Setter understreken til gul */
-  text-decoration-thickness: 3px; /* Gjør understreken tykkere */
-  text-underline-offset: 4px; /* Avstand mellom tekst og understrek */
+  max-width: 100%;
+  margin: 10px;
+  background-color: #ffda00;
+  padding: 10px;
 }
 
-.enkel-flex-container{
+.tredje-seksjon-flex-container a {
+  text-decoration-color: #000;
+}
+
+.enkel-flex-container {
   width: 350px;
   margin: auto;
   background-color: #ffda00;
@@ -244,20 +239,18 @@ padding: 10px;
   justify-content: center;
   align-items: center;
   height: 100px;
-} 
+}
 
 .enkel-flex-container h3 {
   margin: 0;
   padding: 0;
-} 
- 
-.container-første-seksjon{
+}
+
+.container-første-seksjon {
   max-width: 800px;
   margin: auto;
   padding: 10px;
-
 }
-
 /* Styling for summary-tittelen */
 summary {
   font-weight: bold;
@@ -277,1126 +270,648 @@ summary:hover {
   color: black;
 }
 
-/* Styling for innholdet i paragraf*/
-details h2, details h3, details p {
-  
-padding-left: 10px;
-max-width: 100%;
+/* Styling for innholdet i paragrafen inne i details */
+details h2,
+details h3,
+details p {
+  padding-left: 10px;
+  max-width: 100%;
 }
 
 details ul {
-padding-left: 70px;
-max-width: 750px;
+  padding-left: 70px;
+  max-width: 750px;
 }
 
 details > details {
-margin-left: 20px;
-margin-bottom: 10px;
-max-width: 700px;
-border-left: 2px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  max-width: 700px;
 }
 
 details > details summary {
   background-color: #ffda00;
   color: black;
-  }
+}
 
 details > summary {
-padding: 10px;
-display: flex; /* Plasser innholdet i summary på én linje */
-cursor: pointer; /* Indiker at det er klikkbart */
-align-items: center; /* Juster vertikal plassering */
-
+  padding: 10px;
+  display: flex; /* Plasserer innholdet i summary på én linje */
+  cursor: pointer; /* Indiker at det er klikkbart */
+  align-items: center; /* Justerer vertikal plassering */
 }
 
 details > details p {
-max-width: 100%;
+  max-width: 100%;
 }
+
+/* Klassestil for tykkskrift */
 .tykkskrift {
-font-weight: bold;
-}  
+  font-weight: bold;
+}
 
-/* CSS for Git siden */
-.git{flex-wrap: wrap;}
+/* CSS for Git-siden */
+.git {
+  flex-wrap: wrap;
+}
 
-.git h1{text-align: left;}
+.git h1 {
+  text-align: left;
+}
 
-.git-container{
- display: flex;
- flex-direction: column;
-}  
+.git-container {
+  display: flex;
+  flex-direction: column;
+}
 
-.githublogo{
+/* GitHub-logo, sentrert */
+.githublogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}  
-
-  .gitlogo img{
-    float: right;
-    text-indent: 0;
-  } 
-
-  .githublogo2 img{
-    float: left;
-    overflow: auto;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    
-  } 
-  .fordeler-container{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .vscode-container{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    align-items: center;
- 
-  }
-  .fordeler-container img{
-    padding: 20px;
-  } 
-
-  figcaption {
-   
-    font-style: italic;
-    margin: auto;
-    text-align: right;
-  }
-
-  .brukGit {
-    max-width: 100%; /* Begrens bredden til 750px */
-    margin: 0 auto; /* Sentraliser innholdet horisontalt */
-    padding: 20px; /* Legg til litt padding for bedre lesbarhet */
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
+.gitlogo img {
+  float: right;
+  text-indent: 0;
+}
+
+.githublogo2 img {
+  float: left;
+  overflow: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.brukGit{
+  max-width: 750px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+
+.fordeler-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.vscode-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+}
+
+/* Bilder i fordeler-seksjonen */
+.fordeler-container img {
+  padding: 20px;
+}
+
+/* Figcaption for bilder */
+figcaption {
+  font-style: italic;
+  margin: auto;
+  text-align: right;
+}
+
+/* Flex-container for Git-bilder */
 .gitimg-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
- .gitimg{
+
+.gitimg {
   flex: 50%;
   max-width: 50%;
- }
+}
 
- .gitimg img{
+.gitimg img {
   max-width: 100%;
- }
+}
+
+/* CSS for aktivitetssider */
+main {
+  border: none;
+  outline: none;
+}
+
+.rolling-paper {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 50px 60px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+}
+
+/* Aktivitetsseksjonen */
+.aktivitet {
+  background-color: #ffd500;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+/* Typografi for rullende papir */
+.rolling-paper h1 {
+  font-weight: 700;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.rolling-paper h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 30px;
+}
+
+.rolling-paper p,
+.rolling-paper ul {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.8;
+}
+
+.rolling-paper a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.rolling-paper a:hover {
+  text-decoration: underline;
+}
+
+/* Flex-container for bilder med hover-effekter */
+.flex-container img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.flex-container ul {
+  flex: 2;
+  max-width: 55%;
+  margin: 10px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* Sentraliserte bilder */
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.boxed-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Sentrer bilder */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Knappstil */
+.button-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #004c99;
+}
+
+/* Generelle stiler for bilder med effekter */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 60px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Side-ved-side layout for bilder */
+.image-container .image-box {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Stil for sentrerte bilder */
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stil for boxed bilder */
+.boxed-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
 
 
-  /*CSS for activity*/
-  main {
+.footer {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: #ffd500;
+  padding: 70px 0 30px;
+  border-top-left-radius: 100px;
+  line-height: 1.8;
+}
+
+.footer i {
+  padding: 15px;
+}
+
+.footer-container h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: #ffd500;
+  border: 3px solid #ffd500;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hrFooter {
+  border: 1px solid #ffd500;
+  margin: 0;
+}
+
+.contact-info,
+.footer-links,
+.social-icons {
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.social-icons i {
+  font-size: 12px;
+  padding: 1px;
+}
+
+.footer-links a:hover,
+.social-icons a:hover,
+.contact-info a:hover {
+  text-decoration: underline;
+  color: rgb(245, 239, 153);
+}
+
+.social-icons a i:hover {
+  background-color: black;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.social-icons a:hover i {
+  color: black;
+  transition: 0.5s;
+  background-color: #ffd500;
+}
+
+.social-icons a i {
+  text-decoration: none;
+  padding: 8px;
+  color: #ffd500;
+  opacity: 0.9;
+  font-size: 1.5em;
+  border-radius: 50%;
+}
+
+.social-icons a {
+  color: #ffd500;
+  text-decoration: none;
+}
+
+.contact-info p,
+.footer-links a {
+  line-height: 2;
+}
+
+.contact-info a,
+.contact-info p {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info a,
+.footer-links a,
+.contact-info {
+  color: #ffd500;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.contact-info a {
+  margin-bottom: 30px;
+}
+
+.social-icons i {
+  margin-right: 8px !important;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  color: #ffd500;
+  border-top-left-radius: 30px;
+}
+
+.footer-container > div {
+  flex: 1 1 200px; /* Minimum bredde på 200px */
+}
+
+.subscribe-btn {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Knappstil */
+.subscribe-btn {
+  background-color: #ffd500;
+  color: black;
+  border: 2px solid #ffd500;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #ffd500;
+  color: black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+
+/* Mobilvisning: Stiler for skjermer med 700px eller mindre */
+@media (max-width: 751px) {
+  /* Menyen blir vertikal og skjult til den aktiveres */
+  .menu {
+    list-style-type: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: none;
+    transition: max-height 0.3s ease-out;
+    padding: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    background-image: url(media/menu-icon.webp); /* Hamburger-ikon */
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+
+  #burger-toggle:checked ~ .menu {
+    display: block; /* Viser menyen når checkbox er aktivert */
+  }
+
+  .menu li {
+    height: auto;
+    overflow: visible;
+    text-align: center;
+  }
+
+  /* Justering av tekst og fonter på mobil */
+  body,
+  article,
+  .aktivitet {
     border: none;
     outline: none;
-}
-    .rolling-paper {
-        max-width: 900px; 
-        margin: 20px auto; 
-        background-color: white; 
-        padding: 50px 60px;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-        border: none;
-        outline: none;
-    }
-
-    .aktivitet {
-      background-color: #ffd500;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-
-      max-width: none;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
-  .rolling-paper h1 {
-      font-weight: 700;
-      font-size: 2em;
-      color: #333;
-      margin-bottom: 10px;
-  }
-  .rolling-paper h2{
-      font-weight: 600;
-      font-size: 1.5em;
-      color: #555;
-      margin-top: 30px;
-  }
-  
-  .rolling-paper p, .rolling-paper ul {
-      font-size: 1em;
-      color: #666;
-      line-height: 1.8;
+  .indexH1{
+    font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
   }
 
-  .rolling-paper a {
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-  }
-  .rolling-paper a:hover {
-      text-decoration: underline;
+  .indexH1, .undertekst {
+    padding: 15px; /* Justerer padding for mobil */
+    text-align: center; /* Sørger for sentrert tekst */
+    line-height: 1.2; /* Mindre linjeavstand for mobil */
   }
 
-    /* generell styling for flex-container */
-    .flex-container img {
-        width: 100%;
-        object-fit: cover;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .flex-container {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-        gap: 40px; 
-    }
-    .flex-container ul {
-        flex: 2; 
-        max-width: 55%;
-        margin: 10px;
-        padding: 0;
-        list-style-position: inside;
-    }
-
-    .image1 {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%; 
-      height: auto;
-    }
-    .boxed-image {
-        width:100%;
-        max-width: 450px;
-        height: auto;
-        object-fit: cover;
-        overflow: hidden;
-    }
-    /* sentrer bilder */
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%; 
-        height: auto;
-    }
-
-    .button-link {
-        display: inline-block;
-        padding: 10px 15px;
-        background-color: #0066cc;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s;
-    }
-    .button-link:hover {
-        background-color: #004c99;
-    }
-    
-    /* container for bilder med effekt */
-    .image-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        max-width: 900px; 
-        margin: 40px auto 0;
-        padding: 0 60px; 
-    }
-    /* style for bilder med effekt */
-    .image-container img {
-        width: 100%;
-        height: 300px;        
-        object-fit: cover;
-        transition: transform 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .image-container img:hover {
-        transform: scale(1.05); 
-        z-index: 1; 
-    }
-    /* setter bilder side ved side */
-    .image-container .image-box {
-        flex: 1;
-        overflow: hidden;
-    }
-/*CSS til footer*/
-
-.footer {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background-color:black; 
-  color: #ffd500;
-  padding: 70px 0 30px;
-  border-top-left-radius: 100px;
-  line-height: 1.8; 
-  
-}
-
-.footer i {
-padding:15px;}
-
-.footer-container h2 {
-  font-size: 40px; 
-  padding:10px;
-}
-.subscribe-btn {
-  background-color: black;
-  color: #ffd500;
-  border: 3px solid #ffd500;
-  padding:15px 30px;
-  font-size:16px;
-  cursor:pointer;
-  text-transform:uppercase;
-  font-weight:bold;
-}
-
-.hrFooter {
-  border: 1px solid #ffd500;
-  margin: 0;
-}
-
-.contact-info, .footer-links, .social-icons {
-  width: 30%;
-  margin-top: 20px;
-}
-
-.social-icons i {
-  font-size:12px;
-  padding:1px;
-}
-
-.footer-links a 
-{ text-decoration: none;
-}
-
-
-.footer-links a:hover,
-.social-icons a:hover,
-.contact-info a:hover
-{
-  text-decoration: underline;
-  color:rgb(245, 239, 153);
-}
-
-.social-icons a i:hover
-{
- background-color: black;
-  transition: 0.5s;
-  border-radius: 50%;
-}
-.social-icons a:hover i {
-  color:black;
-  transition: 0.5s;
-  background-color: #ffd500;
-}
-
-.social-icons a i {
-  text-decoration: none;
-  padding:8px;
-  color:#ffd500;
-  opacity: 0.9;
-  font-size: 1.5em;
-  border-radius: 50%;
-
-}
-
-.social-icons a {
-  color: #ffd500; /*endrer teksten og ikon  til gul*/
-  text-decoration: none;
-}
-
-/* Spesifikk linjeavstand for kontaktinformasjonen */
-.contact-info p, .footer-links a {
-  line-height: 2; 
-}
-
-/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
-.social-icons a {
-  line-height: 0.5;
-  display: flex;
-  align-items: center; /* Justerer ikonene og teksten på samme linje */
-}
-
-.contact-info a, .contact-info p {
-text-decoration:none;
-font-size: 18px;
-}
-
-.contact-info a:hover {
-text-decoration: underline;
-}
-
-.contact-info a, .footer-links a, .contact-info {
-  color:#ffd500;
-}
-
-.footer-details {
-  display: flex;
-  justify-content: space-between;
-  background-color:black; 
-  
-}
-.contact-info a {
-  margin-bottom: 30px; 
-  
-}
-
-
-.social-icons i {
-      margin-right: 8px !important; 
+  h2,
+  details summary h2,
+  details > details summary h3 {
+    font-size: 1rem;
   }
 
-  .footer-container {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px; 
-      padding: 20px;
-      background-color: black;
-      color: #ffd500;
-      border-top-left-radius: 30px;
+  /* Video-container skaleres */
+  .video-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Justering av tabeller */
+  .tabell-1,
+  .tabell-2,
+  .tabell-3 {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .andre-seksjon-flex-container,
+  .tredje-seksjon-flex-container {
+    flex-direction: column;
+  }
+
+  .andre-seksjon-flex-container p {
+    text-align: center;
+  }
+
+  .tredje-seksjon img {
+    max-width: 100%;
+  }
+
+  /* Justeringer for Git-siden */
+  .git {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    max-width: 95%;
+  }
+
+  .gitlogo img,
+  .githublogo2 img {
+    display: none; /* Skjuler bildene i mobilversjonen */
+  }
+
+  .git-container,
+  .fordeler-container {
+    max-width: 100%;
+    flex-direction: column;
   }
   
-  .footer-container > div {
-      flex: 1 1 200px; /* Hvert element tar minst 200px og vokser ved behov */
-      
-  }
-
-  .subscribe-btn {
-      text-align: center; /* Sentrer knappen horisontalt */
-      padding: 20px; 
-  }
-  
-  /* KNAPPSTIL */
-  .subscribe-btn {
-      background-color: #ffd500; /* gul bakgrunn */
-      color: black; /* Tekstfarge */
-      border: 2px solid #ffd500; /* gul kant */
-      padding: 15px 30px; /* God padding for større knapp */
-      font-size: 15px; /* Større og mer lesbar tekst */
-      font-weight: bold;
-      text-transform: uppercase; /* Gjør teksten stor */
-      letter-spacing: 2px; /* Gir luftigere tekst */
-      border-radius: 10px; /* Myke, avrundede hjørner */
-      cursor: pointer; /* Gir musepeker */
-      transition: all 0.3s ease; /* Myk overgangseffekt */
-      
-    
-  }
-  
-  /* HOVER-EFFEKT */
-  .subscribe-btn:hover {
-      background-color: #ffd500; /* Bytter til gul bakgrunn */
-      color: black; /* Gjør teksten svart */
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
-      transform: translateY(-5px); /* Løfter knappen litt */
-  }
-
-
-
-/* Mobilvisning: Følgende stiler gjelder for skjermer med 700px eller mindre i bredde */
-@media (max-width: 700px) { 
-    .menu {
-        list-style-type: none; /* Fjerner standard punktmerking fra listen */
-        position: absolute;
-        overflow: visible; /* Sørger for at innhold utenfor elementets boks er synlig */
-        top: 80px; /* Plasserer menyen rett under navigasjonsfeltet */
-        left: 0;
-        right: 0;
-        background-color: black;
-        display: none;
-        transition: max-height 0.3s ease-out; /* Smooth transition for menu */
-        padding: 0%;
-
-    }
-
-    .menu-icon { /* Denne delen definerer hvordan hamburger meny skal være visuelt */
-        display: block;
-        background-image: url(media/menu-icon.png); /* Meny ikon hentet fra: */
-        background-size: contain;
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        margin-right: 20px;     
-    }
-
-    #burger-toggle:checked ~ .menu {
-        display: block; /* Menyen vises når avkrysningsboksen er krysset av */
-    }
-
-    .menu li {
-        height: auto;
-        overflow: visible;
-        text-align: center;
-      
-        
-    }
-    a {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-
-    /* Fjern kantlinjer på mindre skjermer */
-    body, article, .aktivitet {
-        border: none;
-        outline: none;
-        padding: 0;
-        width: 100%;
-        font-size: 14px; /* Justering for mindre skjermer */
-        padding-bottom: 10px;
-        margin: 0;
-        word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-
-    h2, details summary h2{
-   font-size: 1rem;
-  }
-
-    .video-container {
-      display: flex;
-      width: 100%;
-      height: 200px;
-    }
-
-    .video-container iframe {
-      top: 0;
-      left: 0;
-      width:100%;
-      height: 100%;
-  }
-    
-    /* Juster tabell og skriftstørrelse */
-    .tabell-1, .tabell-2, .tabell-3 {
-        width: 100%;
-        font-size: 0.9em;
-    }
-    .tabell-1, .tabell-2
-    {
-      padding: 20px;
-  }
-
-    .andre-seksjon-flex-container, .tredje-seksjon-flex-container{
-      display: flex;
-        flex: 100%;
-        flex-direction: column;
-        
-    }
-
-    .andre-seksjon-flex-container p {
-      text-align: center;
-    
-    }
-    .tredje-seksjon img {
-        max-width: 100%;
-    }
-
-    /* CSS for Git siden*/
-    .githublogo  {
-      max-width: 70%;
-      height: auto;
-  }
-    .git-container, .fordeler-container {
-      max-width: 100%;
-      flex-direction: column;
-      
-  }
-
   .vscode-container img {
     max-width: 100%;
     height: auto;
-}
-
-.brukGit {
-padding: 10px;
-max-width: 100%;
-}
-
-.git {
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow-x: hidden; /* Hindrer horisontal rulling */
-}
-
-.image-row-git {
-  display: flex;
-  justify-content: space-between; /* Lik avstand mellom bildene */
-  gap: 10px; /* Mellomrom mellom bildene */
-  margin-bottom: 20px; /* Avstand mellom rader */
-}
-
-.image-row-git {
-  flex: 1; /* Bildene tar lik bredde */
-  display: flex;
-  justify-content: center; /* Sentrer bildet i boksen */
-}
-
-.image-row-git img {
-  max-width: 100%; /* Gjør bildet responsivt */
-  height: auto;
-  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
-}
-
-
-
-/* Github logoer */
-.githublogo {
-  max-width: 100%; /* Hindrer overskridelse av skjermbredden */
-  height: auto;
-  margin: 0 auto;
-  display: block; /* Sentrer bildene på mobil */
-}
-
-/* Git-container justeres til mobilvennlig */
-.git-container, .fordeler-container div{
-  display: flex;
-  flex-direction: column; /* Stablet layout */
-  gap: 5px; /* Litt mellomrom mellom elementene */
-  max-width: 100%;
-  padding: 5px;
-}
-
-.image-row-git {
-  flex-direction: column; /* Stabler bildene vertikalt */
-  gap: 20px; /* Avstand mellom bildene */
-}
-
-.image-row-git {
-  width: 100%; /* Bildene fyller hele bredden */
-}
-
-/* VS Code-bilder */
-.vscode-container img {
-  max-width: 100%; /* Hindrer at bildet blir større enn skjermbredden */
-  height: auto;
-}
-
-/* Reduser tekststørrelsen i figcaption */
-figcaption {
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-
-/* GitHub logoer skal være skjult om nødvendig */
-.gitlogo, .githublogo2 img {
-  display: none; /* Du kan fjerne denne hvis du vil vise logoer */
-}
-
-
-.gitimg-container{
-  flex-direction: column; 
-}
-
-.gitimg{
-  max-width: 90%;
- }
-
-/*CSS for activity mobil*/
-.image-container {
-  flex-direction: column; 
-  align-items: center;
-  padding: 0; 
-}
-.image-container .image-box {
-  max-width: 100%;
-  margin-bottom: 20px; 
-}
-.image-container img {
-  height: auto; 
-}
-
-.rolling-paper {
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.flex-container {
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.flex-container ul, .flex-container img {
-  max-width: 100%;
-}
-h1 {
-  font-size: 1.8em;
-  word-break: break-word;
-}
-p, ul {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-/*CSS for Footer*/
-footer { overflow-x: hidden;}
-
-.footer {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background-color:black; 
-  color: #ffd500;
-  padding: 70px 0 30px;
-  border-top-left-radius: 100px;
-  line-height: 1.8; 
-}
-
-.footer i {
-padding:15px;}
-
-.footer-container h2 {
-  font-size: 40px; 
-  padding:10px;
-}
-.subscribe-btn {
-  background-color: black;
-  color: #ffd500;
-  border: 3px solid #ffd500;
-  padding:15px 30px;
-  font-size:16px;
-  cursor:pointer;
-  text-transform:uppercase;
-  font-weight:bold;
-}
-
-.hrFooter {
-  border: 1px solid #ffd500;
-  margin: 0;
-}
-
-.contact-info, .footer-links, .social-icons {
-  width: 30%;
-  margin-top: 20px;
-}
-
-.social-icons i {
-  font-size:12px;
-  padding:1px;
-}
-
-.footer-links a 
-{ text-decoration: none;
-}
-
-
-.footer-links a:hover,
-.social-icons a:hover,
-.contact-info a:hover
-{
-  text-decoration: underline;
-  color:rgb(245, 239, 153);
-}
-
-.social-icons a i:hover
-{
- background-color: black;
-  transition: 0.5s;
-  border-radius: 50%;
-}
-.social-icons a:hover i {
-  color:black;
-  transition: 0.5s;
-  background-color: #ffd500;
-}
-
-.social-icons a i {
-  text-decoration: none;
-  padding:8px;
-  color:#ffd500;
-  opacity: 0.9;
-  font-size: 1.5em;
-  border-radius: 50%;
-
-}
-
-.social-icons a {
-  color: #ffd500; /*endrer teksten og ikon  til gul*/
-  text-decoration: none;
-}
-
-
-
-
-/* Spesifikk linjeavstand for kontaktinformasjonen */
-.contact-info p, .footer-links a {
-  line-height: 2; 
-}
-
-/* Spesifikk linjeavstand for sosiale medier-ikonene og teksten */
-.social-icons a {
-  line-height: 0.5;
-  display: flex;
-  align-items: center; /* Justerer ikonene og teksten på samme linje */
-}
-
-.contact-info a, .contact-info p {
-text-decoration:none;
-font-size: 18px;
-}
-
-.contact-info a:hover {
-text-decoration: underline;
-}
-
-.contact-info a, .footer-links a, .contact-info {
-  color:#ffd500;
-}
-
-.footer-details {
-  display: flex;
-  justify-content: space-between;
-  background-color:black; 
-  
-}
-.contact-info a {
-  margin-bottom: 30px; 
-  
-}
-
-
-.social-icons i {
-      margin-right: 8px !important; 
   }
 
-  .footer-container {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px; 
-      padding: 20px;
-      background-color: black;
-      color: #ffd500;
-      border-top-left-radius: 30px;
-  }
-  
-  .footer-container > div {
-      flex: 1 1 200px; /* Hvert element tar minst 200px og vokser ved behov */
-      
-  }
-
- 
-  
-  /* KNAPPSTIL */
-  .subscribe-btn {
-      background-color: #ffd500; /* gul bakgrunn */
-      color: black; /* Tekstfarge */
-      border: 2px solid #ffd500; /* gul kant */
-      padding: 15px 30px; /* God padding for større knapp */
-      font-size: 15px; /* Større og mer lesbar tekst */
-      font-weight: bold;
-      text-transform: uppercase; /* Gjør teksten stor */
-      letter-spacing: 2px; /* Gir luftigere tekst */
-      border-radius: 10px; /* Myke, avrundede hjørner */
-      cursor: pointer; /* Gir musepeker */
-      transition: all 0.3s ease; /* Myk overgangseffekt */
-      text-align: center; /* Sentrer knappen horisontalt */
-      padding: 20px; 
-      
-    
-  }
-  
-  /* HOVER-EFFEKT */
-  .subscribe-btn:hover {
-      background-color: #ffd500; /* Bytter til gul bakgrunn */
-      color: black; /* Gjør teksten svart */
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /*  skygge */
-      transform: translateY(-5px); /* Løfter knappen litt */
-  }
-
-
-
-/* Mobilvisning: Følgende stiler gjelder for skjermer med 700px eller mindre i bredde */
-@media (max-width: 700px) { 
-    .menu {
-        list-style-type: none; /* Fjerner standard punktmerking fra listen */
-        position: absolute;
-        overflow: visible; /* Sørger for at innhold utenfor elementets boks er synlig */
-        top: 80px; /* Plasserer menyen rett under navigasjonsfeltet */
-        left: 0;
-        right: 0;
-        background-color: black;
-        display: none;
-        transition: max-height 0.3s ease-out; /* Smooth transition for menu */
-        padding: 0%;
-
-    }
-
-    .menu-icon { /* Denne delen definerer hvordan hamburger meny skal være visuelt */
-        display: block;
-        background-image: url(media/menu-icon.png); /* Meny ikon hentet fra: */
-        background-size: contain;
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        margin-right: 20px;     
-    }
-
-    #burger-toggle:checked ~ .menu {
-        display: block; /* Menyen vises når avkrysningsboksen er krysset av */
-    }
-
-    .menu li {
-        height: auto;
-        overflow: visible;
-        text-align: center;
-      
-        
-    }
-    a {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-
-    /* Fjern kantlinjer på mindre skjermer */
-    body, article, .aktivitet {
-        border: none;
-        outline: none;
-        padding: 0;
-        width: 100%;
-        font-size: 14px; /* Justering for mindre skjermer */
-        padding-bottom: 10px;
-        margin: 0;
-        word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-
-    h2, details summary h2{
-   font-size: 1rem;
-  }
-
-    .video-container {
-      display: flex;
-      width: 100%;
-      height: 200px;
-    }
-
-    .video-container iframe {
-      top: 0;
-      left: 0;
-      width:100%;
-      height: 100%;
-  }
-    
-    /* Juster tabell og skriftstørrelse */
-    .tabell-1, .tabell-2, .tabell-3 {
-        width: 100%;
-        font-size: 0.9em;
-    }
-    .tabell-1, .tabell-2
-    {
-      padding: 20px;
-  }
-
-    .andre-seksjon-flex-container, .tredje-seksjon-flex-container{
-      display: flex;
-        flex: 100%;
-        flex-direction: column;
-        
-    }
-
-    .andre-seksjon-flex-container p {
-      text-align: center;
-    
-    }
-    .tredje-seksjon img {
-        max-width: 100%;
-    }
-
-    /* CSS for Git siden*/
-    .githublogo  {
-      max-width: 70%;
-      height: auto;
-  }
-    .git-container, .fordeler-container {
-      max-width: 100%;
-      flex-direction: column;
-      
-  }
-
-  .vscode-container img {
-    max-width: 100%;
+  .githublogo {
+    max-width: 70%;
     height: auto;
-}
+    margin: 0 auto;
+    display: block;
+  }
 
-.brukGit {
-padding: 10px;
-max-width: 100%;
-}
+  /* Tilpasninger for bilder */
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 
-.git {
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow-x: hidden; /* Hindrer horisontal rulling */
-}
+  .image-container img {
+    height: auto;
+  }
 
-.image-row-git {
-  display: flex;
-  justify-content: space-between; /* Lik avstand mellom bildene */
-  gap: 10px; /* Mellomrom mellom bildene */
-  margin-bottom: 20px; /* Avstand mellom rader */
-}
+  .rolling-paper {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-.image-row-git {
-  flex: 1; /* Bildene tar lik bredde */
-  display: flex;
-  justify-content: center; /* Sentrer bildet i boksen */
-}
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-.image-row-git img {
-  max-width: 100%; /* Gjør bildet responsivt */
-  height: auto;
-  border: 2px solid #ffda00; /* Valgfri kant rundt bildene */
-}
+  .flex-container ul,
+  .flex-container img {
+    max-width: 100%;
+  }
 
-
-
-/* Github logoer */
-.githublogo {
-  max-width: 100%; /* Hindrer overskridelse av skjermbredden */
-  height: auto;
-  margin: 0 auto;
-  display: block; /* Sentrer bildene på mobil */
-}
-
-/* Git-container justeres til mobilvennlig */
-.git-container, .fordeler-container div{
-  display: flex;
-  flex-direction: column; /* Stablet layout */
-  gap: 5px; /* Litt mellomrom mellom elementene */
-  max-width: 100%;
-  padding: 5px;
-}
-
-.image-row-git {
-  flex-direction: column; /* Stabler bildene vertikalt */
-  gap: 20px; /* Avstand mellom bildene */
-}
-
-.image-row-git {
-  width: 100%; /* Bildene fyller hele bredden */
-}
-
-/* VS Code-bilder */
-.vscode-container img {
-  max-width: 100%; /* Hindrer at bildet blir større enn skjermbredden */
-  height: auto;
-}
-
-/* Reduser tekststørrelsen i figcaption */
-figcaption {
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-
-/* GitHub logoer skal være skjult om nødvendig */
-.gitlogo, .githublogo2 img {
-  display: none; /* Du kan fjerne denne hvis du vil vise logoer */
-}
-
-
-.gitimg-container{
-  flex-direction: column; 
-}
-
-.gitimg{
-  max-width: 90%;
- }
-
-/*CSS for activity mobil*/
-.image-container {
-  flex-direction: column; 
-  align-items: center;
-  padding: 0; 
-}
-.image-container .image-box {
-  max-width: 100%;
-  margin-bottom: 20px; 
-}
-.image-container img {
-  height: auto; 
-}
-
-.rolling-paper {
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.flex-container {
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.flex-container ul, .flex-container img {
-  max-width: 100%;
-}
-h1 {
-  font-size: 1.8em;
-  word-break: break-word;
-}
-p, ul {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-/*CSS for Footer*/
-footer { overflow-x: hidden;}
+  /* Footer-tilpasninger */
+  footer {
+    overflow-x: hidden;
+  }
 
   .footer-details {
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
   }
 
-.contact-info a, .contact-info p {
-  font-size: 15px;
-}
-  
-.footer-container h2 {
-  font-size: 27px;
-}
-
-.subscribe-btn {
-  padding:10px;
-  font-size: 12px;
-}
-
-  .contact-info, .footer-links, .social-icons {
-      width: 100%;
+  .footer-container h2 {
+    font-size: 27px;
   }
 
-  .footer-links, .social-icons, .contact-info {
+  .contact-info,
+  .footer-links,
+  .social-icons {
+    width: 100%;
     padding-left: 20px;
   }
 
-  .footer-container {
-    padding-top:10px;
-    
+  .subscribe-btn {
+    padding: 10px;
+    font-size: 12px;
   }
 
   .social-icons i {
-      font-size: 18px;
-      margin: 5px;
+    font-size: 1rem;
+    padding: 5px;
   }
 
-  .social-icons i {
-    font-size: 1rem; /* Mindre størrelse for mobil */
-    padding: 5px;    /* Reduser padding rundt ikonene */
-}
+  .social-icons a i {
+    margin: 0;
+    padding: 0;
+  }
 
-.social-icons a i {
-    margin: 0px; 
-    padding:0px;   /* Mindre avstand mellom ikonene */
-}
-  
-}
 }

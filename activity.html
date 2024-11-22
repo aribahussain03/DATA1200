@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+    <title>Alpakkavandring - OsloMet</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <link rel="stylesheet" href="style.css"><!--add css when ready-->
-    <title>Alpakkavandring - OsloMet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" as="image" href="media/gutt_med_alpakka.webp">
 </head>
     
 <body class="aktivitet no-border"><!-- Tabellen her laget etter koder i W3School og denne artikkelen: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary -->
@@ -14,7 +16,7 @@
                 <img
                     width="90"
                     height="50"
-                    src="media/OsloMet-gulLogo.png"
+                    src="media/OsloMet-gul logo.webp"
                     id="logo"
                     alt="OsloMet logo - homepage">
             </a>  
@@ -33,7 +35,12 @@
         </header>
     <div class="rolling-paper">
         <main>
-                <img src ="media/gutt_med_alpakka.webp" alt="Baby alpakka med en liten gutt" class="image1"> <!-- https://www.visitvestfold.com/no/produkt/?tlp=6694413&name=Monnerod-Alpakka -->
+                <img 
+                    src ="media/gutt_med_alpakka.webp" @
+                    alt="Baby alpakka med en liten gutt" 
+                    class="image1" 
+                    width="800" 
+                    height="400"> <!-- https://www.visitvestfold.com/no/produkt/?tlp=6694413&name=Monnerod-Alpakka -->
 		        <h1>Ta en pause fra studiene med alpakkavandring!</h1>
 		        <p class="ingress">Som student kan det være stressende å balansere studier, deltidsjobber og fritid. Hvorfor ikke ta en velfortjent pause i frisk luft, omgitt av rolige og nysgjerrige alpakkaer? Alpakkavandring er den perfekte måten å koble av fra skolearbeidet på og samtidig tilbringe tid med venner eller alene i naturen.</p>
 
@@ -46,30 +53,38 @@
                         <li><b>Fysisk aktivitet</b> - Få frisk luft og lett mosjon mens du går i skjønn natur. Perfekt for å lade opp før eksamener eller krevende prosjektarbeid.</li>
                         <li><b>En sosial aktivitet</b> - Ta med studiegruppen eller en vennegjeng for en morsom og sosial opplevelse. Alpakkavandring er en fin måte å knytte bånd på utenfor klasserommet.</li>
                     </ul>
-		            <img src ="media/alpakkavandring.webp" alt="Jenter på alpakkavandring" class="boxed-image"> <!-- fra https://alpakkavandring.gifty.no/ -->
+		            <img src ="media/alpakkavandring.webp" alt="Jenter på alpakkavandring" class="boxed-image" width="800" height="400"> <!-- fra https://alpakkavandring.gifty.no/ -->
                     </div>
 
 		            <h2>Hvordan komme i gang?</h2>
 		            <p>Det finnes flere alpakkagårder over hele Norge som tilbyr vandringer for grupper og enkeltpersoner. Sjekk ut noen av disse populære destinasjonene:</p>
 		            <ul>
-                        <li><a href="https://www.alpakkavandring.no/produkt/alpakkavandring/"target="_self">Alpakkavandring i Sørum</a></li>
-		                <li><a href="https://www.alpakkavandring.no/produkt/alpakkavandring-hurdal/"target="_self">Alpakkavandring i Hurdal</a></li> 
-                        <li><a href="https://alpakkagaarden.no/product/alpakkavandring-med-alpakka/"target="_self">Alpakkavandring i Våler</a></li>
+                        <li><a href="https://www.alpakkavandring.no/produkt/alpakkavandring/"target="_self" rel="noopener noreferrer">Alpakkavandring i Sørum</a></li>
+		                <li><a href="https://www.alpakkavandring.no/produkt/alpakkavandring-hurdal/"target="_self" rel="noopener noreferrer">Alpakkavandring i Hurdal</a></li> 
+                        <li><a href="https://alpakkagaarden.no/product/alpakkavandring-med-alpakka/"target="_self" rel="noopener noreferrer">Alpakkavandring i Våler</a></li>
                     </ul>
-                    <p><a href="https://www.alpakkaforeningen.no/om-alpakka/"target="_self">Her kan du lese mer om alpakkaene</a> og hva som gjør dem så spesielle.</p>
+                    <p><a href="https://www.alpakkaforeningen.no/om-alpakka/"target="_self" rel="noopener noreferrer">Her kan du lese mer om alpakkaene</a> og hva som gjør dem så spesielle.</p>
 
                     <h2>Praktisk informasjon</h2>  
                     <p>De fleste alpakkavandringer er tilgjengelige året rundt, men det er lurt å bestille i god tid. Mange gårder tilbyr studentrabatter eller gruppepriser, noe som gjør det til en perfekt aktivitet å inkludere i en studentbudsjettvennlig helgetur. For mer informasjon om turer og priser, sjekk ut <a href=""target="_self">de beste alpakkavandringene for studenter.</a></p>   <!-- link -->
 
                     <h2>Gå en tur og få ny energi!</h2>
-                    <p>Etter en dag med alpakkaer kommer du tilbake til studiene med fornyet energi og motivasjon. Forskning viser at tid i naturen kan forbedre konsentrasjonsevnen og gi deg et mentalt løft. <a href="https://strongbody.no/derfor-er-naturen-viktig/"target="_self">Les mer om fordelene med naturbaserte aktiviteter for studenter.</a></p>
+                    <p>Etter en dag med alpakkaer kommer du tilbake til studiene med fornyet energi og motivasjon. Forskning viser at tid i naturen kan forbedre konsentrasjonsevnen og gi deg et mentalt løft. <a href="https://strongbody.no/derfor-er-naturen-viktig/"target="_self" rel="noopener noreferrer">Les mer om fordelene med naturbaserte aktiviteter for studenter.</a></p>
 
                     <div class="image-container">
                         <div class="image-box">
-                            <img src="media/3alpakkaer.webp" alt="Alpakkaer som løper rundt"> <!-- https://www.enghaugen.no/ -->
+                            <img 
+                                src="media/3alpakkaer.webp" 
+                                alt="Alpakkaer som løper rundt" 
+                                width="800" 
+                                height="400"> <!-- https://www.enghaugen.no/ -->
                         </div>
                         <div class="image-box">
-                            <img src="media/jotunalpakka.webp" alt="Alpakkavandring i Jotun"> <!-- https://jotunfjell-alpakka.no/alpakka-vandring/ -->
+                            <img 
+                                src="media/jotunalpakka.webp" 
+                                alt="Alpakkavandring i Jotun" 
+                                width="800" 
+                                height="400"> <!-- https://jotunfjell-alpakka.no/alpakka-vandring/ -->
                         </div>
                     </div>
                 </div>
@@ -80,7 +95,7 @@
         <div class="footer-container">
             <h2> Hold deg oppdatert på hva som skjer på Oslomet.
             </h2>
-            <button class="subscribe-btn" onclick="window.location.href='https://www.oslomet.no/nyhetsbrev'">Abboner på vårt nyhetsbrev!</button>
+            <button class="subscribe-btn" onclick="window.location.href='https://www.oslomet.no/nyhetsbrev'">Abonner på vårt nyhetsbrev!</button>
               
         </div>
      <hr class="hrFooter">
