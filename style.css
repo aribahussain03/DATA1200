@@ -51,6 +51,20 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+/* Skjuler skip links. Kilde for koden: https://www.w3schools.com/accessibility/accessibility_skip_links.php  */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 
 article {
   max-width: 1000px;
