@@ -810,7 +810,9 @@ main {
     overflow-wrap: break-word;
   }
 
-  article {padding-bottom: 10px;}
+  article {
+    padding-bottom: 10px;
+  }
 
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
@@ -901,6 +903,13 @@ main {
   }
 
   /* Tilpasninger for bilder */
+  .boxed-image{
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    object-fit: cover;
+  }
+
   .image-container {
     flex-direction: column;
     align-items: center;
@@ -908,7 +917,7 @@ main {
   }
 
   .image-container img {
-    height: auto;
+    height: 100%;
   }
 
   .rolling-paper {
@@ -925,7 +934,12 @@ main {
 
   .flex-container ul,
   .flex-container img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-content {
+    max-width: 100%; 
   }
 
   /* Footer-tilpasninger */
