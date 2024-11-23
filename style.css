@@ -51,6 +51,20 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+/* Skjuler skip links. Kilde for koden: https://www.w3schools.com/accessibility/accessibility_skip_links.php  */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 
 article {
   max-width: 1000px;
@@ -210,6 +224,7 @@ hr {
 .andre-seksjon-flex-container > div {
   max-width: 100%;
   margin: 10px;
+  align-items: center;
 }
 
 .andre-seksjon,
@@ -226,6 +241,10 @@ hr {
 
 .tredje-seksjon-flex-container a {
   text-decoration-color: #000;
+}
+
+.tredje-seksjon-flex-container img {
+  margin-left: 20px;
 }
 
 .enkel-flex-container {
@@ -310,7 +329,7 @@ details > details p {
   font-weight: bold;
 }
 
-/* for at bildene krymper sammen med skjermen */
+/* kode for accessibility  */
 .accessibility{
   display: block;
   margin-left: auto;
@@ -802,7 +821,9 @@ main {
     overflow-wrap: break-word;
   }
 
-  article {padding-bottom: 10px;}
+  article {
+    padding-bottom: 10px;
+  }
 
   .indexH1{
     font-size: 1.5em; /* Gjør h1 enda mindre på mobil */
@@ -893,6 +914,13 @@ main {
   }
 
   /* Tilpasninger for bilder */
+  .boxed-image{
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    object-fit: cover;
+  }
+
   .image-container {
     flex-direction: column;
     align-items: center;
@@ -900,7 +928,7 @@ main {
   }
 
   .image-container img {
-    height: auto;
+    height: 100%;
   }
 
   .rolling-paper {
@@ -917,7 +945,12 @@ main {
 
   .flex-container ul,
   .flex-container img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-content {
+    max-width: 100%; 
   }
 
   /* Footer-tilpasninger */
@@ -958,4 +991,3 @@ main {
   }
 
 }
-
