@@ -52,67 +52,49 @@
                 og skriftstørrelsen på nettsiden er størrelse 16 slikt at det skal være lesbart.
             </p>
 
-            <img class= "accessibility" 
-            src="media/skrift.webp" 
-            height="200px" 
-            width="450px" 
-            alt="Dette bildet visere linjeavstand, skriftstørrelse og skrift type som er brukt på nettsiden." />
+            <img class= "accessibility" src="media/skrift.webp" height="200px" width="450px" alt="Dette bildet visere linjeavstand, skriftstørrelse og skrift type som er brukt på nettsiden." />
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
+
+            <img class= "accessibility" src="media/farge.webp" height="200px" width="450x" alt="Bildet viser koden på fargen vi har brukt på nettsiden." />
             <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
             <img class= "accessibility" 
-            src="media/farge.webp" 
-            height="200px" 
-            width="450x" 
-            alt="Bildet viser koden på fargen vi har brukt på nettsiden." />
-            <!-- Bildet er funnet fra vscode i dette prosjektet -->
-
-            <img class= "accessibility" 
-            src="media/Manuel_farge_test.webp" 
-            height="150px" 
-            width="500px" 
-            alt="Bildet viser standarden på hva fargen må skåre for at det skal følge WCAG." />
+            src="media/Manuel_farge_test.webp" height="150px" width="500px" alt="Bildet viser standarden på hva fargen må skåre for at det skal følge WCAG." />
             <!-- kilde brukt for bildet er hentet fra: "https://accessibility.huit.harvard.edu/manual-testing-accessibility"-->
 
-         <img class= "accessibility" src="media/Farge2.webp" height="250px" width="400px" alt="Bildet viser hva fargene våres skårte." />
-         <!-- kildet brukt for bildet er hentet fra: https://webaim.org/resources/contrastchecker/ -->
-         
+            <img class= "accessibility" 
+            src="media/Farge2.webp" 
+            height="250px" 
+            width="400px" 
+            alt="Bildet viser hva fargene våres skårte." />
+            <!-- kildet brukt for bildet er hentet fra: https://webaim.org/resources/contrastchecker/ -->
+        </section>
+        <section class="innhold"> 
+            <h2>Testing av nettsiden</h2>
+            <p> Vi utførte både manuell og automatisk testing for å finne ut om nettsiden vår fulgte WCAG kriteriene. 
+                For å utføre den automatiske testingen brukte vi lighthouse, og fikk ove 90% som resultater på både mobil og data versjoen av nettsiden.
+                Vi hadde gode resultater på begge testene som viste at nettsiden vår er egnet for andre med funksjonsnedsettelse å bruke. 
+                Den manuelle testen vi fulgte var Harvard University sine «Manual Testing for Accessibility». (Harvard University, 2024)
+            </p>
+        </section>
 
-         <p class="skrift"> Vi utførte både manuell og automatisk testing for å finne ut om nettsiden vår fulgte WCAG kriteriene. 
-            vi brukte lighthouse for å teste nettsiden, og skåret over 90% på alle testene på både mobil og data versjonen.
-            Vi hadde gode resultater på begge testene som viste at nettsiden vår er egnet for andre med funksjonsnedsettelse å bruke. 
-            Den manuelle testen vi fulgte var Harvard University sine «Manual Testing for Accessibility». (Harvard University, 2024)
-         </p> 
+        <section class="innhold">
+            <h2>Koder for bedre tilgjengelighet</h2>
 
-        <p>Resultatene fra automatisk testing av mobil versjonen</p>
-        <img class="accessibility" 
-        src="media/mobil versjon.webp" 
-        height="300" 
-        width="600" 
-        alt="Bildet fra automatisk testing av mobil versjonen av nettsiden. ">
-        <!-- https://pagespeed.web.dev/analysis/https-sadaf703-github-io-Eksamen-git-html/xgav37s347?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=no&utm_source=lh-chrome-ext -->
-
-        <p>Resultatene fra automatisk testing av data versjonen</p>
-        <img class="accessibility" 
-        src="media/data versjon.webp" 
-        height="300" 
-        width="600" 
-        alt="Bildet fra automatisk testing av data versjonen av nettsiden.">
-        <!-- https://pagespeed.web.dev/analysis/https-sadaf703-github-io-Eksamen-git-html/xgav37s347?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=no&utm_source=lh-chrome-ext -->
-
-         <p class="skrift"> I indeks-siden har vi valgt å bruke tabeller for å strukturere informasjonen. 
-            For å gjøre disse tabellene tilgjengelige for alle brukere, 
-            har vi fulgt retningslinjene fra artikkelen HTML table advanced features and accessibility.
-            Vi har inkludert caption-elementer for å gi en kort beskrivelse av tabellenes innhold. 
-            Dette er spesielt nyttig for brukere som benytter skjermlesere, 
-            da de kan få en rask oversikt uten å måtte lese hver enkelt celle (MDN Web Docs, n.d.-c).
-         </p>
+            <p> I indeks-siden har vi valgt å bruke tabeller for å strukturere informasjonen. 
+                For å gjøre disse tabellene tilgjengelige for alle brukere, 
+                har vi fulgt retningslinjene fra artikkelen HTML table advanced features and accessibility.
+                Vi har inkludert caption-elementer for å gi en kort beskrivelse av tabellenes innhold. 
+                Dette er spesielt nyttig for brukere som benytter skjermlesere, 
+                da de kan få en rask oversikt uten å måtte lese hver enkelt celle (MDN Web Docs, n.d.-c).
+            </p>
 
             <img class="accessibility" 
             src="media/Tabell og caption.webp" 
             height="300" 
             width="600" 
             alt= "Bildet viser et eksempel av en kode vi har brukt tabell og caption. "/>
-             <!-- Bildet er funnet fra vscode i dette prosjektet -->
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
             <p class="skrift">Tabellene er videre strukturert med thead og tbody. 
                 Disse elementene bidrar til å organisere tabellen i overskrift, hovedinnhold og fot. 
@@ -123,7 +105,7 @@
             src="media/thead og tbody.webp" 
             width="200px" 
             alt="Bildet viser et eksempel av en kode vi har brukt thead og tbody."/>
-             <!-- Bildet er funnet fra vscode i dette prosjektet -->
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
             <p class="skrift">I tillegg har vi brukt attributtet scope på th-elementene. 
                 Dette spesifiserer om en tabelloverskrift gjelder for en kolonne, rad eller gruppe. 
@@ -134,7 +116,7 @@
             src="media/scope.webp" 
             width="600px" 
             alt="Bildet viser et eksempel av en kode vi har brukt scope. "/>
-             <!-- Bildet er funnet fra vscode i dette prosjektet -->
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
             <p class="skrift">For å forbedre tilgjengeligheten ytterligere, har vi inkludert en "skip link" før navigasjonen. 
                 Dette gjør det mulig for brukerne å hoppe direkte til hovedinnholdet (World Wide Web Consortium, 2024). 
@@ -146,8 +128,7 @@
             src="media/skip link.webp" 
             width="900px" 
             alt="Bildet er et eksempel av en kode vi har brukt skip link."/>
-             <!-- Bildet er funnet fra vscode i dette prosjektet -->
-
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
             <p class="skrift">Alle bilder har fått tilordnet alt-attributter med forklarende tekst for å beskrive innholdet. 
                 Dette sikrer at skjermlesere kan lese opp en beskrivelse av bildet for brukere med synshemminger (MDN Web Docs, n.d.-a).
@@ -157,8 +138,7 @@
             src="media/alt-attributtet.webp" 
             width="1000px" 
             alt="Bildet viser et eksempel av en kode vi har brukt alt attributtet."/>
-             <!-- Bildet er funnet fra vscode i dette prosjektet -->
-
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
             <p class="skrift">Overskriftene på siden er organisert i et logisk hierarki. 
                 Denne strukturen gjør det enkelt for skjermlesere å navigere i innholdet og forstå sidens oppbygning (MDN Web Docs, n.d.-a).
@@ -176,7 +156,7 @@
             src="media/aria-label.webp" 
             height="" width="" 
             alt="Bildet viser et eksempel av en kode vi har brukt aria-label i footer."/>
-             <!-- Bildet er funnet fra vscode i dette prosjektet -->
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
 
         </section>
         <hr>
@@ -248,13 +228,14 @@
                 </p>
             </section>
         </article>
-        <footer>
-             
+
+        <footer>  
             <div class="footer-container">
                 <h2> Hold deg oppdatert på hva som skjer på Oslomet.
                 </h2>
-                <a href="https://www.oslomet.no/nyhetsbrev" class="subscribe-btn">Abonner på vårt nyhetsbrev!</a>
-              
+                <a href="https://www.oslomet.no/nyhetsbrev" class="subscribe-btn" aria-label="Abonner på OsloMets nyhetsbrev"> 
+                    Abonner på vårt nyhetsbrev!
+                </a>
             </div>
         <hr class="hrFooter">
             <div class="footer-details">
