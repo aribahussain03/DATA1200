@@ -570,18 +570,25 @@ main {
 .image-container { /* Generelle stiler for bilder med effekter */
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  max-width: 1000px;
+  gap: 20px;
+  max-width: 100%;
   margin: 40px auto 0;
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 .image-container picture {
-  width: 100%;
+  flex: 1;
+  max-width: 50%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .image-container picture:hover {
@@ -973,7 +980,6 @@ main {
     
   }
 
- 
   .footer-container h2 {
     font-size: 27px;
   }
