@@ -585,16 +585,7 @@ a:hover {
     padding: 0px; /* Gir litt innrykk rundt containeren */
 }
 
-    .farge_test, .Farge2, .Farge1, .mobil_index, .data_index, .mobil_git, .data_git, .kode1, .kode2{
-        max-width: 100%;
-        height: auto;
-    } 
-
-    @media (max-width: 600px) {
-        .farge_test, .Farge2, .Farge1, .mobil_index, .data_index, .mobil_git, .data_git, .kode1, .kode2{
-          max-width: 90%; 
-        }
-    }
+   
 
     
 
