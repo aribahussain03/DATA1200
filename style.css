@@ -344,7 +344,7 @@ details > details p {
   font-weight: bold;
 }
 
-/* kode for accessibility  */
+/* CSS for accessibility  */
 .accessibility{
   display: block;
   margin-left: auto;
@@ -353,10 +353,11 @@ details > details p {
   height: auto;
 }
 
-.tilgjengelighet p,.tilgjengelighet h2{
+.innhold p, .innhold h2{
   margin-left: 100px;
   margin-right: 100px;
 }
+
 
 /* CSS for Git-siden */
 .git {
@@ -885,7 +886,20 @@ main {
     margin: 0 auto; /* Sentraliserer bildet horisontalt */
   }
 
-  /* Justeringer for Git-siden */
+/* CSS for accessibility  */
+  
+
+  .tilgjengelighet section{
+    padding: 10px;
+  }
+
+  .innhold p, .innhold h2{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
+  /* CSS for Git-siden */
   .git {
     padding-left: 10px;
     padding-right: 10px;

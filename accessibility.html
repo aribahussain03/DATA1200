@@ -33,15 +33,16 @@
     </header>
 <body>
     <article class="tilgjengelighet">
-        <h1>Tilgjengelighet til nettsiden </h1>
+        <section class="innhold">
+            <h1>Tilgjengelighet til nettsiden </h1>
 
-        <p>I Norge er det lovpålagt at universell utforming for nettløsninger skal utføres. (Sannæs, u.å) 
-            Når det kommer til å utføre universell utforming av nettsider er det viktig at den er tilgjengelig for alle å bruke.
-            Tilgjengelighet rangerer fra farger man bruker, til skriftstørrelse og design. 
-            Dette er for å sikre at andre med diverse funksjonsnedsettelser kan ta til bruk av nettsiden. (GrackleDocs, 2023) 
-            Kravet for å utforme en nettside er å følge kriteriene fra WCAG (Web Content Accessibility Guidelines). (Brajnik, 2010) 
-        </p>
-        <section>
+            <p>I Norge er det lovpålagt at universell utforming for nettløsninger skal utføres. (Sannæs, u.å) 
+                Når det kommer til å utføre universell utforming av nettsider er det viktig at den er tilgjengelig for alle å bruke.
+                Tilgjengelighet rangerer fra farger man bruker, til skriftstørrelse og design. 
+                Dette er for å sikre at andre med diverse funksjonsnedsettelser kan ta til bruk av nettsiden. (GrackleDocs, 2023) 
+                Kravet for å utforme en nettside er å følge kriteriene fra WCAG (Web Content Accessibility Guidelines). (Brajnik, 2010) 
+            </p>
+        
             <h2>Bruk av farge og skriftstørrelse</h2>
             <p> 
                 Det gruppa bestemte seg for å gjøre med tanke på farger ville vi beholde OsloMet sin originale farge. 
@@ -79,7 +80,7 @@
             alt="Bildet viser hva fargene våres skårte." />
             <!-- kildet brukt for bildet er hentet fra: https://webaim.org/resources/contrastchecker/ -->
         </section>
-        <section> 
+        <section class="innhold"> 
             <h2>Testing av nettsiden</h2>
             <p> Vi utførte både manuell og automatisk testing for å finne ut om nettsiden vår fulgte WCAG kriteriene. 
                 Vi hadde gode resultater på begge testene som viste at nettsiden vår er egnet for andre med funksjonsnedsettelse å bruke. 
@@ -87,7 +88,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="innhold">
             <h2>Koder for bedre tilgjengelighet</h2>
 
             <p> I indeks-siden har vi valgt å bruke tabeller for å strukturere informasjonen. 
@@ -139,7 +140,8 @@
                 Dette sikrer at skjermlesere kan lese opp en beskrivelse av bildet for brukere med synshemminger (MDN Web Docs, n.d.-a).
             </p>
 
-            <img src="media/alt-attributtet.webp" 
+            <img class="accessibility"
+            src="media/alt-attributtet.webp" 
             width="1000px" 
             alt="Bildet viser et eksempel av en kode vi har brukt alt attributtet."/>
 
@@ -161,72 +163,73 @@
             alt="Bildet viser et eksempel av en kode vi har brukt aria-label i footer."/>
         </section>
         <hr>
-        <h2>Referanse</h2>
+        <section>
+            <h2>Referanse</h2>
 
-            <p>Sannæs, Katrine (U.å) 
-                Uiniversell utforming på nett.
-                Ravn Webveveriet. 
-                Hentet 21.november, fra 
-                <a href="https://www.ravn.no/fagprat/universell-utforming-pa-nett.html?gad_source=1&gclid=EAIaIQobChMImMTXkJnoiQMVH2iRBR3E7SO7EAAYAyAAEgKgb_D_BwE" 
-                target="_self">https://www.ravn.no/fagprat/universell-utforming-pa-nett.html?gad_source=1&gclid=EAIaIQobChMImMTXkJnoiQMVH2iRBR3E7SO7EAAYAyAAEgKgb_D_BwE</a>
-            </p>  
+                <p>Sannæs, Katrine (U.å) 
+                    Uiniversell utforming på nett.
+                    Ravn Webveveriet. 
+                    Hentet 21.november, fra 
+                    <a href="https://www.ravn.no/fagprat/universell-utforming-pa-nett.html?gad_source=1&gclid=EAIaIQobChMImMTXkJnoiQMVH2iRBR3E7SO7EAAYAyAAEgKgb_D_BwE" 
+                    target="_self">https://www.ravn.no/fagprat/universell-utforming-pa-nett.html?gad_source=1&gclid=EAIaIQobChMImMTXkJnoiQMVH2iRBR3E7SO7EAAYAyAAEgKgb_D_BwE</a>
+                </p>  
        
-            <p> Branjnik, Giorgio & Yesilida, Yeliz & Harper, Simon (25 oktober, 2010) 
-                Testability and validity of WCAG 2.0: the expertise effect. 
-                ACM Digital Library. 43-50. 
-                Hentet 21.november, fra  
-                <a href="https://doi.org/10.1145/1878803.1878813"target="_self">https://doi.org/10.1145/1878803.1878813</a>
-            </p>
+                <p> Branjnik, Giorgio & Yesilida, Yeliz & Harper, Simon (25 oktober, 2010) 
+                    Testability and validity of WCAG 2.0: the expertise effect. 
+                    ACM Digital Library. 43-50. 
+                    Hentet 21.november, fra  
+                    <a href="https://doi.org/10.1145/1878803.1878813"target="_self">https://doi.org/10.1145/1878803.1878813</a>
+                </p>
        
-            <p> GrackleDocs (4 april, 2023) 
-                Hvorfor du må følge retningslinjene for tilgjengelig webinnhold (WCAG). 
-                GrackleDocs. 
-                Hentet 21.november, fra 
-                <a href= "https://www.grackledocs.com/nb/hvorfor-du-ma-folge-retningslinjene-for-tilgjengelighet-av-innhold-pa-nett-wcag/ " target="_self">
-                https://www.grackledocs.com/nb/hvorfor-du-ma-folge-retningslinjene-for-tilgjengelighet-av-innhold-pa-nett-wcag/</a>
-            </p>
+                <p> GrackleDocs (4 april, 2023) 
+                    Hvorfor du må følge retningslinjene for tilgjengelig webinnhold (WCAG). 
+                    GrackleDocs. 
+                    Hentet 21.november, fra 
+                    <a href= "https://www.grackledocs.com/nb/hvorfor-du-ma-folge-retningslinjene-for-tilgjengelighet-av-innhold-pa-nett-wcag/ " target="_self">
+                    https://www.grackledocs.com/nb/hvorfor-du-ma-folge-retningslinjene-for-tilgjengelighet-av-innhold-pa-nett-wcag/</a>
+                </p>
        
-            <p> Harvard University (2024)
-                Manual Testing for Accessibility. 
-                The President and Fellows of Harvard College. 
-                Hentet 21.november, fra 
-                <a href="https://accessibility.huit.harvard.edu/manual-testing-accessibility" target="_self"> https://accessibility.huit.harvard.edu/manual-testing-accessibility</a>
-            </p>
+                <p> Harvard University (2024)
+                    Manual Testing for Accessibility. 
+                    The President and Fellows of Harvard College. 
+                    Hentet 21.november, fra 
+                    <a href="https://accessibility.huit.harvard.edu/manual-testing-accessibility" target="_self"> https://accessibility.huit.harvard.edu/manual-testing-accessibility</a>
+                </p>
 
-            <p>WebAIM (2024) 
-                Contrast Checker. 
-                webAIM. 
-                Hentet 21.november, fra <a href="https://webaim.org/resources/contrastchecker/" target="_self"> https://webaim.org/resources/contrastchecker/ </a>
-            </p>
+                <p>WebAIM (2024) 
+                    Contrast Checker. 
+                    webAIM. 
+                    Hentet 21.november, fra <a href="https://webaim.org/resources/contrastchecker/" target="_self"> https://webaim.org/resources/contrastchecker/ </a>
+                </p>
          
-            <p>World Wide Web Consortium (2024, 13. september) 
-                Technique ARIA8: Using aria-label for link purpose. 
-                World Wide Web Consortium (W3C). 
-                Hentet 22. november 2024, fra 
-                <a href= "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA8.html" target="_self"> https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA8.html </a>
-            </p>
+                <p>World Wide Web Consortium (2024, 13. september) 
+                    Technique ARIA8: Using aria-label for link purpose. 
+                    World Wide Web Consortium (W3C). 
+                    Hentet 22. november 2024, fra 
+                    <a href= "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA8.html" target="_self"> https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA8.html </a>
+                </p>
 
-            <p>MDN Web Docs (n.d.-a)  
-                HTML: A good basis for accessibility. 
-                Mozilla Developer Network. 
-                Hentet 22. november 2024, fra  
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"  target="_self"> https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML </a>
-            </p>
+                <p>MDN Web Docs (n.d.-a)  
+                    HTML: A good basis for accessibility. 
+                    Mozilla Developer Network. 
+                    Hentet 22. november 2024, fra  
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"  target="_self"> https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML </a>
+                </p>
 
-            <p>MDN Web Docs (n.d.-b)  
-                WAI-ARIA basics. 
-                Mozilla Developer Network. 
-                Hentet 22. november 2024, fra  
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics" target="_self"> https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics</a>
-            </p>
+                <p>MDN Web Docs (n.d.-b)  
+                    WAI-ARIA basics. 
+                    Mozilla Developer Network. 
+                    Hentet 22. november 2024, fra  
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics" target="_self"> https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics</a>
+                </p>
 
-            <p>MDN Web Docs (n.d.-c) 
-                Advanced table features. 
-                Mozilla Developer Network. 
-                Hentet 22. november 2024, fra 
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced" target="_self"> https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced</a>
-            </p>
-
+                <p>MDN Web Docs (n.d.-c) 
+                    Advanced table features. 
+                    Mozilla Developer Network. 
+                    Hentet 22. november 2024, fra 
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced" target="_self"> https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced</a>
+                </p>
+            </section>
         </article>
         <footer>
              
