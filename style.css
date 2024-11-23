@@ -1,33 +1,35 @@
 #burger-toggle {
-  display: none;
+  display: none;  /* Skjuler burger-ikonet som brukes på mobil */
 }
 
+/*Navigasjon og meny*/
+
 nav {
-  margin: 0;
-  padding: 0 20px;
+  margin: 0; /* Fjerner all margin rundt elementet. */
+  padding: 0 20px; /* Setter topp- og bunn-padding til 0, og venstre- og høyre-padding til 20px */
   background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;  /* Bruker flexbox for å plassere elementene i navigasjonen */
+  align-items: center; /* Sentraliserer elementene vertikalt */
+  justify-content: space-between; /* Fordeler plass mellom elementene */
   height: 100px;
 }
 
-@media (min-width: 701px) {
+
+@media (min-width:701px) { /* Desktop view for skjermer som er 701px eller større*/
   .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
   }
-
-  .menu li {
-    padding-right: 4rem;
+  
+  .menu li {padding-right: 4rem;}
   }
-}
-
+  
+ 
 .menu a,
 .footer-links a {
-  text-decoration: none;
+  text-decoration: none; /* Fjerner standard understrek på lenker */
 }
 
 .menu a {
@@ -35,20 +37,21 @@ nav {
   font-weight: bold;
   color: #ffda00;
   padding: 15px;
-  display: block;
+  display: block; /* Elementet vises som et blokk-element, tar hele bredden tilgjengelig. */
   text-align: center;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* Legger til en jevn overgang ved hover */
 }
 
-.menu a:hover {
-  background-color: #ffda00;
+.menu a:hover { /* stil ved hover (når pekeren er over elementet.) */
+  background-color: #ffda00; 
   color: #000;
 }
 
+/*Generell styling*/
 body {
   font-family: Arial, sans-serif;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.5; /* Angir linjeavstand. */
   margin: 0;
 }
 /* Skjuler skip links. Kilde for koden: https://www.w3schools.com/accessibility/accessibility_skip_links.php  */
@@ -67,9 +70,9 @@ body {
 }
 
 article {
-  max-width: 1000px;
-  border: 5px solid #ffda00;
-  outline: 5px solid #000;
+  max-width: 1000px; /* Begrenser elementets bredde til maks 1000px. */
+  border: 5px solid #ffda00; /* Gul kantlinje rundt artikkelen */
+  outline: 5px solid #000; /* Svart outline rundt artikkelen, Brukes uten å påvirke layout */
   padding: 20px;
   margin: auto;
 }
@@ -97,12 +100,13 @@ a {
   text-align: center;
 }
 
-a {
+
+a { /*stil for lenker*/
   color: #000;
   text-decoration: underline;
   text-decoration-color: #ffda00;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+  text-decoration-thickness: 3px; /* Tykk understrek */
+  text-underline-offset: 4px; /* Avstand mellom teksten og understrekningen */
 }
 
 h2,
@@ -111,30 +115,39 @@ h3 {
 }
 
 hr {
-  border: 3px solid #ffda00;
-  border-block-end: 3px solid #000;
+  border: 3px solid #ffda00; /* Gul horisontal linje */
+  border-block-end: 3px solid #000;  /* Sort kant nederst på linjen */
 }
 
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-top: 50%;
-  background-color: #000;
+.tykkskrift { /* Klassestil for tykkskrift */
+  font-weight: bold;
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  border: none;
-  left: 0;
+
+/*Video-styling*/
+
+.video-container { /* Brukes for responsiv tilpassing av video.*/
+  position: relative; /* Elementet plasseres relativt til sin normale plassering. */
   width: 100%;
+  padding-top: 50%;  /* Gir containeren en høyde basert på 50% av bredden (aspektforhold). */
+  background-color: #000;  /* Setter svart bakgrunn for å indikere videoinnhold. */
+}
+
+
+.video-container iframe { /* Stiler iframe inni video-container */
+  position: absolute; /* plasserer iframe inne i video-containeren. */
+  top: 0; /* Plasserer iframe øverst i containeren. */
+  border: none; /* Fjerner kantlinjen rundt iframe. */
+  left: 0; /* Plasserer iframe helt til venstre i containeren. */
+  width: 100%; /* Gjør at iframe tar hele bredden  og høyden av containeren. */
   height: 100%;
 }
 
+/* Tabeller*/
 .tabell-1,
 .tabell-2 {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* Fjerner mellomrom mellom celler */
   text-align: left;
   background-color: #000;
   color: #ffda00;
@@ -145,13 +158,13 @@ hr {
 .tabell-1 td,
 .tabell-2 th,
 .tabell-2 td {
-  padding-left: 10px;
+  padding-left: 10px; /* Legger til padding på venstre side av cellene */
   width: 25%;
 }
 
 .tabell-1 caption {
   font-size: 1.5em;
-  caption-side: top;
+  caption-side: top; /* Plasserer overskriften øverst på tabellen */
   font-weight: bold;
   padding: 10px;
   color: #000;
@@ -172,19 +185,20 @@ hr {
   margin-bottom: 10px;
 }
 
-.tabell-3 th {
+
+.tabell-3 th { /* stil for tabellens overskrifter */
   text-align: center;
   font-weight: bold;
   padding: 10px;
-  background-color: #ffda00;
+  background-color: #ffda00; 
   color: #000;
   border: 1px solid #000;
 }
 
-.tabell-3 td {
-  border: 1px solid #000;
+.tabell-3 td { 
+  border: 1px solid #000; /* Sort kant rundt tabellcellene */
   padding: 10px;
-  vertical-align: top;
+  vertical-align: top; /* Justerer innholdet til toppen av cellen det er i. */
 }
 
 .tabell-3 .semester {
@@ -214,6 +228,7 @@ hr {
   margin-bottom: 5px;
 }
 
+/*stil for seksjoner i Index*/
 .andre-seksjon-flex-container,
 .tredje-seksjon-flex-container {
   display: flex;
@@ -247,7 +262,7 @@ hr {
   margin-left: 20px;
 }
 
-.enkel-flex-container {
+.enkel-flex-container {  /*lar elementene inni denne containeren justeres og plasseres fleksibelt. */
   width: 350px;
   margin: auto;
   background-color: #ffda00;
@@ -270,8 +285,8 @@ hr {
   margin: auto;
   padding: 10px;
 }
-/* Styling for summary-tittelen */
-summary {
+
+summary { /* Styling for summary-tittelen */
   font-weight: bold;
   background-color: black;
   color: #ffda00;
@@ -329,7 +344,7 @@ details > details p {
   font-weight: bold;
 }
 
-/* kode for accessibility  */
+/* CSS for accessibility  */
 .accessibility{
   display: block;
   margin-left: auto;
@@ -338,13 +353,11 @@ details > details p {
   height: auto;
 }
 
-/* skrift størrelse, type og linjeavstanden til accessibility siden */
-.skrift {
-  overflow: hidden; 
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+.innhold p, .innhold h2{
+  margin-left: 100px;
+  margin-right: 100px;
 }
+
 
 /* CSS for Git-siden */
 .git {
@@ -360,8 +373,8 @@ details > details p {
   flex-direction: column;
 }
 
-/* GitHub-logo, sentrert */
-.githublogo {
+
+.githublogo { /* GitHub-logo, sentrert */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -402,20 +415,20 @@ details > details p {
   align-items: center;
 }
 
-/* Bilder i fordeler-seksjonen */
-.fordeler-container img {
+
+.fordeler-container img { /* Bilder i fordeler-seksjonen */
   padding: 20px;
 }
 
-/* Figcaption for bilder */
-figcaption {
+
+figcaption { /* bildetekst for bilder */
   font-style: italic;
   margin: auto;
   text-align: right;
 }
 
-/* Flex-container for Git-bilder */
-.gitimg-container {
+
+.gitimg-container { /* Flex-container for Git-bilder */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -446,8 +459,8 @@ main {
   outline: none;
 }
 
-/* Aktivitetsseksjonen */
-.aktivitet {
+
+.aktivitet { /* Aktivitetsseksjonen */
   background-color: #ffd500;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -456,7 +469,7 @@ main {
 }
 
 /* Typografi for rullende papir */
-.rolling-paper h1 {
+.rolling-paper h1 { 
   font-weight: 700;
   font-size: 2em;
   color: #333;
@@ -518,8 +531,8 @@ main {
   list-style-position: inside;
 }
 
-/* Sentraliserte bilder */
-.image1 {
+
+.image1 { /* Sentraliserte bilder */
   display: block;
   margin: auto;
   max-width: 100%;
@@ -534,8 +547,8 @@ main {
   overflow: hidden;
 }
 
-/* Sentrer bilder */
-.center {
+
+.center { /* Sentrer bilder */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -559,31 +572,38 @@ main {
   background-color: #004c99;
 }
 
-/* Generelle stiler for bilder med effekter */
-.image-container {
+
+.image-container { /* Generelle stiler for bilder med effekter */
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  max-width: 900px;
+  max-width: 100%;
   margin: 40px auto 0;
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
-.image-container img {
-  width: 100%;
-  height: 300px;
+.image-container picture {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-container img:hover {
+.image-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-container picture:hover {
   transform: scale(1.05);
   z-index: 1;
 }
 
-/* Side-ved-side layout for bilder */
-.image-container .image-box {
+
+.image-container .image-box { /* Side-ved-side layout for bilder */
   flex: 1;
   overflow: hidden;
 }
@@ -597,28 +617,28 @@ main {
   height: auto;
 }
 
-/* Stil for boxed bilder */
-.boxed-image {
+
+.boxed-image { /* Stil for boxed bilder */
   width: 100%;
-  max-width: 450px;
+  max-width: 1000px;
   height: auto;
   object-fit: cover;
   overflow: hidden;
 }
 
 
-/* Footer css*/ 
+/* Footer CSS */ 
 .footer {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
   color: #ffd500;
   padding: 70px 0 30px;
-  border-top-left-radius: 100px;
+  border-top-left-radius: 100px; /* Gjør det øverste venstre hjørnet avrundet. */
   line-height: 1.8;
 }
 
-.footer i {
+.footer i { /* Ikoner i footer */
   padding: 15px;
 }
 
@@ -627,25 +647,14 @@ main {
   padding: 10px;
 }
 
-.subscribe-btn {
-  background-color: black;
-  color: #ffd500;
-  border: 3px solid #ffd500;
-  padding: 15px 30px;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.hrFooter {
+.hrFooter { /* Stiler for horisontal linje i footer */
   border: 1px solid #ffd500;
   margin: 0;
 }
 
 .contact-info,
 .footer-links,
-.social-icons {
+.social-icons { /* Stiler for hovedseksjonene i footer */
   width: 30%;
   margin-top: 20px;
   margin-left: 20px;
@@ -658,28 +667,32 @@ main {
 
 .footer-links a:hover,
 .social-icons a:hover,
-.contact-info a:hover {
+.contact-info a:hover { /* Hover-stil for lenker i footer */
   text-decoration: underline;
   color: rgb(245, 239, 153);
 }
 
-.social-icons a i:hover {
+
+.social-icons a i:hover { /* stil for  ikonet (i) ved hover. */
   background-color: black;
   transition: 0.5s;
   border-radius: 50%;
 }
 
-.social-icons a:hover i {
+
+.social-icons a:hover i { /* stil for  lenken (a) ved hover. */
   color: black;
   transition: 0.5s;
   background-color: #ffd500;
 }
 
-.social-icons a i {
+
+
+.social-icons a i { /* stil for sosiale-ikon lenke */
   text-decoration: none;
   padding: 8px;
   color: #ffd500;
-  opacity: 0.9;
+  opacity: 0.9; /* Gjør ikonet 90% synlig (litt gjennomsiktig). */
   font-size: 1.5em;
   border-radius: 50%;
 }
@@ -750,8 +763,8 @@ main {
   padding: 20px;
 }
 
-/* Knappstil */
-.subscribe-btn {
+
+.subscribe-btn { /*Stil for abonnementsknappen */
   background-color: #ffd500;
   color: black;
   border: 2px solid #ffd500;
@@ -765,17 +778,19 @@ main {
   transition: all 0.3s ease;
 }
 
-.subscribe-btn:hover {
+.subscribe-btn:hover { /* Hover-stil for abonnementsknappen */
   background-color: #ffd500;
   color: black;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Legger til skygge. */
+  transform: translateY(-5px); /* Flytter knappen oppover ved hover. */
 }
 
 
 /* Mobilvisning: Stiler for skjermer med 700px eller mindre */
-@media (max-width: 700px) {
+@media (max-width: 701px) {
   /* Menyen blir vertikal og skjult til den aktiveres */
+
+    
   .menu {
     list-style-type: none;
     position: absolute;
@@ -791,7 +806,7 @@ main {
   .menu-icon {
     display: block;
     background-image: url(media/menu-icon.webp); /* Hamburger-ikon */
-    background-size: contain;
+    background-size: contain; /* Skalerer ikonet slik at det passer innenfor containerens dimensjoner uten å beskjære. */
     width: 40px;
     height: 40px;
     margin: 20px;
@@ -803,7 +818,7 @@ main {
 
   .menu li {
     height: auto;
-    overflow: visible;
+    overflow: visible; /* Gjør at innhold som går utenfor containeren fortsatt er synlig. */
     text-align: center;
   }
 
@@ -817,8 +832,8 @@ main {
     width: 100%;
     font-size: 14px;
     margin: 0;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-wrap: break-word; /*Bryter lange ord som ikke får plass i containeren */
+    overflow-wrap: break-word;  
   }
 
   article {
@@ -871,11 +886,23 @@ main {
     margin: 0 auto; /* Sentraliserer bildet horisontalt */
   }
 
-  /* Justeringer for Git-siden */
+/* CSS for accessibility  */
+  
+
+  .tilgjengelighet section{
+    padding: 10px;
+  }
+
+  .innhold p, .innhold h2{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
+  /* CSS for Git-siden */
   .git {
     padding-left: 10px;
     padding-right: 10px;
-    overflow-x: hidden;
     max-width: 95%;
   }
 
@@ -886,7 +913,6 @@ main {
 
   .git-container,
   .fordeler-container {
-    max-width: 100%;
     flex-direction: column;
   }
   
@@ -905,11 +931,15 @@ main {
   .gitimg-container{
     max-width: 100%;
     flex-direction: column;
+    height: 80%;
   }
  
   .gitimg{
     max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
   }
+
   .brukGit{
     margin-left: 0;
     margin-right: 0;
@@ -919,7 +949,6 @@ main {
   .boxed-image{
     width: 100%;
     max-width: 300px;
-    min-width: 250px;
     object-fit: cover;
   }
 
@@ -927,10 +956,13 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 0;
+    width: 100%;
   }
 
-  .image-container img {
-    height: 100%;
+  .image-container picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .rolling-paper {
@@ -964,6 +996,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    
   }
 
   .footer-container h2 {
