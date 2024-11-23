@@ -338,14 +338,6 @@ details > details p {
   height: auto;
 }
 
-/* skrift størrelse, type og linjeavstanden til accessibility siden */
-.skrift {
-  overflow: hidden; 
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 /* CSS for Git-siden */
 .git {
   flex-wrap: wrap;
@@ -911,7 +903,7 @@ main {
     max-height: auto;
     margin: 0 auto;
   }
-  
+
   .brukGit{
     margin-left: 0;
     margin-right: 0;
