@@ -224,6 +224,7 @@ hr {
 .andre-seksjon-flex-container > div {
   max-width: 100%;
   margin: 10px;
+  align-items: center;
 }
 
 .andre-seksjon,
@@ -241,7 +242,6 @@ hr {
 .tredje-seksjon-flex-container a {
   text-decoration-color: #000;
 }
-
 
 .enkel-flex-container {
   width: 350px;
