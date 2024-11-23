@@ -33,7 +33,7 @@
             </ul>
         </nav>
     </header>
-
+<!--Logo av Git øverst på siden-->
     <article class="git">
         <img 
             class="githublogo" 
@@ -44,7 +44,7 @@
         <!-- Kilde for GitHub logo: https://pngimg.com/image/73355 -->
     
         <h1>Om GitHub</h1>
-    
+        <!--Første seksjon av nettsiden-->
         <section class="git-container">
             <p class="gitlogo">
                 <img 
@@ -77,6 +77,7 @@
         </section>
 
         <h2>Fordeler med GitHub</h2>
+        <!--Første seksjon av nettsiden-->
         <section class="fordeler-container">
 
             <div>
@@ -138,7 +139,7 @@
             </div>
     
         </section>
-
+        <!--Andre seksjon av nettsiden-->
         <section class="brukGit">
             <h2>Bruk av GitHub</h2>
 
@@ -178,8 +179,8 @@
                 felles innsats.
             </p>
         </section>
-
-
+        <section>
+        <!--Skjermbildet av commit historie-->
         <div class="gitimg-container">
             <div class="gitimg">
                 <img src="media/commit-1.webp" 
@@ -199,55 +200,55 @@
                 tidspunktet for endringene og hvem som har utført dem.
             </p>
         </div>
-
-        <div class="gitimg-container">
-            <div class="gitimg">
-                <img src="media/history-1.webp" 
-                alt="History 1" 
-                width="500px"
-                height="450px"/>
+        <!--Skjermbilde av endringer-->
+            <div class="gitimg-container">
+                <div class="gitimg">
+                    <img src="media/history-1.webp" 
+                    alt="History 1" 
+                    width="500px"
+                    height="450px"/>
+                </div>
+                <div class="gitimg">
+                    <img src="media/history.webp" 
+                    alt="History 2" 
+                    width="500px"
+                    height="450px"/>
+                </div>
+                <p>
+                    Ved å klikke inn på commit-historikken får man en detaljert oversikt over hvilke endringer som er gjort i 
+                    koden. Endringene presenteres visuelt, hvor koden som er fjernet, vises i rødt, mens koden som er lagt til, 
+                    vises i grønt. I tillegg er det deler av koden som er sammenklemt og merket med blått. Disse delene kan 
+                    åpnes for å se den uendrede koden og gi bedre kontekst til de utførte endringene.
+                </p>
+                <p>
+                    Denne funksjonaliteten gir en tydelig og strukturert oversikt over endringer i prosjektet, noe som gjør det 
+                    enklere å samarbeide og holde oversikt over hva som er blitt oppdatert.
+                </p>
             </div>
-            <div class="gitimg">
-                <img src="media/history.webp" 
-                alt="History 2" 
-                width="500px"
-                height="450px"/>
-            </div>
-            <p>
-                Ved å klikke inn på commit-historikken får man en detaljert oversikt over hvilke endringer som er gjort i 
-                koden. Endringene presenteres visuelt, hvor koden som er fjernet, vises i rødt, mens koden som er lagt til, 
-                vises i grønt. I tillegg er det deler av koden som er sammenklemt og merket med blått. Disse delene kan 
-                åpnes for å se den uendrede koden og gi bedre kontekst til de utførte endringene.
-            </p>
-            <p>
-                Denne funksjonaliteten gir en tydelig og strukturert oversikt over endringer i prosjektet, noe som gjør det 
-                enklere å samarbeide og holde oversikt over hva som er blitt oppdatert.
-            </p>
-        </div>
-
+        </section>
         <hr>
+        <section>
+            <h2>Referanse</h2>
 
-        <h2>Referanse</h2>
+            <p>Chacon, S., & Straub, B. (2014). Pro Git. Hentent fra 
+                <a href="https://git-scm.com/book/en/v2"target="_self">https://git-scm.com/book/en/v2.</a>
+            </p>
 
-        <p>Chacon, S., & Straub, B. (2014). Pro Git. Hentent fra 
-            <a href="https://git-scm.com/book/en/v2"target="_self">https://git-scm.com/book/en/v2.</a>
-        </p>
+            <p>GitHub Guides. (n.d.). Understanding the GitHub flow. Hentet fra
+                <a href="ttps://guides.github.com/introduction/flow/" target="_self"> https://guides.github.com/introduction/flow/.</a>
+            </p>
 
-        <p>GitHub Guides. (n.d.). Understanding the GitHub flow. Hentet fra
-            <a href="ttps://guides.github.com/introduction/flow/" target="_self"> https://guides.github.com/introduction/flow/.</a>
-        </p>
-
-        <p>Carlyrevier, Jehchow, Smith, P., & AbdulRehmanGHub. (2024, 1. februar). Git og GitHub 
-            essentials for Microsoft Learn-dokumentasjon. Microsoft Learn. Hentet fra 
-            <a href="https://learn.microsoft.com/nb-no/contribute/content/git-github-fundamentals" target="_self">https://learn.microsoft.com/nb-no/contribute/content/git-github-fundamentals.</a>
-        </p> 
-
-    </article>
-    <footer>
+            <p>Carlyrevier, Jehchow, Smith, P., & AbdulRehmanGHub. (2024, 1. februar). Git og GitHub 
+                essentials for Microsoft Learn-dokumentasjon. Microsoft Learn. Hentet fra 
+                <a href="https://learn.microsoft.com/nb-no/contribute/content/git-github-fundamentals" target="_self">https://learn.microsoft.com/nb-no/contribute/content/git-github-fundamentals.</a>
+            </p> 
+        </section>
+        </article>
+        <footer>
              
         <div class="footer-container">
             <h2> Hold deg oppdatert på hva som skjer på Oslomet.</h2>
-            <button class="subscribe-btn" onclick="window.location.href='https://www.oslomet.no/nyhetsbrev'">Abboner på vårt nyhetsbrev!</button>
+            <button class="subscribe-btn" aria-label="Abonner på vårt nyhetsbrev" onclick="window.location.href='https://www.oslomet.no/nyhetsbrev'">Abonner på vårt nyhetsbrev!</button> <!--Legger til aria-label for at skjermlesere forstår buttons funksjon-->
           
         </div>
         <hr class="hrFooter">
@@ -277,10 +278,10 @@
                     <a href="#">Admin</a>
                 </div>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-facebook"></i> Facebook </a> <br>
-                    <a href="https://x.com/oslomet"><i class="fa-brands fa-twitter"></i> X (Twitter)</a> <br>
-                    <a href="https://no.linkedin.com/school/oslomet/"><i class="fa-brands fa-linkedin"></i> Linkedin</a> <br>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-instagram"></i> Instagram</a> <br>
+                    <a href="https://www.facebook.com/oslomet/" aria-label="OsloMet på Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a><br> <!--Lagt til forklaring for ikonet for skjermlesere -->
+                    <a href="https://x.com/oslomet" aria-label="OsloMet på Twitter"><i class="fa-brands fa-twitter"></i> X (Twitter)</a><br>
+                    <a href="https://no.linkedin.com/school/oslomet/" aria-label="OsloMet på LinkedIn"><i class="fa-brands fa-linkedin"></i> Linkedin</a><br>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" aria-label="OsloMet på Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
                 </div>
             </div>
     </footer>
