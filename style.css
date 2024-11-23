@@ -243,6 +243,10 @@ hr {
   text-decoration-color: #000;
 }
 
+.tredje-seksjon-flex-container img {
+  margin-left: 20px;
+}
+
 .enkel-flex-container {
   width: 350px;
   margin: auto;
