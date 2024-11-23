@@ -243,6 +243,10 @@ hr {
   text-decoration-color: #000;
 }
 
+.tredje-seksjon-flex-container img {
+  margin-left: 20px;
+}
+
 .enkel-flex-container {
   width: 350px;
   margin: auto;
@@ -325,14 +329,21 @@ details > details p {
   font-weight: bold;
 }
 
-
-.kode1, .kode2, .farge-test, .Farge2,.Farge1, .mobil-index,
-.data-index, .mobil-git, .data-git {
+/* kode for accessibility  */
+.accessibility{
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
   height: auto;
+}
+
+/* skrift størrelse, type og linjeavstanden til accessibility siden */
+.skrift {
+  overflow: hidden; 
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* CSS for Git-siden */
