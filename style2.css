@@ -577,17 +577,24 @@ a:hover {
     }
 }
 
- /* css for accecibility  */
-    .kode1, kode2{
-         max-width: 100%;
-         height: auto;
-         font-family: Arial, sans-serif;
-         margin: 0;
-         padding: 0;
-    }
+.bilde-container {
+    display: flex; /* Plasserer innholdet ved siden av hverandre */
+    gap: 10px; /* Avstand mellom bildene */
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    flex-wrap: wrap; /* Bryter linjen hvis skjermen er for smal */
+    padding: 0px; /* Gir litt innrykk rundt containeren */
+}
 
-    .farge test, Farge 2, Farge, mobil index, data index, mobil git, data git{
+    .farge_test, .Farge2, .Farge1, .mobil_index, .data_index, .mobil_git, .data_git, .kode1, .kode2{
         max-width: 100%;
         height: auto;
-   } 
+    } 
+
+    @media (max-width: 600px) {
+        .farge_test, .Farge2, .Farge1, .mobil_index, .data_index, .mobil_git, .data_git, .kode1, .kode2{
+          max-width: 90%; 
+        }
+    }
+
+    
 
