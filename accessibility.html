@@ -24,10 +24,10 @@
                 <div class="menu-icon"></div>
             </label>
             <ul class="menu">
-                <li><a href="index.html">Index</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="index.html">Indeks</a></li>
+                <li><a href="accessibility.html">Tilgjengelighet</a></li>
                 <li><a href="git.html">Github</a></li>
-                <li><a href="activity.html">Activity</a></li>
+                <li><a href="activity.html">Aktivitet</a></li>
             </ul>
         </nav>
     </header>
@@ -35,84 +35,207 @@
     <article>
         <h1>Tilgjengelighet til nettsiden </h1>
 
-         <p> I Norge er det lovpålagt at universell utforming for nettløsninger skal utføres. (Sannæs, u.å)
-             Når det kommer til å utføre universell utforming av nettsider er det viktig at den er tilgjengelig for alle å bruke.
-             Tilgjengelighet rangerer fra farger man bruker, til skriftstørrelse og design.
-             Dette er for å sikre at andre med diverse funksjonsnedsettelser kan ta til bruk av nettsiden.(GrackleDocs, 2023) 
-             Kravet for å utforme en nettside er å følge kriteriene fra WCAG. 
-             WCAG står for Web Content Accessibility Guidelines, som betyr Internett, Innhold, Tilgjengelighet, og Rettlingslinjer. (Brajnik, 2010) 
-         </p>
-        
-         <p> Det gruppa bestemte seg for å gjøre med tanke på farger ville vi beholde OsloMet sin originale farge. 
-             Dette er fordi fargene på den originale nettsiden følger tilgjengelighets retningslinjen. 
-             Vi ville allikevel gjøre noen endringer med den originale fargen. 
-             Isteden for å ha den gule bakgrunnen, ville vi ha svart bakgrunn med gul skrift, men vi beholdt allikevel gul bakgrunn på noen steder for å skape kontrast mellom informasjonen i nettsiden. 
-             Linjeavstanden vi har brukt er 1,5 som er standarden, skriftstørrelsen er Arial og Sanserif, og skriftstørrelsen på hovedinformasjonen i nettsiden er størrelse 16. 
-             Det har vi gjort for å gjøre nettsiden så tilgengelig som mulig for andre å kunne lese. 
-         </p>
+        <p>I Norge er det lovpålagt at universell utforming for nettløsninger skal utføres. (Sannæs, u.å) 
+            Når det kommer til å utføre universell utforming av nettsider er det viktig at den er tilgjengelig for alle å bruke.
+            Tilgjengelighet rangerer fra farger man bruker, til skriftstørrelse og design. 
+            Dette er for å sikre at andre med diverse funksjonsnedsettelser kan ta til bruk av nettsiden. (GrackleDocs, 2023) 
+            Kravet for å utforme en nettside er å følge kriteriene fra WCAG (Web Content Accessibility Guidelines). (Brajnik, 2010) 
+        </p>
+        <section>
+            <h2>Bruk av farge og skriftstørrelse</h2>
+            <p> 
+                Det gruppa bestemte seg for å gjøre med tanke på farger ville vi beholde OsloMet sin originale farge. 
+                Dette er fordi fargene på den originale nettsiden følger tilgjengelighets retningslinjen. (WebAIM, 2024) 
+                Linjeavstanden vi har brukt er 1,5 som er standarden, 
+                skriftstørrelsen er Arial og San serif, 
+                og skriftstørrelsen på nettsiden er størrelse 16 slikt at det skal være lesbart.
+            </p>
 
+            <img class= "accessibility" src="media/skrift.webp" height="200px" width="450px" alt="Dette bildet visere linjeavstand, skriftstørrelse og skrift type som er brukt på nettsiden." />
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
+
+            <img class= "accessibility" src="media/farge.webp" height="200px" width="450x" alt="Bildet viser koden på fargen vi har brukt på nettsiden." />
+            <!-- Bildet er funnet fra vscode i dette prosjektet -->
+
+            <img class= "accessibility" src="media/Manuel_farge_test.webp" height="150px" width="500px" alt="Bildet viser standarden på hva fargen må skåre for at det skal følge WCAG." />
+            <!-- kilde brukt for bildet er hentet fra: "https://accessibility.huit.harvard.edu/manual-testing-accessibility"-->
+
+            <img class= "accessibility" src="media/Farge2.webp" height="250px" width="400px" alt="Bildet viser hva fargene våres skårte." />
+            <!-- kildet brukt for bildet er hentet fra: https://webaim.org/resources/contrastchecker/ -->
+        </section>
+        <section> 
+            <h2>Testing av nettsiden</h2>
+            <p> Vi utførte både manuell og automatisk testing for å finne ut om nettsiden vår fulgte WCAG kriteriene. 
+                Vi hadde gode resultater på begge testene som viste at nettsiden vår er egnet for andre med funksjonsnedsettelse å bruke. 
+                Den manuelle testen vi fulgte var Harvard University sine «Manual Testing for Accessibility». (Harvard University, 2024)
+            </p>
+        </section>
+
+        <section>
+            <h2>Koder for bedre tilgjengelighet</h2>
+
+            <p> I indeks-siden har vi valgt å bruke tabeller for å strukturere informasjonen. 
+                For å gjøre disse tabellene tilgjengelige for alle brukere, 
+                har vi fulgt retningslinjene fra artikkelen HTML table advanced features and accessibility.
+                Vi har inkludert caption-elementer for å gi en kort beskrivelse av tabellenes innhold. 
+                Dette er spesielt nyttig for brukere som benytter skjermlesere, 
+                da de kan få en rask oversikt uten å måtte lese hver enkelt celle (MDN Web Docs, n.d.-c).
+            </p>
+
+            <img class="accessibility" src="media/Tabell og caption.webp" height="300" width="600" alt= "Bildet viser et eksempel av en kode vi har brukt tabell og caption. "/>
+
+            <p>Tabellene er videre strukturert med thead og tbody. 
+                Disse elementene bidrar til å organisere tabellen i overskrift, hovedinnhold og fot. 
+                Dette gir en semantisk struktur som gjør det lettere for skjermlesere å navigere og tolke tabellen (MDN Web Docs, n.d.-c).
+            </p>
+
+            <img class="accessibility" src="media/thead og tbody.webp" height="" width="" alt="Bildet viser et eksempel av en kode vi har brukt thead og tbody."/>
+
+            <p>I tillegg har vi brukt attributtet scope på th-elementene. 
+                Dette spesifiserer om en tabelloverskrift gjelder for en kolonne, rad eller gruppe. 
+                Dette gjør det enklere for skjermlesere å koble data med riktig overskrift (MDN Web Docs, n.d.-c).
+            </p>
+
+            <img class="accessibility" src="media/scope.webp" height="" width="" alt="Bildet viser et eksempel av en kode vi har brukt scope. "/>
+
+            <p>For å forbedre tilgjengeligheten ytterligere, har vi inkludert en "skip link" før navigasjonen. 
+                Dette gjør det mulig for brukerne å hoppe direkte til hovedinnholdet (World Wide Web Consortium, 2024). 
+                Vi har også brukt role="navigation" på nav-elementet for å indikere tydelig for skjermlesere at dette er navigasjonsområdet 
+                (MDN Web Docs, n.d.-a).
+            </p>
+
+            <img class="accessibility" src="media/skip link.webp" height="" width="" alt="Bildet er et eksempel av en kode vi har brukt skip link."/>
+
+            <p>Alle bilder har fått tilordnet alt-attributter med forklarende tekst for å beskrive innholdet. 
+                Dette sikrer at skjermlesere kan lese opp en beskrivelse av bildet for brukere med synshemminger (MDN Web Docs, n.d.-a).
+            </p>
+
+            <img class="accessibility" src="media/alt-attributtet.webp" height="" width="" alt="Bildet viser et eksempel av en kode vi har brukt alt attributtet."/>
+
+            <p>Overskriftene på siden er organisert i et logisk hierarki. 
+                Denne strukturen gjør det enkelt for skjermlesere å navigere i innholdet og forstå sidens oppbygning (MDN Web Docs, n.d.-a).
+            </p>
+
+
+            <p>I footer har vi benyttet aria-label på knappen for nyhetsbrevet for å tydeliggjøre funksjonen for skjermlesere (MDN Web Docs, n.d.-b). 
+                Vi har også brukt aria-label på ikonene i footer. 
+                Dette gir en beskrivelse av lenkene, spesielt når de representeres av logoer. 
+                Ettersom logoene også er trykkbare lenker, 
+                gjør aria-label at skjermlesere kan identifisere og forklare funksjonen på en god måte (World Wide Web Consortium, 2024).
+            </p>
          
-         <p> Vi utførte manuell testing for å finne ut om nettsiden vår fulgte WCAG kriteriene for tilgjengelighet retningslinjene. 
-             For å kunne teste nettsiden manuelt, valgte vi å følge Harvard University sine 3 kategorier å teste. 
-             (Harvard University, 2024) De 3 kategoriene baserte seg på content review, keyboard testing og screen reader. 
-             Innenfor de 3 kategoriene var det flere tester å utføre som blant annet var å sjekke farger, bilder, automatisk lydavspilling og teste ut tastaturet osv. 
-             Disse testene måtte vi utføre på både mobil og pc versjonen av nettsiden. 
-             Resultatene etter testingen ble vist at alt i nettsiden fulgte kriteriene for WCAG.
-         </p>
-        
-         <p> Etter manuell testing så skulle vi utføre automatisk testing av nettsiden på både mobil og datamaskin. 
-             Den automatiske testen vurderte resultater, tilgjengelighet, gode fremgangsmåter, og SEO (Søkemotoroptimalisering). 
-             Resultatene på testingen viste at alt var på over 90% på mobilversjonen, bortsett fra resultat av testingen. 
-             Det ble skåret 64% fordi det var problemer med videoen som skulle være med på nettsiden. 
-             Derfor bestemte vi oss for å fjerne den dersom den skapte problemer for mobilversjonen av nettsiden. 
-             Etter at videoen ble fjernet var alle resultatene over 90%. 
-             På datamaskinversjonen skåret alt over 90% selv med videoen. 
-             Resultatene viser til at nettsiden vår er accessible for at alle kan benytte den. 
-         </p>
+            <img class="accessibility" src="media/aria-label.webp" height="" width="" alt="Bildet viser et eksempel av en kode vi har brukt aria-label i footer."/>
+        </section>
+        <hr>
+        <h2>Referanse</h2>
 
-    </article>
-    <footer>
+            <p>Sannæs, Katrine (U.å) 
+                Uiniversell utforming på nett.
+                Ravn Webveveriet. 
+                Hentet 21.november, fra 
+                <a href="https://www.ravn.no/fagprat/universell-utforming-pa-nett.html?gad_source=1&gclid=EAIaIQobChMImMTXkJnoiQMVH2iRBR3E7SO7EAAYAyAAEgKgb_D_BwE" 
+                target="_self">https://www.ravn.no/fagprat/universell-utforming-pa-nett.html?gad_source=1&gclid=EAIaIQobChMImMTXkJnoiQMVH2iRBR3E7SO7EAAYAyAAEgKgb_D_BwE</a>
+            </p>  
+       
+            <p> Branjnik, Giorgio & Yesilida, Yeliz & Harper, Simon (25 oktober, 2010) 
+                Testability and validity of WCAG 2.0: the expertise effect. 
+                ACM Digital Library. 43-50. 
+                Hentet 21.november, fra  
+                <a href="https://doi.org/10.1145/1878803.1878813"target="_self">https://doi.org/10.1145/1878803.1878813</a>
+            </p>
+       
+            <p> GrackleDocs (4 april, 2023) 
+                Hvorfor du må følge retningslinjene for tilgjengelig webinnhold (WCAG). 
+                GrackleDocs. 
+                Hentet 21.november, fra 
+                <a href= "https://www.grackledocs.com/nb/hvorfor-du-ma-folge-retningslinjene-for-tilgjengelighet-av-innhold-pa-nett-wcag/ " target="_self">
+                https://www.grackledocs.com/nb/hvorfor-du-ma-folge-retningslinjene-for-tilgjengelighet-av-innhold-pa-nett-wcag/</a>
+            </p>
+       
+            <p> Harvard University (2024)
+                Manual Testing for Accessibility. 
+                The President and Fellows of Harvard College. 
+                Hentet 21.november, fra 
+                <a href="https://accessibility.huit.harvard.edu/manual-testing-accessibility" target="_self"> https://accessibility.huit.harvard.edu/manual-testing-accessibility</a>
+            </p>
+
+            <p>WebAIM (2024) 
+                Contrast Checker. 
+                webAIM. 
+                Hentet 21.november, fra <a href="https://webaim.org/resources/contrastchecker/" target="_self"> https://webaim.org/resources/contrastchecker/ </a>
+            </p>
+         
+            <p>World Wide Web Consortium (2024, 13. september) 
+                Technique ARIA8: Using aria-label for link purpose. 
+                World Wide Web Consortium (W3C). 
+                Hentet 22. november 2024, fra 
+                <a href= "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA8.html" target="_self"> https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA8.html </a>
+            </p>
+
+            <p>MDN Web Docs (n.d.-a)  
+                HTML: A good basis for accessibility. 
+                Mozilla Developer Network. 
+                Hentet 22. november 2024, fra  
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"  target="_self"> https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML </a>
+            </p>
+
+            <p>MDN Web Docs (n.d.-b)  
+                WAI-ARIA basics. 
+                Mozilla Developer Network. 
+                Hentet 22. november 2024, fra  
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics" target="_self"> https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics</a>
+            </p>
+
+            <p>MDN Web Docs (n.d.-c) 
+                Advanced table features. 
+                Mozilla Developer Network. 
+                Hentet 22. november 2024, fra 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced" target="_self"> https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced</a>
+            </p>
+
+        </article>
+        <footer>
              
-        <div class="footer-container">
-            <h2> Hold deg oppdatert på hva som skjer på Oslomet.
-            </h2>
-            <a href="https://www.oslomet.no/nyhetsbrev" class="subscribe-btn">Abonner på vårt nyhetsbrev!</a>
+            <div class="footer-container">
+                <h2> Hold deg oppdatert på hva som skjer på Oslomet.
+                </h2>
+                <button class="subscribe-btn" aria-label="Abonner på vårt nyhetsbrev" onclick="window.location.href='https://www.oslomet.no/nyhetsbrev'">Abonner på vårt nyhetsbrev!</button> <!--Legger til aria-label for at skjermlesere forstår buttons funksjon-->
               
-        </div>
-     <hr class="hrFooter">
-        <div class="footer-details">
-            <div class="contact-info">
-                <p>
-                    <strong>OSLO METROPOLITAN UNIVERSITY</strong><br>
-                    STORBYUNIVERSITETET<br>
-                    Postboks 4, St. Olavs plass<br>
-                    0130 Oslo<br>
-                    Tlf.: 67 23 50 00<br>
-                    <strong><a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a></strong>
-                </p>
             </div>
-        <div class="footer-links">
+        <hr class="hrFooter">
+            <div class="footer-details">
+                <div class="contact-info">
+                    <p>  <strong> OSLO&nbsp;METROPOLITAN&nbsp;UNIVERSITY</strong> <br>
+                        STORBYUNIVERSITETET <br>
+                        Postboks 4, St. Olavs plass <br>
+                        0130 Oslo <br>
+                        Tlf.: 67 23 50 00 <br>
+                        <strong><a href="https://www.oslomet.no/om/kontakt">Kontakt oss    </strong></a>
     
-            <a href="https://www.oslomet.no/en">English</a><br>
-            <a href="https://www.oslomet.no/alumni">Alumni</a><br>
-            <a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a><br>
-            <a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arangementsoversikt</a><br>
-            <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a><br>
-            <a href="https://www.oslomet.no/om/for-studenter">For-studenter</a><br>
-            <a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a><br>
-            <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapslar</a><br>
-            <a href="https://www.oslomet.no/om/pressekontakt"> Pressekontakt</a><br>
-            <a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelighetserklæring</a><br>
-            <a href="#">Admin</a>
+                    </p>
+                </div>
+            <div class="footer-links">
+    
+                <a href="https://www.oslomet.no/en">English</a><br>
+                <a href="https://www.oslomet.no/alumni">Alumni</a><br>
+                <a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a><br>
+                <a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arangementsoversikt</a><br>
+                <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a><br>
+                <a href="https://www.oslomet.no/om/for-studenter">For-studenter</a><br>
+                <a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a><br>
+                <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapslar</a><br>
+                <a href="https://www.oslomet.no/om/pressekontakt"> Pressekontakt</a><br>
+                <a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelighetserklæring</a><br>
+                <a href="#">Admin</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/oslomet/" aria-label="OsloMet på Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a><br> <!--Lagt til forklaring for ikonet for skjermlesere -->
+                    <a href="https://x.com/oslomet" aria-label="OsloMet på Twitter"><i class="fa-brands fa-twitter"></i> X (Twitter)</a><br>
+                    <a href="https://no.linkedin.com/school/oslomet/" aria-label="OsloMet på LinkedIn"><i class="fa-brands fa-linkedin"></i> Linkedin</a><br>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" aria-label="OsloMet på Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+                </div>
             </div>
-        <div class="social-icons">
-                <a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-facebook"></i> Facebook </a> <br>
-                <a href="https://x.com/oslomet"><i class="fa-brands fa-twitter"></i> X (Twitter)</a> <br>
-                <a href="https://no.linkedin.com/school/oslomet/"><i class="fa-brands fa-linkedin"></i> Linkedin</a> <br>
-                <a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-instagram"></i> Instagram</a> <br>
-            </div>
-        </div>
     
         </footer>
-</body>
+    </body>
 </html>

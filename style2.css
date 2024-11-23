@@ -576,3 +576,16 @@ a:hover {
         height: auto;
     }
 }
+
+.bilde-container {
+    display: flex; /* Plasserer innholdet ved siden av hverandre */
+    gap: 10px; /* Avstand mellom bildene */
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    flex-wrap: wrap; /* Bryter linjen hvis skjermen er for smal */
+    padding: 0px; /* Gir litt innrykk rundt containeren */
+}
+
+   
+
+    
+

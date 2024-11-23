@@ -2,40 +2,50 @@
 <html lang="no">
 
 <head>
-    <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Hopp til hovedinnhold</a> <!--Legg til en "skip link" før navigasjonen for å tillate brukere å hoppe direkte til hovedinnholdet.-->
+    
+    <!--Header og navigasjonsfelt -->
+    <!-- Videoen på canvas brukt som inspirasjon: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526 -->
     <header>
-        <nav>
+        <nav role="navigation"><!--Legger til rolle for å gi skjermlesere en tydelig indikasjon om at dette er navigasjonsområdet.-->
             <a href="OsloMet-logo">
-                <img width="90" height="50" src="media/OsloMet-gul logo.webp" id="logo" alt="OsloMet logo">
+                <img width="90" height="50" src="media/OsloMet-gul logo.webp" id="logo" alt="OsloMet logo"> <!--Link til logoen: https://bie.tjenester.oslomet.no/oslomet-logo-gul.png -->
             </a>
             <input id="burger-toggle" type="checkbox">
             <label class="hamburger-toggle-container" for="burger-toggle">
                 <div class="menu-icon"></div>
             </label>
             <ul class="menu">
-                <li><a href="index.html">Index</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="index.html">Indeks</a></li>
+                <li><a href="accessibility.html">Tilgjengelighet</a></li>
                 <li><a href="git.html">Github</a></li>
-                <li><a href="activity.html">Activity</a></li>
+                <li><a href="activity.html">Aktivitet</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--Hovedinnhold-->
     <article>
         <h1 class="indexH1">Matematisk modellering og datavitenskap – ingeniør</h1>
         <p class="undertekst">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
+        
+        <!--Innebygd video-seksjon-->
         <div class="video-container">
-            <iframe title="Video av studenter snakke om Matematisk modellering og datavitenskap." src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483"></iframe>
+            <iframe title="Video av studenter snakke om Matematisk modellering og datavitenskap." 
+                    src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483">
+            </iframe>
         </div>
         <hr>
 
+        <!--Tabell for bachelorprogram-->
         <table class="tabell-1">
             <caption>Bachelorprogram</caption>
             <thead>
@@ -56,6 +66,7 @@
             </tbody>
         </table>
 
+        <!-- Tabell for studiestart og andre programdetaljer -->
         <table class="tabell-2">
             <thead>
                 <tr>
@@ -82,12 +93,16 @@
         </table>
         <hr>
 
+        <!-- Seksjon med detaljert informasjon om bachelorprogrammet -->
         <section class="container-første-seksjon">
+            <!-- Studiestart detaljer -->
             <details> <!-- Tabellen her laget etter koder i W3School og denne artikkelen: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary -->
                 <summary><h2>Studiestart</h2></summary>
                 <p>
                     Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på 
-                    <a href="https://student.oslomet.no/en/bachelor-matematisk-modellering-datavitenskap" target="_blank">studiestartsiden for matematisk modellering og datavitenskap - ingeniør</a>.
+                    <a href="https://student.oslomet.no/en/bachelor-matematisk-modellering-datavitenskap" target="_blank">
+                        studiestartsiden for matematisk modellering og datavitenskap - ingeniør
+                    </a>.
                 </p>
                 <p>NB! Vær obs på at timeplanen som ligger på studiestartsiden er en timeplan for alle studentene på kullet.</p>
                 <p>
@@ -98,11 +113,15 @@
                 </p>
             </details>
 
+            <!-- Studiested detaljer -->
             <details>
                 <summary><h2>Studiested</h2></summary>
-                <p><a href="https://www.oslomet.no/om/studiested-pilestredet" target="_blank">Studiested Pilestredet</a></p>
+                <p>
+                    <a href="https://www.oslomet.no/om/studiested-pilestredet" target="_blank">Studiested Pilestredet</a>
+                </p>
             </details>
 
+            <!-- Detaljer om opptakskrav og poeng -->
             <details>
                 <summary><h2>Opptakskrav og poeng</h2></summary>
                 <p>For å søke på dette programmet må du ha:</p>
@@ -129,6 +148,7 @@
                 </p>
             </details>
 
+            <!-- Informasjon om hvordan søke studieplass-->
             <details>
                 <summary><h2>Slik søker du</h2></summary>
                 <p>Du søker på Samordna opptak med studiekode 215 503.</p>
@@ -136,8 +156,14 @@
                     <li>15. april: ordinær søknadsfrist</li>
                     <li>1. mars: frist for enkelte søkere</li>
                 </ul>
-                <p><a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier" target="_blank">Mer om å søke på bachelor.</a></p>
+                <p>
+                    <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier" target="_blank">
+                        Mer om å søke på bachelor.
+                    </a>
+                </p>
             </details>
+
+            <!-- Læringsmål og spesialiseringer -->
             <details>
                 <summary>
                     <h2>Hva lærer du?</h2>
@@ -148,6 +174,7 @@
                 <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.</p>
                 <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
                 
+                <!-- Spesialisering: Statistiske og datadrevne metoder-->
                 <details>
                     <summary>
                         <h3>Statistiske og datadrevne metoder</h3>
@@ -155,7 +182,8 @@
                     <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.</p>
                     <p>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.</p>
                 </details>
-        
+
+                <!-- Spesialisering: Vitenskapelige beregninger -->        
                 <details>
                     <summary>
                         <h3>Vitenskapelige beregninger</h3>
@@ -164,6 +192,7 @@
                     <p>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</p>
                 </details>
         
+                <!-- Spesialisering: Matematikk og fysikk -->
                 <details>
                     <summary>
                         <h3>Matematikk og fysikk</h3>
@@ -179,6 +208,7 @@
                 </details>
             </details>
         
+            <!-- Seksjon for studiets oppbygning -->
             <details>
                 <summary>
                     <h2>Studiets oppbygging</h2>
@@ -192,6 +222,7 @@
                     </caption>
                     <thead>
                         <tr>
+                            <!-- 1. studieår (1. og 2. semester) -->
                             <th scope="col" colspan="2">1. Studieår</th>
                         </tr>
                         <tr>
@@ -262,6 +293,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Emner for 3. og 4. semester -->
                         <tr>
                             <td>
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/HØST" target="_blank">
@@ -285,6 +317,7 @@
                             </td>
                             <td></td>
                         </tr>
+                        <!-- Emnegruppe: Matematikk og fysikk -->
                         <tr>
                             <td>
                                 <span class="Emnegruppe">Emnegruppe: Matematikk og fysikk</span>
@@ -305,6 +338,7 @@
                                 <span> - MAMO2500 10 stp</span>
                             </td>
                         </tr>
+                        <!-- Emnegruppe: Statistiske og datadrevne metoder -->
                         <tr>
                             <td>
                                 <span class="Emnegruppe">Emnegruppe: Statistiske og datadrevne metoder</span>
@@ -327,6 +361,27 @@
                                     Avansert modellering og beregninger
                                 </a>
                                 <span> - MAMO2200 10 stp ⍟</span>
+                            </td>
+                        </tr>
+                        <!-- Emnegruppe: Vitenskaplige beregninger -->
+                        <tr>
+                            <td>
+                                <span class="Emnegruppe">Emnegruppe: Vitenskaplige beregninger</span>
+                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/HØST" target="_blank">
+                                    Algoritmer og datastrukturer
+                                </a>
+                                <span> - DATS2300 10 stp</span>
+                            </td>
+                            <td>
+                                <span class="Emnegruppe">Emnegruppe: Vitenskaplige beregninger</span>
+                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/HØST" target="_blank">
+                                    Ressurseffektive programmer
+                                </a>
+                                <span> - DAVE3606 10 stp</span><br>
+                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/HØST" target="_blank">
+                                    Avansert modellering og beregninger
+                                </a>
+                                <span> - MAMO2200 10 stp</span>
                             </td>
                         </tr>
                     </tbody>
@@ -415,6 +470,8 @@
                     </tbody>
                 </table>
             </details>
+
+            <!-- Seksjon for hvordan undervisningen foregår -->
             <details>
                 <summary>
                     <h2>Hvordan foregår undervisningen?</h2>
@@ -434,6 +491,7 @@
                 <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret. </p>
             </details>
             
+            <!-- Seksjon for studieavgift -->
             <details>
                 <summary>
                     <h2>Hva koster det?</h2>
@@ -445,6 +503,7 @@
                 </p>
             </details>
             
+            <!-- Seksjon for jobbmuligheter etter studie -->
             <details>
                 <summary>
                     <h2>Hva kan du jobbe som?</h2>
@@ -455,6 +514,7 @@
                 <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>
             </details>
             
+            <!-- Seksjon for utveksling -->
             <details>
                 <summary>
                     <h2>Utveksling</h2>
@@ -462,6 +522,7 @@
                 <p>Du kan dra på utveksling i femte semester.</p>
             </details>
             
+            <!-- Seksjon for videre studiemuligheter -->
             <details>
                 <summary>
                     <h2>Videre studiemuligheter ved OsloMet</h2>
@@ -473,6 +534,8 @@
                 </p>
                 <p>Masterprogram | 2 år | Pilestredet i Oslo | Heltid</p>
             </details>
+
+            <!-- Seksjon for spørsmål relatert til utdanningen -->
             <details>
                 <summary>
                     <h2>Spørsmål om utdanningen?</h2>
@@ -483,11 +546,12 @@
                     </a>
                 </p>
             </details>
+
+            <!-- Seksjon for andre studier ved OsloMet -->
             <details>
                 <summary>
                     <h2>Du er kanskje også interessert i disse?</h2>
                 </summary>
-            
                 <p>
                     <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" target="_blank" class="tykkskrift">
                         Anvendt datateknologi
@@ -543,21 +607,26 @@
                     </a>
                 </p>
                 <p>Bachelorprogram | 3 år | Pilestredet i Oslo | Heltid</p>
-            
             </details>
         </section>
+
         <hr>
+        <!-- Seksjon for faglig leder -->
         <section>
             <h2 class="andre-seksjon">Faglig leder</h2>
             <div class="andre-seksjon-flex-container">
+                <!-- Faglig leders bilde -->
                 <div>
                     <p class="FagligLeder">
-                        <img src="https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944" 
-                             width="150px" 
-                             alt="Bilde av Kristoffer Herland Hellton">
+                        <img src="media/kristoffer.webp" 
+                        alt="Bilde av Kristoffer Herland Hellton" 
+                        width="200px"
+                        height="270px"> 
+                        <!--Kilde for bildet:https://www.oslomet.no/om/ansatt/krhel3944/ -->
                     </p>
                 </div>
-        
+
+                <!-- Faglig leders navn og kontaktinformasjon -->
                 <div>
                     <p>
                         <a href="https://www.oslomet.no/om/ansatt/krhel3944/" target="_blank">
@@ -571,11 +640,11 @@
         </section>
         
         <hr>
-        
+        <!-- Seksjon for studenthistorier -->
         <section class="tredje-seksjon">
             <h2>Studenthistorier</h2>
             <div class="tredje-seksjon-flex-container">
-        
+                <!-- Første studnethistorie med tilgang til mer informasjon -->
                 <div>
                     <h3>
                         <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" 
@@ -596,12 +665,15 @@
         
                 <div>
                     <img src="media/to_menn.webp" 
-                         alt="To menn i OsloMet. En av dem holder en pc." 
-                         width="500px">
+                    alt="To menn i OsloMet. En av dem holder en pc." 
+                    width="500px"
+                    height="250px"> 
+                    <!--Kilde til bildet: Fotografer Oda Hveem, https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap -->
                 </div>
         
             </div>
-        
+            
+            <!-- Lenke til flere studenthistorier -->
             <div class="enkel-flex-container">
                 <h3>
                     <a href="https://www.oslomet.no/studier/studenthistorier" target="_blank">
@@ -612,13 +684,15 @@
         </section>
     </article>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <h2>Hold deg oppdatert på hva som skjer på Oslomet.</h2>
-            <a href="https://www.oslomet.no/nyhetsbrev" class="subscribe-btn">Abonner på vårt nyhetsbrev!</a>
+            <button class="subscribe-btn" aria-label="Abonner på vårt nyhetsbrev" onclick="window.location.href='https://www.oslomet.no/nyhetsbrev'">Abonner på vårt nyhetsbrev!</button> <!--Legger til aria-label for at skjermlesere forstår buttons funksjon-->
         </div>
         <hr class="hrFooter">
         <div class="footer-details">
+            <!-- Seksjon for OsloMet sin kontaktinformasjon -->
             <div class="contact-info">
                 <p>
                     <strong>OSLO METROPOLITAN UNIVERSITY</strong><br>
@@ -629,6 +703,8 @@
                     <strong><a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a></strong>
                 </p>
             </div>
+
+            <!-- Ekstra footer-lenker-->
             <div class="footer-links">
                 <a href="https://www.oslomet.no/en">English</a><br>
                 <a href="https://www.oslomet.no/alumni">Alumni</a><br>
@@ -640,11 +716,13 @@
                 <a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelighetserklæring</a><br>
                 <a href="#">Admin</a>
             </div>
+
+            <!--Universitetets sosiale medier -->
             <div class="social-icons">
-                <a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-facebook"></i> Facebook</a><br>
-                <a href="https://x.com/oslomet"><i class="fa-brands fa-twitter"></i> X (Twitter)</a><br>
-                <a href="https://no.linkedin.com/school/oslomet/"><i class="fa-brands fa-linkedin"></i> Linkedin</a><br>
-                <a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+                <a href="https://www.facebook.com/oslomet/" aria-label="OsloMet på Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a><br> <!--Lagt til forklaring for ikonet for skjermlesere -->
+                <a href="https://x.com/oslomet" aria-label="OsloMet på Twitter"><i class="fa-brands fa-twitter"></i> X (Twitter)</a><br>
+                <a href="https://no.linkedin.com/school/oslomet/" aria-label="OsloMet på LinkedIn"><i class="fa-brands fa-linkedin"></i> Linkedin</a><br>
+                <a href="https://www.instagram.com/oslomet/?hl=nb" aria-label="OsloMet på Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
             </div>
         </div>
     </footer>
