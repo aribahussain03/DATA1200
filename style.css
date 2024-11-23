@@ -338,6 +338,11 @@ details > details p {
   height: auto;
 }
 
+.tilgjengelighet p,.tilgjengelighet h2{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 /* CSS for Git-siden */
 .git {
   flex-wrap: wrap;
