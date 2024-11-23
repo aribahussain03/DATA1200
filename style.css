@@ -242,6 +242,7 @@ hr {
   text-decoration-color: #000;
 }
 
+
 .enkel-flex-container {
   width: 350px;
   margin: auto;
@@ -326,7 +327,7 @@ details > details p {
 
 
 .kode1, .kode2, .farge-test, .Farge2,.Farge1, .mobil-index,
-.data-index, .mobil-git, .data-git, .{
+.data-index, .mobil-git, .data-git{
   display: block;
   margin-left: auto;
   margin-right: auto;
