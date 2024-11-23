@@ -311,8 +311,8 @@ details > details p {
 }
 
 
-.mobil-index,
-.data-index, {
+.kode1, .kode2, .farge-test, .Farge2,.Farge1, .mobil-index,
+.data-index, .mobil-git, .data-git, .{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -951,3 +951,4 @@ main {
   }
 
 }
+
