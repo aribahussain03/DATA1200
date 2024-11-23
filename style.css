@@ -867,6 +867,8 @@ main {
 
   .tredje-seksjon img {
     max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Sentraliserer bildet horisontalt */
   }
 
   /* Justeringer for Git-siden */
