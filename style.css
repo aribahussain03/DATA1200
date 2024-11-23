@@ -875,7 +875,6 @@ main {
   .git {
     padding-left: 10px;
     padding-right: 10px;
-    overflow-x: hidden;
     max-width: 95%;
   }
 
@@ -886,7 +885,6 @@ main {
 
   .git-container,
   .fordeler-container {
-    max-width: 100%;
     flex-direction: column;
   }
   
@@ -905,12 +903,15 @@ main {
   .gitimg-container{
     max-width: 100%;
     flex-direction: column;
+    height: 80%;
   }
  
   .gitimg{
     max-width: 100%;
     max-height: auto;
+    margin: 0 auto;
   }
+  
   .brukGit{
     margin-left: 0;
     margin-right: 0;
