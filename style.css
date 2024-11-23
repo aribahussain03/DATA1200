@@ -909,6 +909,7 @@ main {
  
   .gitimg{
     max-width: 100%;
+    max-height: auto;
   }
   .brukGit{
     margin-left: 0;
