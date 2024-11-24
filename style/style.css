@@ -2,18 +2,20 @@
    Innholdsfortegnelse:
    1. Navigasjon og meny
    2. Generell styling
-   3. Video-styling
-   4. Tabeller
-   5. Git-siden
-   6. Tilgjengelighet
-   7. Aktivitet
-   8. Bilder og bildeoppsett
-   9. Footer
-   10. Responsiv design
-       10.1 Generell responsiv styling
-       10.2 Git-siden responsiv styling
-       10.3 Tilpasninger for bilder
-       10.4 Footer responsiv styling
+   3. Indeks
+   4. Git-siden
+   5. Tilgjengelighet
+   6. Aktivitet
+   7. Bilder og bildeoppsett
+   8. Footer
+   9. Responsiv design
+       9.1 Navigasjon og meny
+       9.2 Generell responsiv style
+       9.3 Indeks 
+       9.4 Tilgjengelighet
+       9.5 Git
+       9.6 Tilpasninger for bilder
+       9.7 Footer 
 ============================================ */
 
 
@@ -144,6 +146,7 @@ hr {
   font-weight: bold;
 }
 
+/* CSS for Indeks  */
 
 /*Video-styling*/
 
