@@ -459,7 +459,6 @@ main {
   outline: none;
 }
 
-
 .aktivitet { /* Aktivitetsseksjonen */
   background-color: #ffd500;
   font-family: Arial, sans-serif;
@@ -505,22 +504,23 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
-  gap: 40px; 
+  gap: 20px; 
 }
 
 .text-content {
   flex: 1.5; 
-  max-width: 55%; 
+  max-width: 60%; 
   line-height: 1.8;
   margin: 0;
 }
 
-.flex-container img {
-  flex: 1.5;
-  max-width: 400px;
+.flex-container picture {
+  flex: 1;
+  max-width: 40%;
   height: auto;
   object-fit: cover;
   margin: auto;
+  padding: 0;
 }
 
 .flex-container ul {
@@ -531,7 +531,6 @@ main {
   list-style-position: inside;
 }
 
-
 .image1 { /* Sentraliserte bilder */
   display: block;
   margin: auto;
@@ -540,13 +539,51 @@ main {
 }
 
 .boxed-image {
+  flex: 1;
   width: 100%;
-  max-width: 450px;
   height: auto;
   object-fit: cover;
   overflow: hidden;
 }
 
+.flex-pic {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container { /* Generell stil for bilder med effekter */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.image-container picture {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container picture img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-container picture:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.image-container .image-box { /* Side-ved-side layout for bilder */
+  flex: 1;
+  overflow: hidden;
+}
 
 .center { /* Sentrer bilder */
   display: block;
@@ -573,66 +610,12 @@ main {
 }
 
 
-.image-container { /* Generelle stiler for bilder med effekter */
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 100%;
-  margin: 40px auto 0;
-  padding: 0 20px;
-}
-
-.image-container picture {
-  flex: 1;
-  max-width: 50%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image-container img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.image-container picture:hover {
-  transform: scale(1.05);
-  z-index: 1;
-}
-
-
-.image-container .image-box { /* Side-ved-side layout for bilder */
-  flex: 1;
-  overflow: hidden;
-}
-
-/* Stil for sentrerte bilder */
-.image1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-
-.boxed-image { /* Stil for boxed bilder */
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-
 /* Footer CSS */ 
 .footer {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
-  color: #ffd500;
+  color: #ffda00;
   padding: 70px 0 30px;
   border-top-left-radius: 100px; /* Gjør det øverste venstre hjørnet avrundet. */
   line-height: 1.8;
@@ -648,7 +631,7 @@ main {
 }
 
 .hrFooter { /* Stiler for horisontal linje i footer */
-  border: 1px solid #ffd500;
+  border: 1px solid #ffda00;
   margin: 0;
 }
 
@@ -683,7 +666,7 @@ main {
 .social-icons a:hover i { /* stil for  lenken (a) ved hover. */
   color: black;
   transition: 0.5s;
-  background-color: #ffd500;
+  background-color: #ffda00;
 }
 
 
@@ -691,14 +674,14 @@ main {
 .social-icons a i { /* stil for sosiale-ikon lenke */
   text-decoration: none;
   padding: 8px;
-  color: #ffd500;
+  color: #ffda00;
   opacity: 0.9; /* Gjør ikonet 90% synlig (litt gjennomsiktig). */
   font-size: 1.5em;
   border-radius: 50%;
 }
 
 .social-icons a {
-  color: #ffd500;
+  color: #ffda00;
   text-decoration: none;
  
 }
@@ -725,7 +708,7 @@ main {
 .contact-info a,
 .footer-links a,
 .contact-info {
-  color: #ffd500;
+  color: #ffda00;
 }
 
 .footer-details {
@@ -750,7 +733,7 @@ main {
   gap: 20px;
   padding: 20px;
   background-color: black;
-  color: #ffd500;
+  color: #ffda00;
   border-top-left-radius: 30px;
 }
 
@@ -765,9 +748,9 @@ main {
 
 
 .subscribe-btn { /*Stil for abonnementsknappen */
-  background-color: #ffd500;
+  background-color: #ffda00;
   color: black;
-  border: 2px solid #ffd500;
+  border: 2px solid #ffda00;
   padding: 15px 30px;
   font-size: 15px;
   font-weight: bold;
@@ -779,7 +762,7 @@ main {
 }
 
 .subscribe-btn:hover { /* Hover-stil for abonnementsknappen */
-  background-color: #ffd500;
+  background-color: #ffda00;
   color: black;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Legger til skygge. */
   transform: translateY(-5px); /* Flytter knappen oppover ved hover. */
@@ -948,7 +931,7 @@ main {
   /* Tilpasninger for bilder */
   .boxed-image{
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     object-fit: cover;
   }
 
@@ -973,17 +956,16 @@ main {
 
   .flex-container {
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
 
   .flex-container ul,
-  .flex-container img {
+  .flex-container picture {
     max-width: 100%;
     height: auto;
   }
 
-  .text-content {
+  .text-content, .flex-pic {
     max-width: 100%; 
   }
 
