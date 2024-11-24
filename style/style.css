@@ -1,8 +1,27 @@
+/* ============================================
+   Innholdsfortegnelse:
+   1. Navigasjon og meny
+   2. Generell styling
+   3. Video-styling
+   4. Tabeller
+   5. Git-siden
+   6. Tilgjengelighet
+   7. Aktivitet
+   8. Bilder og bildeoppsett
+   9. Footer
+   10. Responsiv design
+       10.1 Generell responsiv styling
+       10.2 Git-siden responsiv styling
+       10.3 Tilpasninger for bilder
+       10.4 Footer responsiv styling
+============================================ */
+
+
+
+/*Navigasjon og meny*/
 #burger-toggle {
   display: none;  /* Skjuler burger-ikonet som brukes på mobil */
 }
-
-/*Navigasjon og meny*/
 
 nav {
   margin: 0; /* Fjerner all margin rundt elementet. */
@@ -341,10 +360,7 @@ details > details p {
   max-width: 100%;
 }
 
-/* Klassestil for tykkskrift */
-.tykkskrift {
-  font-weight: bold;
-}
+
 
 /* CSS for accessibility  */
 .accessibility{
