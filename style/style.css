@@ -54,19 +54,21 @@ body {
   line-height: 1.5; /* Angir linjeavstand. */
   margin: 0;
 }
-/* Skjuler skip links. Kilde for koden: https://www.w3schools.com/accessibility/accessibility_skip_links.php  */
+/* Skjuler skip links, men dette er fortsatt synlig for skjermleser. Kilde for koden: https://www.w3schools.com/accessibility/accessibility_skip_links.php  */
 .skip-link {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  position: absolute; /* Plasserer elementet utenfor normal dokumentflyt */
+  left: -10000px; /* Flytter elementet langt utenfor synlig område på venstre side */
+  top: auto; /* Beholder standard topp-posisjon */
+  width: 1px; /* Reduserer bredden til et minimum */
+  height: 1px; /* Reduserer høyden til et minimum */
+  overflow: hidden; /* Hindrer innholdet i å vises selv om det skulle dukke opp */
 }
+
+/* Gjør "skip-link" synlig når det får fokus (f.eks. ved tastaturnavigasjon) */
 .skip-link:focus {
-  position: static;
-  width: auto;
-  height: auto;
+  position: static; /* Plasserer elementet tilbake i dokumentflyten */
+  width: auto; /* Gjenoppretter bredden til å tilpasse innholdet */
+  height: auto; /* Gjenoppretter høyden til å tilpasse innholdet */
 }
 
 article {
@@ -392,7 +394,7 @@ details > details p {
   margin-right: 20px;
 }
 
-.brukGit{
+.brukGit{ /*Sentraliserer teksten*/
   max-width: 750px;
   margin-left: 150px;
   margin-right: 150px;
@@ -928,7 +930,7 @@ main {
     margin-right: 0;
   }
 
-  /* Tilpasninger for bilder */
+  /* Tilpasninger for bilder i accessibility*/
   .boxed-image{
     width: 100%;
     max-width: 100%;
