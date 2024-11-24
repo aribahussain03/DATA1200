@@ -805,7 +805,7 @@ main {
 
   .menu-icon {
     display: block;
-    background-image: url(media/menu-icon.webp); /* Hamburger-ikon */
+    background-image: url(../media/menu-icon.webp); /* Hamburger-ikon */
     background-size: contain; /* Skalerer ikonet slik at det passer innenfor containerens dimensjoner uten å beskjære. */
     width: 40px;
     height: 40px;
