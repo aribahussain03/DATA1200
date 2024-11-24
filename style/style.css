@@ -615,7 +615,7 @@ main {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
-  color: #ffd500;
+  color: #ffda00;
   padding: 70px 0 30px;
   border-top-left-radius: 100px; /* Gjør det øverste venstre hjørnet avrundet. */
   line-height: 1.8;
@@ -631,7 +631,7 @@ main {
 }
 
 .hrFooter { /* Stiler for horisontal linje i footer */
-  border: 1px solid #ffd500;
+  border: 1px solid #ffda00;
   margin: 0;
 }
 
@@ -666,7 +666,7 @@ main {
 .social-icons a:hover i { /* stil for  lenken (a) ved hover. */
   color: black;
   transition: 0.5s;
-  background-color: #ffd500;
+  background-color: #ffda00;
 }
 
 
@@ -674,14 +674,14 @@ main {
 .social-icons a i { /* stil for sosiale-ikon lenke */
   text-decoration: none;
   padding: 8px;
-  color: #ffd500;
+  color: #ffda00;
   opacity: 0.9; /* Gjør ikonet 90% synlig (litt gjennomsiktig). */
   font-size: 1.5em;
   border-radius: 50%;
 }
 
 .social-icons a {
-  color: #ffd500;
+  color: #ffda00;
   text-decoration: none;
  
 }
@@ -708,7 +708,7 @@ main {
 .contact-info a,
 .footer-links a,
 .contact-info {
-  color: #ffd500;
+  color: #ffda00;
 }
 
 .footer-details {
@@ -733,7 +733,7 @@ main {
   gap: 20px;
   padding: 20px;
   background-color: black;
-  color: #ffd500;
+  color: #ffda00;
   border-top-left-radius: 30px;
 }
 
@@ -748,9 +748,9 @@ main {
 
 
 .subscribe-btn { /*Stil for abonnementsknappen */
-  background-color: #ffd500;
+  background-color: #ffda00;
   color: black;
-  border: 2px solid #ffd500;
+  border: 2px solid #ffda00;
   padding: 15px 30px;
   font-size: 15px;
   font-weight: bold;
@@ -762,7 +762,7 @@ main {
 }
 
 .subscribe-btn:hover { /* Hover-stil for abonnementsknappen */
-  background-color: #ffd500;
+  background-color: #ffda00;
   color: black;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Legger til skygge. */
   transform: translateY(-5px); /* Flytter knappen oppover ved hover. */
